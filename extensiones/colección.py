@@ -1,6 +1,0 @@
-ano_fenix = Colection(colection="Año del Fenix", year="2020")
-ano_dragon = Colection(colection="Año del Dragón", year="2019")
-ano_cuervo = Colection(colection="Año del Cuervo", year="2018")
-ano_mamut = Colection(colection="Año del Mamut", year="2017")
-ano_kraken = Colection(colection="Año del Kraken", year="2016")
-ano_clasico = Colection(colection="Conjunto Clásico", year="2014-2015")
