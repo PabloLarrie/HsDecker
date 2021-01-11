@@ -14,7 +14,6 @@ class Card(models.Model):
     endurance = models.PositiveIntegerField(null=True)
 
 
-
 class Collection(models.Model):
     name = models.CharField(max_length=50, unique=True)
     year = models.DateTimeField()

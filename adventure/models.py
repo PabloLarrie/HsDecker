@@ -4,11 +4,7 @@ class Adventure(models.Model): #Primer menú
     announcement = models.CharField(max_length=50, unique=True) #Chapter unlocked! Chapter I:Dalaran Bank
     name = models.CharField(max_length=50, unique=True)  #Dalaran 
     message = models.CharField(max_length=150, unique=True) # Dalaran! A splendid, floating city of...
-    info = models.CharField(max_length=50, unique=True) #Dalaran. 0/5 Chapters Completed
-    unlocked = models.BooleanField() #Indica si el chapter es accesible
-    unlocked_info = models.CharField(max_length=50) #Opens week 2 / Still unlocked
-    new = models.BooleanField() #Indica si se trata de un Challenge nuevo con un contorno brillante.
-    menus = models.ForeignKey('adventure.Chapter', related_name='adventures', on_delete=models.CASCADE) #Selección de capítulo (I, II, III, IV o V)
+    menus = models.ForeignKey('adventure.Chapter', through='adventure.AdventureChapters', on_delete=models.CASCADE) #Selección de capítulo (I, II, III, IV o V)
 
 
 class Chapter(models.Model): #Segundo menú
@@ -17,20 +13,28 @@ class Chapter(models.Model): #Segundo menú
     message = models.CharField(max_length=150, unique=True) #Everyone, split up. For this plan to work, we must each do our part.
     info = models.CharField(max_length=100, unique=True) #Break into the Bank of Dalaran to loot its most precious artifacts.
     rewards = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100) #Enseña una imagen del reward.
-    description = models.CharField(max_length=50, unique=True) #First Chapter, bank of Dalaran... (Accesible desde el menú anterior)
-    anomaly = models.BooleanField() #Switcher para encender y apagar el comando anomaly.
-    anomaly_info = models.CharField(max_length=50, unique=True)  #Anomaly Mode: Gain a random effect this turn.
-    anomaly_type = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100) #imagen de la anomalía
+    description = models.CharField(max_length=50, unique=True) #First Chapter, bank of Dalaran... (Accesible desde el menú anterior)  
+    adventure = models.ForeignKey('adventure.Adventure', through='adventure.AdventureChapters', on_delete=models.CASCADE)
     anomaly_get = models.ManyToManyField('adventure.Anomaly', related_name='chapters', on_delete=models.CASCADE) #relación chapter/anomaly
     new = models.BooleanField() #Indica si se trata de un Challenge nuevo con "New"
     #para avanzar al siguiente menú solo hay que darle a "GO!"
     
 
+class AdventureChapter(models.Model): #Tabla de relación
+    adventure = models.ForeignKey('adventure.Adventure', on_delete=models.CASCADE) #Indica la aventura
+    chapter = models.ForeignKey('adventure.Chapter', on_delete=models.CASCADE) #Indica el capítulo
+    info = models.CharField(max_length=50, unique=True) #Dalaran. 0/5 Chapters Completed
+    unlocked = models.BooleanField() #Indica si el chapter es accesible
+    unlocked_info = models.CharField(max_length=50) #Opens week 2 / Still unlocked
+    new = models.BooleanField() #Indica si se trata de un Challenge nuevo con un contorno brillante.
+    reward_status = models.BooleanField() #Indica si se ha conseguido el reward
+    anomaly = models.BooleanField() #Indica si se juega con o sin Anomaly.
+
 class Anomaly(models.Model): #subtrama del segundo menú
     name = models.CharField(max_length=50, unique=True) #Anomaly- Arcane
     description = models.CharField(max_length=50, unique=True) #All spells cost (2) less.
     image = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100) #imagen de la anomalía
-
+    info = models.CharField(max_length=50, unique=True)  #Anomaly Mode: Gain a random effect this turn.
 
 class Champion(models.Model): #Tercer menú
     message = models.CharField(max_length=200, unique=True) #We have recruited an elite band of disenfranchised miscreantes. Each have their own strengths.     
@@ -68,7 +72,7 @@ class Deck(models.Model): #Quinto menú
     #bosses = models.PositiveIntegerField(default=0) #indica el número de bosses derrotados
     
 
-class Challenge(models.Model):
+class Challenge(models.Model): #Sexto menú
     message = models.CharField(max_length=200, unique=True) #The guards and citizens of Dalaran will rise against you...
     round_ind = models.PositiveIntegerField(default=1) #Indica la ronda en la que se encuentra el jugador.
     hero_enemy = models.ManyToManyField('cards.Hero', related_name='adventure bosses', on_delete=models.CASCADE) #Indicador del Boss.
