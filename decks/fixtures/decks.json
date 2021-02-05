@@ -1,0 +1,21 @@
+[
+    {
+        "model": "decks.Deck",
+        "pk": 1,
+        "fields": {
+            "name": "My Deck",
+            "size": 30,
+            "hero_class": 10
+
+        }
+    },
+    {
+        "model": "decks.Deck",
+        "pk": 2,
+        "fields": {
+            "name": "My Deck2",
+            "size": 0,
+            "hero_class": 9
+        }
+    } 
+]

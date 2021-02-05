@@ -1,0 +1,170 @@
+[
+{
+    "model": "cards.expansion",
+    "pk": 1,
+    "fields": {
+        "name": "Basic",
+        "collection": 1
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 2,
+    "fields": {
+        "name": "Curse of Naxxramas",
+        "collection": 1
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 3,
+    "fields": {
+        "name": "Goblins Vs Gnomes",
+        "collection": 1
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 4,
+    "fields": {
+        "name": "Blackrock mountain",
+        "collection": 1
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 5,
+    "fields": {
+        "name": "The Grand Tournament",
+        "collection": 1
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 6,
+    "fields": {
+        "name": "The league of Explorers",
+        "collection": 1
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 7,
+    "fields": {
+        "name": "Whispers of the Old Gods",
+        "collection": 2
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 8,
+    "fields": {
+        "name": "One night in Karazhan",
+        "collection": 2
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 9,
+    "fields": {
+        "name": "Mean streets of Gadgetzan",
+        "collection": 2
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 10,
+    "fields": {
+        "name": "Journey to Un'Goro",
+        "collection": 3
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 11,
+    "fields": {
+        "name": "Knoghts of the Frozen Throne",
+        "collection": 3
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 12,
+    "fields": {
+        "name": "Kobolds & Catacombs",
+        "collection": 3
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 13,
+    "fields": {
+        "name": "The Witchwood",
+        "collection": 4
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 14,
+    "fields": {
+        "name": "The Boomsday project",
+        "collection": 4
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 15,
+    "fields": {
+        "name": "Rastakhan's Rumble",
+        "collection": 4
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 16,
+    "fields": {
+        "name": "Rise of the Shadows",
+        "collection": 5
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 17,
+    "fields": {
+        "name": "Saviors of Uldum",
+        "collection": 5
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 18,
+    "fields": {
+        "name": "Descent of the Dragons",
+        "collection": 5
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 19,
+    "fields": {
+        "name": "Ashes of Outland",
+        "collection": 6
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 20,
+    "fields": {
+        "name": "Scholomance Academy",
+        "collection": 6
+    }
+},
+{
+    "model": "cards.expansion",
+    "pk": 21,
+    "fields": {
+        "name": "Madness at the Darkmoon Faire",
+        "collection": 6
+    }
+}
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "model": "cards.Hero",
+        "pk": 1,
+        "fields": {
+            "name": "Illidan Stormrage",
+            "hero_class": 1,
+            "description": "You are not prepared!",
+            "health": 30, 
+            "armor": 0
+        }
+    },
+    {
+        "model": "cards.Hero",
+        "pk": 2,
+        "fields": {
+            "name": "Malfurion Stormrage",
+            "hero_class": 2,
+            "description": "Nature will rise against you!",
+            "health": 30, 
+            "armor": 0
+        }
+    },
+    {
+        "model": "cards.Hero",
+        "pk": 3,
+        "fields": {
+            "name": "Rexxar",
+            "hero_class": 3,
+            "description": "Let the hunt begin",
+            "health": 30, 
+            "armor": 0
+        }
+    },  
+    {
+        "model": "cards.Hero",
+        "pk": 4,
+        "fields": {
+            "name": "Jaina Proudmoore",
+            "hero_class": 4,
+            "description": "My magic will tear you apart!",
+            "health": 30, 
+            "armor": 0
+        }
+    }, 
+    {
+        "model": "cards.Hero",
+        "pk": 5,
+        "fields": {
+            "name": "Uther Lightbringer",
+            "hero_class": 5,
+            "description": "The Light protects those who wield it",
+            "health": 30, 
+            "armor": 0
+        }
+    }, 
+    {
+        "model": "cards.Hero",
+        "pk": 6,
+        "fields": {
+            "name": "Anduin Wrynn",
+            "hero_class": 6,
+            "description": "Light smiles upon the just!",
+            "health": 30, 
+            "armor": 0
+        }
+    }, 
+    {
+        "model": "cards.Hero",
+        "pk": 7,
+        "fields": {
+            "name": "Valeera Sanguinar",
+            "hero_class": 7,
+            "description": "Watch your back!",
+            "health": 30, 
+            "armor": 0
+        }
+    }, 
+    {
+        "model": "cards.Hero",
+        "pk": 8,
+        "fields": {
+            "name": "Thrall",
+            "hero_class": 8,
+            "description": "Storm, earth and fire, heed my call!",
+            "health": 30, 
+            "armor": 0
+        }
+    },   
+    {
+        "model": "cards.Hero",
+        "pk": 9,
+        "fields": {
+            "name": "Gul'dan",
+            "hero_class": 9,
+            "description": "I am your nightmare!",
+            "health": 30, 
+            "armor": 0
+        }
+    },     {
+        "model": "cards.Hero",
+        "pk": 10,
+        "fields": {
+            "name": "Garrosh Hellscream",
+            "hero_class": 10,
+            "description": "Victory or death!",
+            "health": 30, 
+            "armor": 0
+        }
+    }
+    ]

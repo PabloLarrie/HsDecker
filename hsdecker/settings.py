@@ -37,11 +37,14 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
+
 ]
 
 LOCAL_APPS = [
     'cards',
     'decks',
+
 ]
 
 
@@ -130,3 +133,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+SHELL_PLUS_PRINT_SQL = True
+SHELL_PLUS_PRINT_SQL_TRUNCATE = None

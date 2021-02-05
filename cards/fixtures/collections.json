@@ -1,0 +1,51 @@
+[
+{
+    "model": "cards.collection",
+    "pk": 1,
+    "fields": {
+        "name": "Classic Sets",
+        "year": 2014
+    }
+},
+{
+    "model": "cards.collection",
+    "pk": 6,
+    "fields": {
+        "name": "Year of the Phoenix ",
+        "year": 2020
+    }
+},
+{
+    "model": "cards.collection",
+    "pk": 5,
+    "fields": {
+        "name": "Year of the Dragon",
+        "year": 2019
+    }
+},
+{
+    "model": "cards.collection",
+    "pk": 4,
+    "fields": {
+        "name": "Year of the Raven",
+        "year": 2018
+    }
+},
+{
+    "model": "cards.collection",
+    "pk": 3,
+    "fields": {
+        "name": "Year of the Mammoth",
+        "year": 2017
+    }
+},
+{
+    "model": "cards.collection",
+    "pk": 2,
+    "fields": {
+        "name": "Year of the Kraken",
+        "year": 2016
+    }
+}
+
+]

@@ -1,0 +1,92 @@
+[  
+{
+    "model": "cards.heroclass",
+    "pk": 1,
+    "fields": {
+        "name": "Demon Hunter",
+        "power": 1,
+        "description": null
+    }
+},
+{
+    "model": "cards.heroclass",
+    "pk": 2,
+    "fields": {
+        "name": "Druid",
+        "power": 2,
+        "description": null
+    }
+},
+{
+    "model": "cards.heroclass",
+    "pk": 3,
+    "fields": {
+        "name": "Hunter",
+        "power": 3,
+        "description": null
+    }
+},
+{
+    "model": "cards.heroclass",
+    "pk": 4,
+    "fields": {
+        "name": "Mage",
+        "power": 4,
+        "description": null
+    }
+},
+{
+    "model": "cards.heroclass",
+    "pk": 5,
+    "fields": {
+        "name": "Paladin",
+        "power": 5,
+        "description": null
+    }
+},
+{
+    "model": "cards.heroclass",
+    "pk": 6,
+    "fields": {
+        "name": "Priest",
+        "power": 6,
+        "description": null
+    }
+},
+{
+    "model": "cards.heroclass",
+    "pk": 7,
+    "fields": {
+        "name": "Rogue",
+        "power": 7,
+        "description": null
+    }
+},
+{
+    "model": "cards.heroclass",
+    "pk": 8,
+    "fields": {
+        "name": "Shaman",
+        "power": 8,
+        "description": null
+    }
+},
+{
+    "model": "cards.heroclass",
+    "pk": 9,
+    "fields": {
+        "name": "Warlock",
+        "power": 9,
+        "description": null
+    }
+},
+{
+    "model": "cards.heroclass",
+    "pk": 10,
+    "fields": {
+        "name": "Warrior",
+        "power": 10,
+        "description": null
+    }
+}
+]

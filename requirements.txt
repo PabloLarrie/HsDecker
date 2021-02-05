@@ -1,2 +1,6 @@
 django
+django-extensions
 psycopg2
+pytest
+pytest-django
+factory-boy

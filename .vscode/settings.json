@@ -1,0 +1,23 @@
+{
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "workbench.colorTheme": "lucy",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground":"#a784a7",
+        "editor.selectionHighlightBackground":"#655969",
+        "terminal.border": "#504079",
+        "terminal.background": "#464658",
+        "terminal.foreground": "#31c5d8",
+        "terminal.ansiBrightCyan": "#c993d4",
+        "terminal.ansiBrightBlack": "#ffffff",
+        "terminal.ansiBrightBlue": "#859ef0",
+        "terminal.ansiBrightGreen": "#a0ebbd",
+        "terminal.selectionBackground":"#a3d5db"
+    
+    }
+}

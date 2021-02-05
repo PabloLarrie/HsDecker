@@ -1,0 +1,92 @@
+[
+{
+    "model": "cards.power",
+    "pk": 1,
+    "fields": {
+        "name": "Demon Claws",
+        "cost": 2,
+        "description": "Activate the Demon Hunter’s Hero Power to gain 1 Attack this turn."
+    }
+},
+{
+    "model": "cards.power",
+    "pk": 2,
+    "fields": {
+        "name": "Shapeshift",
+        "cost": 2,
+        "description": "Activate the Druid’s Hero Power to gain 1 armor and 1 attack this turn."
+    }
+},
+{
+    "model": "cards.power",
+    "pk": 3,
+    "fields": {
+        "name": "Steady Shot",
+        "cost": 2,
+        "description": "Activate the Hunter’s Hero Power to deal 2 damage to the enemy hero."
+    }
+},
+{
+    "model": "cards.power",
+    "pk": 4,
+    "fields": {
+        "name": "Fireblast",
+        "cost": 2,
+        "description": "Activate the Mage’s Hero Power to deal 1 damage to any target of your choosing."
+    }
+},
+{
+    "model": "cards.power",
+    "pk": 5,
+    "fields": {
+        "name": "Reinforce",
+        "cost": 2,
+        "description": "Activate the Paladin’s Hero power to summon a 1/1 Silver Hand Recruit minion."
+    }
+},
+{
+    "model": "cards.power",
+    "pk": 6,
+    "fields": {
+        "name": "Lesser Heal",
+        "cost": 2,
+        "description": "Activate the Priest’s Hero Power to restore 2 health to any target on the board."
+    }
+},
+{
+    "model": "cards.power",
+    "pk": 7,
+    "fields": {
+        "name": "Dagger Mastery",
+        "cost": 2,
+        "description": "Activate the Rogue’s Hero Power to equip a weapon with 1 attack and 2 durability."
+    }
+},
+{
+    "model": "cards.power",
+    "pk": 8,
+    "fields": {
+        "name": "Totemic Call",
+        "cost": 2,
+        "description": "Activating the Shaman’s Hero Power will randomly summon 1 of 4 possible Totem minions: Healing Totem, Stoneclaw Totem, Searing Totem, or Wrath of Air Totem."
+    }
+},
+{
+    "model": "cards.power",
+    "pk": 9,
+    "fields": {
+        "name": "Life Tap",
+        "cost": 2,
+        "description": "Activate the Warlock’s Hero Power to draw a card and lose 2 health."
+    }
+},
+{
+    "model": "cards.power",
+    "pk": 10,
+    "fields": {
+        "name": "Armor Up!",
+        "cost": 2,
+        "description": "Activating the Warrior’s Hero Power 'Armor Up!' grants 2 Armor, which functions as indefinitely stacking additional Health."
+    }
+}
+]

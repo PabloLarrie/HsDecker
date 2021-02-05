@@ -1,0 +1,6462 @@
+[    
+    {
+        "model": "cards.card",
+        "pk": 8,
+        "fields": {
+            "name": "Mind Control",
+            "description": "Take control of an enemy minion.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 10,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 9,
+        "fields": {
+            "name": "Prophet Velen",
+            "description": "Double the damage and healing of your spells and Hero Power.",
+            "heroes": [6],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 7,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 12,
+        "fields": {
+            "name": "Mana Addict",
+            "description": "Whenever you cast a spell, gain +2 Attack this turn.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 1,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 22,
+        "fields": {
+            "name": "Inner Rage",
+            "description": "Deal 1 damage to a minion and give it +2 Attack.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 23,
+        "fields": {
+            "name": "Bane of Doom",
+            "description": "Deal 2 damage to a character. If that kills it, summon a random Demon.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 28,
+        "fields": {
+            "name": "Kor'kron Elite",
+            "description": "Charge",
+            "heroes": [10],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 30,
+        "fields": {
+            "name": "Thoughtsteal",
+            "description": "Copy 2 cards from your opponent's deck and put them into your hand.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 32,
+        "fields": {
+            "name": "Al'Akir the Windlord",
+            "description": "Windfury, Charge, Divine Shield, Taunt",
+            "heroes": [8],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 8,
+            "attack": 3,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 34,
+        "fields": {
+            "name": "Silvermoon Guardian",
+            "description": "Divine Shield",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 36,
+        "fields": {
+            "name": "Cenarius",
+            "description": "Choose One - Give your other minions +2/+2; or Summon two 2/2 Treants with Taunt.",
+            "heroes": [2],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 9,
+            "attack": 5,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 37,
+        "fields": {
+            "name": "Pint-Sized Summoner",
+            "description": "The first minion you play each turn costs (1) less.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 41,
+        "fields": {
+            "name": "Frostwolf Grunt",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 45,
+        "fields": {
+            "name": "Tauren Warrior",
+            "description": "Taunt. Enrage: +3 Attack",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 48,
+        "fields": {
+            "name": "Voidwalker",
+            "description": "Taunt",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 51,
+        "fields": {
+            "name": "Windfury",
+            "description": "Give a minion Windfury.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 61,
+        "fields": {
+            "name": "Spiteful Smith",
+            "description": "Enrage: Your weapon has +2 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 4,
+            "endurance": 6,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 64,
+        "fields": {
+            "name": "Swipe",
+            "description": "Deal 4 damage to an enemy and 1 damage to all other enemies.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 67,
+        "fields": {
+            "name": "Silverback Patriarch",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 1,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 68,
+        "fields": {
+            "name": "Stranglethorn Tiger",
+            "description": "Stealth",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 5,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 69,
+        "fields": {
+            "name": "Silver Hand Knight",
+            "description": "Battlecry: Summon a 2/2 Squire.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 70,
+        "fields": {
+            "name": "Blessing of Might",
+            "description": "Give a minion +3 Attack.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 75,
+        "fields": {
+            "name": "Brawl",
+            "description": "Destroy all minions except one. (chosen randomly)",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 77,
+        "fields": {
+            "name": "Polymorph",
+            "description": "Transform a minion into a 1/1 Sheep.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 86,
+        "fields": {
+            "name": "Starfall",
+            "description": "Choose One - Deal 5 damage to a minion; or 2 damage to all enemy minions.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 90,
+        "fields": {
+            "name": "Chillwind Yeti",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 95,
+        "fields": {
+            "name": "Nourish",
+            "description": "Choose One - Gain 2 Mana Crystals; or Draw 3 cards.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 113,
+        "fields": {
+            "name": "Counterspell",
+            "description": "Secret: When your opponent casts a spell, Counter it.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 132,
+        "fields": {
+            "name": "Voodoo Doctor",
+            "description": "Battlecry: Restore 2 Health.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 134,
+        "fields": {
+            "name": "Ravenholdt Assassin",
+            "description": "Stealth",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 7,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 138,
+        "fields": {
+            "name": "Doomsayer",
+            "description": "At the start of your turn, destroy ALL minions.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 140,
+        "fields": {
+            "name": "Redemption",
+            "description": "Secret: When one of your minions dies, return it to life with 1 Health.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 141,
+        "fields": {
+            "name": "Hunter's Mark",
+            "description": "Change a minion's Health to 1.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 145,
+        "fields": {
+            "name": "Mindgames",
+            "description": "Put a copy of a random minion from your opponent's deck into the battlefield.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 147,
+        "fields": {
+            "name": "Shadowflame",
+            "description": "Destroy a friendly minion and deal its Attack damage to all enemy minions.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 149,
+        "fields": {
+            "name": "Ancestral Healing",
+            "description": "Restore a minion to full Health and give it Taunt.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 151,
+        "fields": {
+            "name": "Mark of Nature",
+            "description": "Choose One - Give a minion +4 Attack; or +4 Health and Taunt.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 157,
+        "fields": {
+            "name": "Lord of the Arena",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 6,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 158,
+        "fields": {
+            "name": "Secretkeeper",
+            "description": "Whenever a Secret is played, gain +1/+1.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 163,
+        "fields": {
+            "name": "Sacrificial Pact",
+            "description": "Destroy a Demon. Restore #5 Health to your hero.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 172,
+        "fields": {
+            "name": "Ice Lance",
+            "description": "Freeze a character. If it was already Frozen, deal 4 damage instead.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 175,
+        "fields": {
+            "name": "Dalaran Mage",
+            "description": "Spell Damage +1",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 1,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 178,
+        "fields": {
+            "name": "Windspeaker",
+            "description": "Battlecry: Give a friendly minion Windfury.",
+            "heroes": [8],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 179,
+        "fields": {
+            "name": "Wisp",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 180,
+        "fields": {
+            "name": "Backstab",
+            "description": "Deal 2 damage to an undamaged minion.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 186,
+        "fields": {
+            "name": "Ancient Brewmaster",
+            "description": "Battlecry: Return a friendly minion from the battlefield to your hand.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 5,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 189,
+        "fields": {
+            "name": "Fire Elemental",
+            "description": "Battlecry: Deal 3 damage.",
+            "heroes": [8],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 6,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 191,
+        "fields": {
+            "name": "Murloc Raider",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "murloc",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 192,
+        "fields": {
+            "name": "Ice Block",
+            "description": "Secret: When your hero takes fatal damage, prevent it and become Immune this turn.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 195,
+        "fields": {
+            "name": "Mirror Entity",
+            "description": "Secret: When your opponent plays a minion, summon a copy of it.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 196,
+        "fields": {
+            "name": "Vanish",
+            "description": "Return all minions to their owner's hand.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 201,
+        "fields": {
+            "name": "Defias Ringleader",
+            "description": "Combo: Summon a 2/1 Defias Bandit.",
+            "heroes": [7],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 205,
+        "fields": {
+            "name": "Ironbark Protector",
+            "description": "Taunt",
+            "heroes": [2],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 8,
+            "attack": 8,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 211,
+        "fields": {
+            "name": "Sea Giant",
+            "description": "Costs (1) less for each other minion on the battlefield.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 10,
+            "attack": 8,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 213,
+        "fields": {
+            "name": "Mark of the Wild",
+            "description": "Give a minion Taunt and +2/+2. (+2 Attack/+2 Health)",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 216,
+        "fields": {
+            "name": "Bloodfen Raptor",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 220,
+        "fields": {
+            "name": "Shadow Madness",
+            "description": "Gain control of an enemy minion with 3 or less Attack until end of turn.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 232,
+        "fields": {
+            "name": "Repentance",
+            "description": "Secret: When your opponent plays a minion, reduce its Health to 1.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 233,
+        "fields": {
+            "name": "Naturalize",
+            "description": "Destroy a minion. Your opponent draws 2 cards.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 237,
+        "fields": {
+            "name": "Auchenai Soulpriest",
+            "description": "Your cards and powers that restore Health now deal damage instead.",
+            "heroes": [6],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 3,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 238,
+        "fields": {
+            "name": "Feral Spirit",
+            "description": "Summon two 2/3 Spirit Wolves with Taunt. Overload: (2)",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 239,
+        "fields": {
+            "name": "Rockbiter Weapon",
+            "description": "Give a friendly character +3 Attack this turn.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 242,
+        "fields": {
+            "name": "Abusive Sergeant",
+            "description": "Battlecry: Give a friendly minion +2 Attack this turn.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 250,
+        "fields": {
+            "name": "Hammer of Wrath",
+            "description": "Deal 3 damage. Draw a card.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 251,
+        "fields": {
+            "name": "Loot Hoarder",
+            "description": "Deathrattle: Draw a card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 254,
+        "fields": {
+            "name": "Innervate",
+            "description": "Gain 2 Mana Crystals this turn only.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 257,
+        "fields": {
+            "name": "Razorfen Hunter",
+            "description": "Battlecry: Summon a 1/1 Boar.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 268,
+        "fields": {
+            "name": "Cold Blood",
+            "description": "Give a minion +2 Attack. Combo: +4 Attack instead.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 272,
+        "fields": {
+            "name": "Cabal Shadow Priest",
+            "description": "Battlecry: Take control of an enemy minion that has 2 or less Attack.",
+            "heroes": [6],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 4,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 279,
+        "fields": {
+            "name": "Holy Smite",
+            "description": "Deal 2 damage.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 281,
+        "fields": {
+            "name": "Argent Commander",
+            "description": "Charge, Divine Shield",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 4,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 282,
+        "fields": {
+            "name": "Betrayal",
+            "description": "An enemy minion deals its damage to the minions next to it.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 284,
+        "fields": {
+            "name": "Novice Engineer",
+            "description": "Battlecry: Draw a card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 285,
+        "fields": {
+            "name": "Cruel Taskmaster",
+            "description": "Battlecry: Deal 1 damage to a minion and give it +2 Attack.",
+            "heroes": [10],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 286,
+        "fields": {
+            "name": "Vaporize",
+            "description": "Secret: When a minion attacks your hero, destroy it.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 287,
+        "fields": {
+            "name": "Kidnapper",
+            "description": "Combo: Return a minion to its owner's hand.",
+            "heroes": [7],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 5,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 289,
+        "fields": {
+            "name": "Wolfrider",
+            "description": "Charge",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 290,
+        "fields": {
+            "name": "Ironbeak Owl",
+            "description": "Battlecry: Silence a minion.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 291,
+        "fields": {
+            "name": "Holy Light",
+            "description": "Restore #6 Health.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 292,
+        "fields": {
+            "name": "Multi-Shot",
+            "description": "Deal 3 damage to two random enemy minions.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 296,
+        "fields": {
+            "name": "Kill Command",
+            "description": "Deal 3 damage. If you have a Beast, deal 5 damage instead.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 299,
+        "fields": {
+            "name": "Forked Lightning",
+            "description": "Deal 2 damage to 2 random enemy minions. Overload: (2)",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 304,
+        "fields": {
+            "name": "Arcanite Reaper",
+            "description": "",
+            "heroes": [10],
+            "card_type": "weapon",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 5,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 306,
+        "fields": {
+            "name": "Edwin VanCleef",
+            "description": "Combo: Gain +2/+2 for each card played earlier this turn.",
+            "heroes": [7],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 308,
+        "fields": {
+            "name": "Gnomish Inventor",
+            "description": "Battlecry: Draw a card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 2,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 311,
+        "fields": {
+            "name": "Gladiator's Longbow",
+            "description": "Your hero is Immune while attacking.",
+            "heroes": [3],
+            "card_type": "weapon",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 5,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 315,
+        "fields": {
+            "name": "Fireball",
+            "description": "Deal 6 damage.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 336,
+        "fields": {
+            "name": "Baron Geddon",
+            "description": "At the end of your turn, deal 2 damage to ALL other characters.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 7,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 338,
+        "fields": {
+            "name": "Grommash Hellscream",
+            "description": "Charge. Enrage: +6 Attack",
+            "heroes": [10],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 8,
+            "attack": 4,
+            "endurance": 9,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 339,
+        "fields": {
+            "name": "Ironforge Rifleman",
+            "description": "Battlecry: Deal 1 damage.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 344,
+        "fields": {
+            "name": "Charge",
+            "description": "Give a friendly minion +2 Attack and Charge.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 345,
+        "fields": {
+            "name": "Assassinate",
+            "description": "Destroy an enemy minion.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 348,
+        "fields": {
+            "name": "Dark Iron Dwarf",
+            "description": "Battlecry: Give a minion +2 Attack this turn.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 351,
+        "fields": {
+            "name": "Master Swordsmith",
+            "description": "At the end of your turn, give another random friendly minion +1 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 1,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 352,
+        "fields": {
+            "name": "Doomhammer",
+            "description": "Windfury, Overload: (2)",
+            "heroes": [8],
+            "card_type": "weapon",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 2,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 363,
+        "fields": {
+            "name": "Onyxia",
+            "description": "Battlecry: Summon 1/1 Whelps until your side of the battlefield is full.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "dragon",
+            "expansion": 1,
+            "cost": 9,
+            "attack": 8,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 365,
+        "fields": {
+            "name": "Shadowstep",
+            "description": "Return a friendly minion to your hand. It costs (2) less.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 366,
+        "fields": {
+            "name": "Spellbender",
+            "description": "Secret: When an enemy casts a spell on a minion, summon a 1/3 as the new target.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 374,
+        "fields": {
+            "name": "Ragnaros the Firelord",
+            "description": "Can't Attack. At the end of your turn, deal 8 damage to a random enemy.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 8,
+            "attack": 8,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 376,
+        "fields": {
+            "name": "Inner Fire",
+            "description": "Change a minion's Attack to be equal to its Health.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 381,
+        "fields": {
+            "name": "Soul of the Forest",
+            "description": "Give your minions \"Deathrattle: Summon a 2/2 Treant.\"",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 383,
+        "fields": {
+            "name": "Light's Justice",
+            "description": "",
+            "heroes": [5],
+            "card_type": "weapon",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 389,
+        "fields": {
+            "name": "Elven Archer",
+            "description": "Battlecry: Deal 1 damage.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 391,
+        "fields": {
+            "name": "Perdition's Blade",
+            "description": "Battlecry: Deal 1 damage. Combo: Deal 2 instead.",
+            "heroes": [7],
+            "card_type": "weapon",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 394,
+        "fields": {
+            "name": "Explosive Shot",
+            "description": "Deal 5 damage to a minion and 2 damage to adjacent ones.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 395,
+        "fields": {
+            "name": "Water Elemental",
+            "description": "Freeze any character damaged by this minion.",
+            "heroes": [4],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 3,
+            "endurance": 6,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 397,
+        "fields": {
+            "name": "Flesheating Ghoul",
+            "description": "Whenever a minion dies, gain +1 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 400,
+        "fields": {
+            "name": "Battle Rage",
+            "description": "Draw a card for each damaged friendly character.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 401,
+        "fields": {
+            "name": "Fiery War Axe",
+            "description": "",
+            "heroes": [10],
+            "card_type": "weapon",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 404,
+        "fields": {
+            "name": "Ancestral Spirit",
+            "description": "Choose a minion. When that minion is destroyed, return it to the battlefield.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 405,
+        "fields": {
+            "name": "Mana Wyrm",
+            "description": "Whenever you cast a spell, gain +1 Attack.",
+            "heroes": [4],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 411,
+        "fields": {
+            "name": "Nozdormu",
+            "description": "Players only have 15 seconds to take their turns.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "dragon",
+            "expansion": 1,
+            "cost": 9,
+            "attack": 8,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 413,
+        "fields": {
+            "name": "Stormpike Commando",
+            "description": "Battlecry: Deal 2 damage.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 4,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 415,
+        "fields": {
+            "name": "Youthful Brewmaster",
+            "description": "Battlecry: Return a friendly minion from the battlefield to your hand.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 420,
+        "fields": {
+            "name": "Cairne Bloodhoof",
+            "description": "Deathrattle: Summon a 4/5 Baine Bloodhoof.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 4,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 421,
+        "fields": {
+            "name": "Assassin's Blade",
+            "description": "",
+            "heroes": [7],
+            "card_type": "weapon",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 3,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 424,
+        "fields": {
+            "name": "Priestess of Elune",
+            "description": "Battlecry: Restore 4 Health to your hero.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 5,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 430,
+        "fields": {
+            "name": "Cone of Cold",
+            "description": "Freeze a minion and the minions next to it, and deal 1 damage to them.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 435,
+        "fields": {
+            "name": "Holy Wrath",
+            "description": "Draw a card and deal damage equal to its cost.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 436,
+        "fields": {
+            "name": "Malygos",
+            "description": "Spell Damage +5",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "dragon",
+            "expansion": 1,
+            "cost": 9,
+            "attack": 4,
+            "endurance": 12,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 437,
+        "fields": {
+            "name": "Animal Companion",
+            "description": "Summon a random Beast Companion.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 440,
+        "fields": {
+            "name": "Abomination",
+            "description": "Taunt. Deathrattle: Deal 2 damage to ALL characters.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 443,
+        "fields": {
+            "name": "Hungry Crab",
+            "description": "Battlecry: Destroy a Murloc and gain +2/+2.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 445,
+        "fields": {
+            "name": "Reckless Rocketeer",
+            "description": "Charge",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 5,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 447,
+        "fields": {
+            "name": "Arcane Explosion",
+            "description": "Deal 1 damage to all enemy minions.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 453,
+        "fields": {
+            "name": "Coldlight Seer",
+            "description": "Battlecry: Give ALL other Murlocs +2 Health.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "murloc",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 455,
+        "fields": {
+            "name": "Snake Trap",
+            "description": "Secret: When one of your minions is attacked, summon three 1/1 Snakes.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 456,
+        "fields": {
+            "name": "Captain Greenskin",
+            "description": "Battlecry: Give your weapon +1/+1.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "pirate",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 5,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 457,
+        "fields": {
+            "name": "Blizzard",
+            "description": "Deal 2 damage to all enemy minions and Freeze them.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 459,
+        "fields": {
+            "name": "Deadly Poison",
+            "description": "Give your weapon +2 Attack.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 461,
+        "fields": {
+            "name": "Sap",
+            "description": "Return an enemy minion to its owner's hand.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 462,
+        "fields": {
+            "name": "Eye for an Eye",
+            "description": "Secret: When your hero takes damage, deal that much damage to the enemy hero.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 466,
+        "fields": {
+            "name": "Arcane Golem",
+            "description": "Charge. Battlecry: Give your opponent a Mana Crystal.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 4,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 467,
+        "fields": {
+            "name": "Moonfire",
+            "description": "Deal 1 damage.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 469,
+        "fields": {
+            "name": "Blood Imp",
+            "description": "Stealth. At the end of your turn, give another random friendly minion +1 Health.",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 0,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 475,
+        "fields": {
+            "name": "Murloc Tidecaller",
+            "description": "Whenever a Murloc is summoned, gain +1 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "murloc",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 476,
+        "fields": {
+            "name": "Consecration",
+            "description": "Deal 2 damage to all enemies.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 481,
+        "fields": {
+            "name": "Savagery",
+            "description": "Deal damage equal to your hero's Attack to a minion.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 493,
+        "fields": {
+            "name": "Force of Nature",
+            "description": "Summon three 2/2 Treants with Charge that die at the end of the turn.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 496,
+        "fields": {
+            "name": "Frostwolf Warlord",
+            "description": "Battlecry: Gain +1/+1 for each other friendly minion on the battlefield.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 503,
+        "fields": {
+            "name": "Power of the Wild",
+            "description": "Choose One - Give your minions +1/+1; or Summon a 3/2 Panther.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 505,
+        "fields": {
+            "name": "Lightning Bolt",
+            "description": "Deal 3 damage. Overload: (1)",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 510,
+        "fields": {
+            "name": "Grimscale Oracle",
+            "description": "ALL other Murlocs have +1 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "murloc",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 511,
+        "fields": {
+            "name": "Upgrade!",
+            "description": "If you have a weapon, give it +1/+1. Otherwise equip a 1/3 weapon.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 512,
+        "fields": {
+            "name": "Frost Elemental",
+            "description": "Battlecry: Freeze a character.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 5,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 513,
+        "fields": {
+            "name": "Mana Tide Totem",
+            "description": "At the end of your turn, draw a card.",
+            "heroes": [8],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "totem",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 517,
+        "fields": {
+            "name": "Felguard",
+            "description": "Taunt. Battlecry: Destroy one of your Mana Crystals.",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 519,
+        "fields": {
+            "name": "Freezing Trap",
+            "description": "Secret: When an enemy minion attacks, return it to its owner's hand and it costs (2) more.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 523,
+        "fields": {
+            "name": "Dragonling Mechanic",
+            "description": "Battlecry: Summon a 2/1 Mechanical Dragonling.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 2,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 525,
+        "fields": {
+            "name": "Archmage",
+            "description": "Spell Damage +1",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 4,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 526,
+        "fields": {
+            "name": "Gruul",
+            "description": "At the end of each turn, gain +1/+1 .",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 8,
+            "attack": 7,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 530,
+        "fields": {
+            "name": "Captain's Parrot",
+            "description": "Battlecry: Put a random Pirate from your deck into your hand.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 531,
+        "fields": {
+            "name": "Faceless Manipulator",
+            "description": "Battlecry: Choose a minion and become a copy of it.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 538,
+        "fields": {
+            "name": "Arathi Weaponsmith",
+            "description": "Battlecry: Equip a 2/2 weapon.",
+            "heroes": [10],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 545,
+        "fields": {
+            "name": "Mind Blast",
+            "description": "Deal 5 damage to the enemy hero.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 546,
+        "fields": {
+            "name": "Shield Slam",
+            "description": "Deal 1 damage to a minion for each Armor you have.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 555,
+        "fields": {
+            "name": "Arcane Intellect",
+            "description": "Draw 2 cards.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 556,
+        "fields": {
+            "name": "Illidan Stormrage",
+            "description": "Whenever you play a card, summon a 2/1 Flame of Azzinoth.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 7,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 559,
+        "fields": {
+            "name": "Leeroy Jenkins",
+            "description": "Charge. Battlecry: Summon two 1/1 Whelps for your opponent.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 6,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 564,
+        "fields": {
+            "name": "Arcane Missiles",
+            "description": "Deal 3 damage randomly split among enemy characters.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 567,
+        "fields": {
+            "name": "Windfury Harpy",
+            "description": "Windfury",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 4,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 570,
+        "fields": {
+            "name": "Tinkmaster Overspark",
+            "description": "Battlecry: Transform another random minion into a 5/5 Devilsaur or a 1/1 Squirrel at random.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 573,
+        "fields": {
+            "name": "Shiv",
+            "description": "Deal 1 damage. Draw a card.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 577,
+        "fields": {
+            "name": "Bite",
+            "description": "Give your hero +4 Attack this turn and 4 Armor.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 581,
+        "fields": {
+            "name": "Alexstrasza",
+            "description": "Battlecry: Set a hero's remaining Health to 15.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "dragon",
+            "expansion": 1,
+            "cost": 9,
+            "attack": 8,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 582,
+        "fields": {
+            "name": "Darkscale Healer",
+            "description": "Battlecry: Restore 2 Health to all friendly characters.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 4,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 584,
+        "fields": {
+            "name": "Noble Sacrifice",
+            "description": "Secret: When an enemy attacks, summon a 2/1 Defender as the new target.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 585,
+        "fields": {
+            "name": "Explosive Trap",
+            "description": "Secret: When your hero is attacked, deal 2 damage to all enemies.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 587,
+        "fields": {
+            "name": "Frost Nova",
+            "description": "Freeze all enemy minions.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 592,
+        "fields": {
+            "name": "Succubus",
+            "description": "Battlecry: Discard a random card.",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 4,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 594,
+        "fields": {
+            "name": "Lay on Hands",
+            "description": "Restore #8 Health. Draw 3 cards.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 8,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 596,
+        "fields": {
+            "name": "Armorsmith",
+            "description": "Whenever a friendly minion takes damage, gain 1 Armor.",
+            "heroes": [10],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 1,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 601,
+        "fields": {
+            "name": "Keeper of the Grove",
+            "description": "Choose One - Deal 2 damage; or Silence a minion.",
+            "heroes": [2],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 2,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 602,
+        "fields": {
+            "name": "Fen Creeper",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 3,
+            "endurance": 6,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 605,
+        "fields": {
+            "name": "Ancient Watcher",
+            "description": "Can't Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 4,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 606,
+        "fields": {
+            "name": "Timber Wolf",
+            "description": "Your other Beasts have +1 Attack.",
+            "heroes": [3],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 608,
+        "fields": {
+            "name": "Shattered Sun Cleric",
+            "description": "Battlecry: Give a friendly minion +1/+1.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 609,
+        "fields": {
+            "name": "Faerie Dragon",
+            "description": "Can't be targeted by Spells or Hero Powers.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "dragon",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 613,
+        "fields": {
+            "name": "Power Word: Shield",
+            "description": "Give a minion +2 Health. Draw a card.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 614,
+        "fields": {
+            "name": "Sorcerer's Apprentice",
+            "description": "Your spells cost (1) less.",
+            "heroes": [4],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 618,
+        "fields": {
+            "name": "Dust Devil",
+            "description": "Windfury. Overload: (2)",
+            "heroes": [8],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 3,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 621,
+        "fields": {
+            "name": "Ice Barrier",
+            "description": "Secret: As soon as your hero is attacked, gain 8 Armor.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 622,
+        "fields": {
+            "name": "Stormwind Knight",
+            "description": "Charge",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 2,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 629,
+        "fields": {
+            "name": "Lightning Storm",
+            "description": "Deal 2-3 damage to all enemy minions. Overload: (2)",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 630,
+        "fields": {
+            "name": "Sprint",
+            "description": "Draw 4 cards.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 631,
+        "fields": {
+            "name": "Doomguard",
+            "description": "Charge. Battlecry: Discard two random cards.",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 5,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 635,
+        "fields": {
+            "name": "Sen'jin Shieldmasta",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 3,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 636,
+        "fields": {
+            "name": "Whirlwind",
+            "description": "Deal 1 damage to ALL minions.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 640,
+        "fields": {
+            "name": "Hogger",
+            "description": "At the end of your turn, summon a 2/2 Gnoll with Taunt.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 641,
+        "fields": {
+            "name": "Young Dragonhawk",
+            "description": "Windfury",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 642,
+        "fields": {
+            "name": "Scarlet Crusader",
+            "description": "Divine Shield",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 643,
+        "fields": {
+            "name": "Sword of Justice",
+            "description": "Whenever you summon a minion, give it +1/+1 and this loses 1 Durability.",
+            "heroes": [5],
+            "card_type": "weapon",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 1,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 648,
+        "fields": {
+            "name": "Stonetusk Boar",
+            "description": "Charge",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 654,
+        "fields": {
+            "name": "Frothing Berserker",
+            "description": "Whenever a minion takes damage, gain +1 Attack.",
+            "heroes": [10],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 658,
+        "fields": {
+            "name": "Leper Gnome",
+            "description": "Deathrattle: Deal 2 damage to the enemy hero.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 662,
+        "fields": {
+            "name": "Frostbolt",
+            "description": "Deal 3 damage to a character and Freeze it.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 667,
+        "fields": {
+            "name": "Fan of Knives",
+            "description": "Deal 1 damage to all enemy minions. Draw a card.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 670,
+        "fields": {
+            "name": "Nightblade",
+            "description": "Battlecry: Deal 3 damage to the enemy hero.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 672,
+        "fields": {
+            "name": "Kobold Geomancer",
+            "description": "Spell Damage +1",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 679,
+        "fields": {
+            "name": "Divine Favor",
+            "description": "Draw cards until you have as many in hand as your opponent.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 680,
+        "fields": {
+            "name": "Southsea Captain",
+            "description": "Your other Pirates have +1/+1.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "pirate",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 692,
+        "fields": {
+            "name": "Druid of the Claw",
+            "description": "Choose One - Charge; or +2 Health and Taunt.",
+            "heroes": [2],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 699,
+        "fields": {
+            "name": "Tundra Rhino",
+            "description": "Your Beasts have Charge.",
+            "heroes": [3],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 2,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 700,
+        "fields": {
+            "name": "Mogu'shan Warden",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 1,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 708,
+        "fields": {
+            "name": "Headcrack",
+            "description": "Deal 2 damage to the enemy hero. Combo: Return this to your hand next turn.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 710,
+        "fields": {
+            "name": "Sinister Strike",
+            "description": "Deal 3 damage to the enemy hero.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 712,
+        "fields": {
+            "name": "War Golem",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 7,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 715,
+        "fields": {
+            "name": "Mana Wraith",
+            "description": "ALL minions cost (1) more.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 724,
+        "fields": {
+            "name": "Southsea Deckhand",
+            "description": "Has Charge while you have a weapon equipped.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "pirate",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 727,
+        "fields": {
+            "name": "Hand of Protection",
+            "description": "Give a minion Divine Shield.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 734,
+        "fields": {
+            "name": "Mind Control Tech",
+            "description": "Battlecry: If your opponent has 4 or more minions, take control of one at random.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 736,
+        "fields": {
+            "name": "Old Murk-Eye",
+            "description": "Charge. Has +1 Attack for each other Murloc on the battlefield.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "murloc",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 2,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 739,
+        "fields": {
+            "name": "Bluegill Warrior",
+            "description": "Charge",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "murloc",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 742,
+        "fields": {
+            "name": "Savage Roar",
+            "description": "Give your characters +2 Attack this turn.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 748,
+        "fields": {
+            "name": "Kirin Tor Mage",
+            "description": "Battlecry: The next Secret you play this turn costs (0).",
+            "heroes": [4],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 4,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 749,
+        "fields": {
+            "name": "Bloodmage Thalnos",
+            "description": "Spell Damage +1. Deathrattle: Draw a card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 753,
+        "fields": {
+            "name": "Stormwind Champion",
+            "description": "Your other minions have +1/+1.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 6,
+            "endurance": 6,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 754,
+        "fields": {
+            "name": "Spellbreaker",
+            "description": "Battlecry: Silence a minion.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 755,
+        "fields": {
+            "name": "Blood Knight",
+            "description": "Battlecry: All minions lose Divine Shield. Gain +3/+3 for each Shield lost.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 756,
+        "fields": {
+            "name": "Equality",
+            "description": "Change the Health of ALL minions to 1.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 757,
+        "fields": {
+            "name": "Argent Squire",
+            "description": "Divine Shield",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 759,
+        "fields": {
+            "name": "Sunwalker",
+            "description": "Taunt. Divine Shield",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 4,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 762,
+        "fields": {
+            "name": "Mad Bomber",
+            "description": "Battlecry: Deal 3 damage randomly split between all other characters.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 763,
+        "fields": {
+            "name": "Defender of Argus",
+            "description": "Battlecry: Give adjacent minions +1/+1 and Taunt.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 765,
+        "fields": {
+            "name": "Thrallmar Farseer",
+            "description": "Windfury",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 766,
+        "fields": {
+            "name": "Hex",
+            "description": "Transform a minion into a 0/1 Frog with Taunt.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 767,
+        "fields": {
+            "name": "Earth Shock",
+            "description": "Silence a minion, then deal 1 damage to it.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 768,
+        "fields": {
+            "name": "Gurubashi Berserker",
+            "description": "Whenever this minion takes damage, gain +3 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 2,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 773,
+        "fields": {
+            "name": "Healing Touch",
+            "description": "Restore #8 Health.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 774,
+        "fields": {
+            "name": "Unbound Elemental",
+            "description": "Whenever you play a card with Overload, gain +1/+1.",
+            "heroes": [8],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 777,
+        "fields": {
+            "name": "Lord Jaraxxus",
+            "description": "Battlecry: Destroy your hero and replace him with Lord Jaraxxus.",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 9,
+            "attack": 3,
+            "endurance": 15,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 778,
+        "fields": {
+            "name": "Harvest Golem",
+            "description": "Deathrattle: Summon a 2/1 Damaged Golem.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 783,
+        "fields": {
+            "name": "Pit Lord",
+            "description": "Battlecry: Deal 5 damage to your hero.",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 5,
+            "endurance": 6,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 785,
+        "fields": {
+            "name": "Execute",
+            "description": "Destroy a damaged enemy minion.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 790,
+        "fields": {
+            "name": "Amani Berserker",
+            "description": "Enrage: +3 Attack",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 791,
+        "fields": {
+            "name": "Questing Adventurer",
+            "description": "Whenever you play a card, gain +1/+1.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 797,
+        "fields": {
+            "name": "Lightwell",
+            "description": "At the start of your turn, restore 3 Health to a damaged friendly character.",
+            "heroes": [6],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 801,
+        "fields": {
+            "name": "Crazed Alchemist",
+            "description": "Battlecry: Swap the Attack and Health of a minion.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 804,
+        "fields": {
+            "name": "Mortal Strike",
+            "description": "Deal 4 damage. If your hero has 12 or less Health, deal 6 damage instead.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 810,
+        "fields": {
+            "name": "Gorehowl",
+            "description": "Attacking a minion costs 1 Attack instead of 1 Durability.",
+            "heroes": [10],
+            "card_type": "weapon",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 7,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 811,
+        "fields": {
+            "name": "Cult Master",
+            "description": "Whenever one of your other minions dies, draw a card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 814,
+        "fields": {
+            "name": "Snipe",
+            "description": "Secret: When your opponent plays a minion, deal 4 damage to it.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 818,
+        "fields": {
+            "name": "Far Sight",
+            "description": "Draw a card. That card costs (3) less.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 823,
+        "fields": {
+            "name": "Starfire",
+            "description": "Deal 5 damage. Draw a card.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 825,
+        "fields": {
+            "name": "Azure Drake",
+            "description": "Spell Damage +1. Battlecry: Draw a card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "dragon",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 830,
+        "fields": {
+            "name": "Totemic Might",
+            "description": "Give your Totems +2 Health.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 834,
+        "fields": {
+            "name": "Deathwing",
+            "description": "Battlecry: Destroy all other minions and discard your hand.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "dragon",
+            "expansion": 1,
+            "cost": 10,
+            "attack": 12,
+            "endurance": 12,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 836,
+        "fields": {
+            "name": "Wrath",
+            "description": "Choose One - Deal 3 damage to a minion; or 1 damage and draw a card.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 841,
+        "fields": {
+            "name": "Holy Nova",
+            "description": "Deal 2 damage to all enemies. Restore #2 Health to all friendly characters.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 846,
+        "fields": {
+            "name": "Power Overwhelming",
+            "description": "Give a friendly minion +4/+4 until end of turn. Then, it dies. Horribly.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 847,
+        "fields": {
+            "name": "Truesilver Champion",
+            "description": "Whenever your hero attacks, restore 2 Health to it.",
+            "heroes": [5],
+            "card_type": "weapon",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 854,
+        "fields": {
+            "name": "Humility",
+            "description": "Change a minion's Attack to 1.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 855,
+        "fields": {
+            "name": "Millhouse Manastorm",
+            "description": "Battlecry: Enemy spells cost (0) next turn.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 859,
+        "fields": {
+            "name": "Twisting Nether",
+            "description": "Destroy all minions.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 8,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 860,
+        "fields": {
+            "name": "Sense Demons",
+            "description": "Put 2 random Demons from your deck into your hand.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 864,
+        "fields": {
+            "name": "Lava Burst",
+            "description": "Deal 5 damage. Overload: (2)",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 866,
+        "fields": {
+            "name": "Shieldbearer",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 877,
+        "fields": {
+            "name": "Arcane Shot",
+            "description": "Deal 2 damage.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 878,
+        "fields": {
+            "name": "Dread Corsair",
+            "description": "Taunt. Costs (1) less per Attack of your weapon.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "pirate",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 886,
+        "fields": {
+            "name": "Lightspawn",
+            "description": "This minion's Attack is always equal to its Health.",
+            "heroes": [6],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 887,
+        "fields": {
+            "name": "Master of Disguise",
+            "description": "Battlecry: Give a friendly minion Stealth.",
+            "heroes": [7],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 890,
+        "fields": {
+            "name": "Tirion Fordring",
+            "description": "Divine Shield. Taunt. Deathrattle: Equip a 5/3 Ashbringer.",
+            "heroes": [5],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 8,
+            "attack": 6,
+            "endurance": 6,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 891,
+        "fields": {
+            "name": "Sunfury Protector",
+            "description": "Battlecry: Give adjacent minions Taunt.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 896,
+        "fields": {
+            "name": "Flare",
+            "description": "All minions lose Stealth. Destroy all enemy Secrets. Draw a card.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 903,
+        "fields": {
+            "name": "Bestial Wrath",
+            "description": "Give a Beast +2 Attack and Immune this turn.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 904,
+        "fields": {
+            "name": "Eviscerate",
+            "description": "Deal 2 damage. Combo: Deal 4 damage instead.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 906,
+        "fields": {
+            "name": "Acidic Swamp Ooze",
+            "description": "Battlecry: Destroy your opponent's weapon.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 912,
+        "fields": {
+            "name": "Harrison Jones",
+            "description": "Battlecry: Destroy your opponent's weapon and draw cards equal to its Durability.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 5,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 914,
+        "fields": {
+            "name": "Shadow Bolt",
+            "description": "Deal 4 damage to a minion.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 915,
+        "fields": {
+            "name": "Ancient Mage",
+            "description": "Battlecry: Give adjacent minions Spell Damage +1.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 2,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 919,
+        "fields": {
+            "name": "Drain Life",
+            "description": "Deal 2 damage. Restore #2 Health to your hero.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 920,
+        "fields": {
+            "name": "Ancient of Lore",
+            "description": "Choose One - Draw 2 cards; or Restore 5 Health.",
+            "heroes": [2],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 5,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 921,
+        "fields": {
+            "name": "Jungle Panther",
+            "description": "Stealth",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 4,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 922,
+        "fields": {
+            "name": "Goldshire Footman",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 926,
+        "fields": {
+            "name": "Imp Master",
+            "description": "At the end of your turn, deal 1 damage to this minion and summon a 1/1 Imp.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 1,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 932,
+        "fields": {
+            "name": "Gadgetzan Auctioneer",
+            "description": "Whenever you cast a spell, draw a card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 940,
+        "fields": {
+            "name": "Cleave",
+            "description": "Deal 2 damage to two random enemy minions.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 943,
+        "fields": {
+            "name": "Blessing of Kings",
+            "description": "Give a minion +4/+4. (+4 Attack/+4 Health)",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 950,
+        "fields": {
+            "name": "Hellfire",
+            "description": "Deal 3 damage to ALL characters.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 960,
+        "fields": {
+            "name": "Stormforged Axe",
+            "description": "Overload: (1)",
+            "heroes": [8],
+            "card_type": "weapon",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 962,
+        "fields": {
+            "name": "The Beast",
+            "description": "Deathrattle: Summon a 3/3 Finkle Einhorn for your opponent.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 9,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 969,
+        "fields": {
+            "name": "Summoning Portal",
+            "description": "Your minions cost (2) less, but not less than (1).",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 971,
+        "fields": {
+            "name": "Frost Shock",
+            "description": "Deal 1 damage to an enemy character and Freeze it.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 974,
+        "fields": {
+            "name": "Soulfire",
+            "description": "Deal 4 damage. Discard a random card.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 976,
+        "fields": {
+            "name": "Murloc Tidehunter",
+            "description": "Battlecry: Summon a 1/1 Murloc Scout.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "murloc",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 979,
+        "fields": {
+            "name": "Demolisher",
+            "description": "At the start of your turn, deal 2 damage to a random enemy.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 1,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 982,
+        "fields": {
+            "name": "Corruption",
+            "description": "Choose an enemy minion. At the start of your turn, destroy it.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 985,
+        "fields": {
+            "name": "Dire Wolf Alpha",
+            "description": "Adjacent minions have +1 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 990,
+        "fields": {
+            "name": "Conceal",
+            "description": "Give your minions Stealth until your next turn.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 993,
+        "fields": {
+            "name": "Mountain Giant",
+            "description": "Costs (1) less for each other card in your hand.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 12,
+            "attack": 8,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 994,
+        "fields": {
+            "name": "Worgen Infiltrator",
+            "description": "Stealth",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 995,
+        "fields": {
+            "name": "Ogre Magi",
+            "description": "Spell Damage +1",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 997,
+        "fields": {
+            "name": "Bloodsail Corsair",
+            "description": "Battlecry: Remove 1 Durability from your opponent's weapon.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "pirate",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 999,
+        "fields": {
+            "name": "Bloodsail Raider",
+            "description": "Battlecry: Gain Attack equal to the Attack of your weapon.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "pirate",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1003,
+        "fields": {
+            "name": "Houndmaster",
+            "description": "Battlecry: Give a friendly Beast +2/+2 and Taunt.",
+            "heroes": [3],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1004,
+        "fields": {
+            "name": "Flamestrike",
+            "description": "Deal 4 damage to all enemy minions.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1007,
+        "fields": {
+            "name": "Heroic Strike",
+            "description": "Give your hero +4 Attack this turn.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1008,
+        "fields": {
+            "name": "Flametongue Totem",
+            "description": "Adjacent minions have +2 Attack.",
+            "heroes": [8],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "totem",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1009,
+        "fields": {
+            "name": "Warsong Commander",
+            "description": "Whenever you play a minion with 3 or less Attack, give it Charge.",
+            "heroes": [10],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1014,
+        "fields": {
+            "name": "Wild Pyromancer",
+            "description": "After you cast a spell, deal 1 damage to ALL minions.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1016,
+        "fields": {
+            "name": "Coldlight Oracle",
+            "description": "Battlecry: Each player draws 2 cards.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "murloc",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1019,
+        "fields": {
+            "name": "Dread Infernal",
+            "description": "Battlecry: Deal 1 damage to ALL other characters.",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 6,
+            "endurance": 6,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1022,
+        "fields": {
+            "name": "Argent Protector",
+            "description": "Battlecry: Give a friendly minion Divine Shield.",
+            "heroes": [5],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1023,
+        "fields": {
+            "name": "Shield Block",
+            "description": "Gain 5 Armor. Draw a card.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1026,
+        "fields": {
+            "name": "Commanding Shout",
+            "description": "Your minions can't be reduced below 1 Health this turn. Draw a card.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1029,
+        "fields": {
+            "name": "Violet Teacher",
+            "description": "Whenever you cast a spell, summon a 1/1 Violet Apprentice.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 3,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1035,
+        "fields": {
+            "name": "Ancient of War",
+            "description": "Choose One - Taunt and +5 Health; or +5 Attack.",
+            "heroes": [2],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 5,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1037,
+        "fields": {
+            "name": "Twilight Drake",
+            "description": "Battlecry: Gain +1 Health for each card in your hand.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "dragon",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 4,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1047,
+        "fields": {
+            "name": "Tracking",
+            "description": "Look at the top three cards of your deck. Draw one and discard the others.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1050,
+        "fields": {
+            "name": "Claw",
+            "description": "Give your hero +2 Attack this turn and 2 Armor.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1063,
+        "fields": {
+            "name": "Murloc Warleader",
+            "description": "ALL other Murlocs have +2/+1.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "murloc",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1064,
+        "fields": {
+            "name": "Blade Flurry",
+            "description": "Destroy your weapon and deal its damage to all enemies.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1068,
+        "fields": {
+            "name": "Guardian of Kings",
+            "description": "Battlecry: Restore 6 Health to your hero.",
+            "heroes": [5],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 5,
+            "endurance": 6,
+            "collectible":true
+        }
+},
+    {
+        "model": "cards.card",
+        "pk": 1073,
+        "fields": {
+            "name": "Knife Juggler",
+            "description": "After you summon a minion, deal 1 damage to a random enemy.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1074,
+        "fields": {
+            "name": "Slam",
+            "description": "Deal 2 damage to a minion. If it survives, draw a card.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1080,
+        "fields": {
+            "name": "Archmage Antonidas",
+            "description": "Whenever you cast a spell, put a 'Fireball' spell into your hand.",
+            "heroes": [4],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 5,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1084,
+        "fields": {
+            "name": "Mirror Image",
+            "description": "Summon two 0/2 minions with Taunt.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1087,
+        "fields": {
+            "name": "Pyroblast",
+            "description": "Deal 10 damage.",
+            "heroes": [4],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 10,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1090,
+        "fields": {
+            "name": "Flame Imp",
+            "description": "Battlecry: Deal 3 damage to your hero.",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1091,
+        "fields": {
+            "name": "Misdirection",
+            "description": "Secret: When a character attacks your hero, instead he attacks another random character.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1092,
+        "fields": {
+            "name": "Mortal Coil",
+            "description": "Deal 1 damage to a minion. If that kills it, draw a card.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1093,
+        "fields": {
+            "name": "Deadly Shot",
+            "description": "Destroy a random enemy minion.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1098,
+        "fields": {
+            "name": "Emperor Cobra",
+            "description": "Destroy any minion damaged by this minion.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1099,
+        "fields": {
+            "name": "Mind Vision",
+            "description": "Put a copy of a random card in your opponent's hand into your hand.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1100,
+        "fields": {
+            "name": "Siphon Soul",
+            "description": "Destroy a minion. Restore #3 Health to your hero.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1108,
+        "fields": {
+            "name": "Rampage",
+            "description": "Give a damaged minion +3/+3.",
+            "heroes": [10],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1109,
+        "fields": {
+            "name": "Injured Blademaster",
+            "description": "Battlecry: Deal 4 damage to HIMSELF.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 4,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1117,
+        "fields": {
+            "name": "SI:7 Agent",
+            "description": "Combo: Deal 2 damage.",
+            "heroes": [7],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1122,
+        "fields": {
+            "name": "Venture Co. Mercenary",
+            "description": "Your minions cost (3) more.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 7,
+            "endurance": 6,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1124,
+        "fields": {
+            "name": "Wild Growth",
+            "description": "Gain an empty Mana Crystal.",
+            "heroes": [2],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1133,
+        "fields": {
+            "name": "Patient Assassin",
+            "description": "Stealth. Destroy any minion damaged by this minion.",
+            "heroes": [7],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1135,
+        "fields": {
+            "name": "Lorewalker Cho",
+            "description": "Whenever a player casts a spell, put a copy into the other player’s hand.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1140,
+        "fields": {
+            "name": "Booty Bay Bodyguard",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 5,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1141,
+        "fields": {
+            "name": "Earth Elemental",
+            "description": "Taunt. Overload: (3)",
+            "heroes": [8],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 7,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1142,
+        "fields": {
+            "name": "Demonfire",
+            "description": "Deal 2 damage to a minion. If it’s a friendly Demon, give it +2/+2 instead.",
+            "heroes": [9],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1144,
+        "fields": {
+            "name": "King Krush",
+            "description": "Charge",
+            "heroes": [3],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 9,
+            "attack": 8,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1147,
+        "fields": {
+            "name": "Nat Pagle",
+            "description": "At the start of your turn, you have a 50% chance to draw an extra card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": 4,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1155,
+        "fields": {
+            "name": "Raging Worgen",
+            "description": "Enrage: Windfury and +1 Attack",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1158,
+        "fields": {
+            "name": "Preparation",
+            "description": "The next spell you cast this turn costs (3) less.",
+            "heroes": [7],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1167,
+        "fields": {
+            "name": "Aldor Peacekeeper",
+            "description": "Battlecry: Change an enemy minion's Attack to 1.",
+            "heroes": [5],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1171,
+        "fields": {
+            "name": "Bloodlust",
+            "description": "Give your minions +3 Attack this turn.",
+            "heroes": [8],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1174,
+        "fields": {
+            "name": "Avenging Wrath",
+            "description": "Deal 8 damage randomly split among enemy characters.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1182,
+        "fields": {
+            "name": "Ironfur Grizzly",
+            "description": "Taunt",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1186,
+        "fields": {
+            "name": "Ysera",
+            "description": "At the end of your turn, draw a Dream Card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "dragon",
+            "expansion": 1,
+            "cost": 9,
+            "attack": 4,
+            "endurance": 12,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1189,
+        "fields": {
+            "name": "Silence",
+            "description": "Silence a minion.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1221,
+        "fields": {
+            "name": "Void Terror",
+            "description": "Battlecry: Destroy the minions on either side of this minion and gain their Attack and Health.",
+            "heroes": [9],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "demon",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1241,
+        "fields": {
+            "name": "Starving Buzzard",
+            "description": "Whenever you summon a Beast, draw a card.",
+            "heroes": [3],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1243,
+        "fields": {
+            "name": "Unleash the Hounds",
+            "description": "For each enemy minion, summon a 1/1 Hound with Charge.",
+            "heroes": [3],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1261,
+        "fields": {
+            "name": "Savannah Highmane",
+            "description": "Deathrattle: Summon two 2/2 Hyenas.",
+            "heroes": [3],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 6,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1281,
+        "fields": {
+            "name": "Scavenging Hyena",
+            "description": "Whenever a friendly Beast dies, gain +2/+1.",
+            "heroes": [3],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1361,
+        "fields": {
+            "name": "Divine Spirit",
+            "description": "Double a minion's Health.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1362,
+        "fields": {
+            "name": "Circle of Healing",
+            "description": "Restore #4 Health to ALL minions.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 0,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1363,
+        "fields": {
+            "name": "Shadow Word: Death",
+            "description": "Destroy a minion with an Attack of 5 or more.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1364,
+        "fields": {
+            "name": "Temple Enforcer",
+            "description": "Battlecry: Give a friendly minion +3 Health.",
+            "heroes": [6],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 6,
+            "endurance": 6,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1365,
+        "fields": {
+            "name": "Holy Fire",
+            "description": "Deal 5 damage. Restore 5 Health to your hero.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1366,
+        "fields": {
+            "name": "Mass Dispel",
+            "description": "Silence all enemy minions. Draw a card.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1367,
+        "fields": {
+            "name": "Shadow Word: Pain",
+            "description": "Destroy a minion with 3 or less Attack.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 2,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1368,
+        "fields": {
+            "name": "Shadowform",
+            "description": "Your Hero Power becomes 'Deal 2 damage'. If already in Shadowform: 3 damage.",
+            "heroes": [6],
+            "card_type": "spell",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1369,
+        "fields": {
+            "name": "River Crocolisk",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 2,
+            "attack": 2,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1370,
+        "fields": {
+            "name": "Oasis Snapjaw",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 2,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1371,
+        "fields": {
+            "name": "Stampeding Kodo",
+            "description": "Battlecry: Destroy a random enemy minion with 2 or less Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 5,
+            "attack": 3,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1372,
+        "fields": {
+            "name": "Molten Giant",
+            "description": "Costs (1) less for each damage your hero has taken.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 20,
+            "attack": 8,
+            "endurance": 8,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1373,
+        "fields": {
+            "name": "Blessing of Wisdom",
+            "description": "Choose a minion. Whenever it attacks, draw a card.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1401,
+        "fields": {
+            "name": "Raid Leader",
+            "description": "Your other minions have +1 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 2,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1522,
+        "fields": {
+            "name": "Blessed Champion",
+            "description": "Double a minion's Attack.",
+            "heroes": [5],
+            "card_type": "spell",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 5,
+            "attack": null,
+            "endurance": null,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1634,
+        "fields": {
+            "name": "Young Priestess",
+            "description": "At the end of your turn, give another random friendly minion +1 Health.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 2,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1650,
+        "fields": {
+            "name": "Northshire Cleric",
+            "description": "Whenever a minion is healed, draw a card.",
+            "heroes": [6],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1651,
+        "fields": {
+            "name": "Earthen Ring Farseer",
+            "description": "Battlecry: Restore 3 Health.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1653,
+        "fields": {
+            "name": "Magma Rager",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 5,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1655,
+        "fields": {
+            "name": "Lightwarden",
+            "description": "Whenever a character is healed, gain +2 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1656,
+        "fields": {
+            "name": "The Black Knight",
+            "description": "Battlecry: Destroy an enemy minion with Taunt.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 4,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1657,
+        "fields": {
+            "name": "Big Game Hunter",
+            "description": "Battlecry: Destroy a minion with an Attack of 7 or more.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "epic",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 4,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1658,
+        "fields": {
+            "name": "Alarm-o-Bot",
+            "description": "At the start of your turn, swap this minion with a random one in your hand.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": null,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1659,
+        "fields": {
+            "name": "Acolyte of Pain",
+            "description": "Whenever this minion takes damage, draw a card.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 1,
+            "endurance": 3,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1662,
+        "fields": {
+            "name": "Eaglehorn Bow",
+            "description": "Whenever a friendly Secret is revealed, gain +1 Durability.",
+            "heroes": [3],
+            "card_type": "weapon",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 3,
+            "endurance": 2,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1686,
+        "fields": {
+            "name": "Boulderfist Ogre",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "free",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 6,
+            "endurance": 7,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1687,
+        "fields": {
+            "name": "Core Hound",
+            "description": "",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "common",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 7,
+            "attack": 9,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1688,
+        "fields": {
+            "name": "Angry Chicken",
+            "description": "Enrage: +5 Attack.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 1,
+            "attack": 1,
+            "endurance": 1,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1693,
+        "fields": {
+            "name": "King Mukla",
+            "description": "Battlecry: Give your opponent 2 Bananas.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "beast",
+            "expansion": 1,
+            "cost": 3,
+            "attack": 5,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1721,
+        "fields": {
+            "name": "Sylvanas Windrunner",
+            "description": "Deathrattle: Take control of a random enemy minion.",
+            "heroes": [],
+            "card_type": "minion",
+            "quality": "legendary",
+            "race": "none",
+            "expansion": 1,
+            "cost": 6,
+            "attack": 5,
+            "endurance": 5,
+            "collectible":true
+        }
+    },
+    {
+        "model": "cards.card",
+        "pk": 1737,
+        "fields": {
+            "name": "Ethereal Arcanist",
+            "description": "If you control a Secret at the end of your turn, gain +2/+2.",
+            "heroes": [4],
+            "card_type": "minion",
+            "quality": "rare",
+            "race": "none",
+            "expansion": 1,
+            "cost": 4,
+            "attack": 3,
+            "endurance": 3,
+            "collectible":true
+        }
+    }
+]

@@ -1,0 +1,222 @@
+[
+    {
+        "model": "decks.DeckCard",
+        "pk": 1,
+        "fields": {
+            "deck": 1,
+            "card": 9,
+            "quantity": 2,
+            "golden": true
+        }
+    },
+    {
+        "model": "decks.DeckCard",
+        "pk": 1,
+        "fields": {
+            "deck": 1,
+            "card": 9,
+            "quantity": 2,
+            "golden": false
+        }
+    },
+    {
+        "model": "decks.DeckCard",
+        "pk": 2,
+        "fields": {
+            "deck": 1,
+            "card": 22,
+            "quantity": 1,
+            "golden": false
+        }
+    },
+    {
+        "model": "decks.DeckCard",
+        "pk": 3,
+        "fields": {
+            "deck": 1,
+            "card": 22,
+            "quantity": 1,
+            "golden": true
+        }
+    },
+    {
+        "model": "decks.DeckCard",
+        "pk": 4,
+        "fields": {
+            "deck": 1,
+            "card": 30,
+            "quantity": 2,
+            "golden": false
+        }
+    }, 
+    {
+        "model": "decks.DeckCard",
+        "pk": 5,
+        "fields": {
+            "deck": 1,
+            "card": 32,
+            "quantity": 1,
+            "golden": false
+        }
+    },
+    {
+        "model": "decks.DeckCard",
+        "pk": 6,
+        "fields": {
+            "deck": 1,
+            "card": 34,
+            "quantity": 2,
+            "golden": false
+        }
+    }, 
+    {
+        "model": "decks.DeckCard",
+        "pk": 7,
+        "fields": {
+            "deck": 1,
+            "card": 36,
+            "quantity": 2,
+            "golden": false
+        }
+    }, 
+    {
+        "model": "decks.DeckCard",
+        "pk": 8,
+        "fields": {
+            "deck": 1,
+            "card": 37,
+            "quantity": 1,
+            "golden": true
+        }
+    },
+    {
+        "model": "decks.DeckCard",
+        "pk": 9,
+        "fields": {
+            "deck": 1,
+            "card": 37,
+            "quantity": 1,
+            "golden": false
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 10,
+        "fields": {
+            "deck": 1,
+            "card": 41,
+            "quantity": 2,
+            "golden": false
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 11,
+        "fields": {
+            "deck": 1,
+            "card": 45,
+            "quantity": 1,
+            "golden": false
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 12,
+        "fields": {
+            "deck": 1,
+            "card": 48,
+            "quantity": 2,
+            "golden": false
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 13,
+        "fields": {
+            "deck": 1,
+            "card": 51,
+            "quantity": 1,
+            "golden": false
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 14,
+        "fields": {
+            "deck": 1,
+            "card": 61,
+            "quantity": 2,
+            "golden": false
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 15,
+        "fields": {
+            "deck": 1,
+            "card": 64,
+            "quantity": 2,
+            "golden": false
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 16,
+        "fields": {
+            "deck": 1,
+            "card": 67,
+            "quantity": 2,
+            "golden": true
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 17,
+        "fields": {
+            "deck": 1,
+            "card": 68,
+            "quantity": 1,
+            "golden": false
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 18,
+        "fields": {
+            "deck": 1,
+            "card": 69,
+            "quantity": 1,
+            "golden": true
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 19,
+        "fields": {
+            "deck": 1,
+            "card": 69,
+            "quantity": 1,
+            "golden": false
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 20,
+        "fields": {
+            "deck": 1,
+            "card": 70,
+            "quantity": 1,
+            "golden": true
+        }
+    },  
+    {
+        "model": "decks.DeckCard",
+        "pk": 21,
+        "fields": {
+            "deck": 1,
+            "card": 70,
+            "quantity": 1,
+            "golden": false
+        }
+    }
+]
