@@ -6,10 +6,13 @@ from django.db.models import Sum, CheckConstraint, Q, F
 
 class Deck(models.Model):
     name = models.CharField(max_length=50, unique=True)
-    size = models.PositiveIntegerField()
+    size = models.PositiveIntegerField(default=30)
     hero_class = models.ForeignKey('cards.HeroClass', related_name="decks", on_delete=models.CASCADE, null=True)
     cards = models.ManyToManyField('cards.Card', through='DeckCard')
 
+    def complete(self):
+        return self.size == DeckCard.objects.filter(deck_id=self.id).aggregate(total=Sum("quantity"))["total"]
+        
 
 class DeckCard(models.Model):
     deck = models.ForeignKey(Deck, on_delete=models.CASCADE)

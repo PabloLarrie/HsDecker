@@ -1,18 +1,18 @@
 from factory.django import DjangoModelFactory
-from cards.models import Collection, Expansion
-from factory import Faker
+from decks.models import Deck, DeckCard
+from cards.tests.factories import HeroClassFactory, CardFactory
+from factory import Faker, SubFactory
 
-class CollectionFactory(DjangoModelFactory):
-    name = Faker("first_name")
-    year = Faker("year")
-    
-    
+
+class DeckFactory(DjangoModelFactory):
+    hero_class = SubFactory(HeroClassFactory)
     class Meta:
-        model = Collection
+        model = Deck
 
-class ExpansionFactory(DjangoModelFactory):
-    name = Faker("first_name")
-    #collection = CollectionFactory
 
+class DeckCardFactory(DjangoModelFactory):
+    deck = SubFactory(DeckFactory)
+    card = SubFactory(CardFactory)
+    quantity = Faker("random_int", min=1, max=2)
     class Meta:
-        model = Expansion
+        model = DeckCard 

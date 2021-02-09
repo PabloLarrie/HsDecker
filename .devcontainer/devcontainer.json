@@ -28,6 +28,8 @@
 	"extensions": [
 		"ms-python.python",
 		"tht13.python",
+		"mikestead.dotenv",
+		"2gua.rainbow-brackets",
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
