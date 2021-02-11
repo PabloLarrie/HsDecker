@@ -17,6 +17,7 @@ class Card(models.Model):
     collectible = models.BooleanField(default=False)
     keywords = models.ManyToManyField('cards.KeyWord', related_name="cards", blank=True) 
     decks = models.ManyToManyField('decks.Deck', through='decks.DeckCard', blank=True)
+    standard = models.BooleanField(default=True)
 
     def usage(self):
         n_decks = Deck.objects.count()

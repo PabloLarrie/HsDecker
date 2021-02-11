@@ -21,6 +21,7 @@ class CardFactory(DjangoModelFactory):
     name = Faker("name")
     expansion = SubFactory(ExpansionFactory)
     cost = Faker("random_int", min=0, max=15)
+    standard = True
     class Meta:
         model = Card
 
