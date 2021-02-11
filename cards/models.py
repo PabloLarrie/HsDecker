@@ -21,7 +21,10 @@ class Card(models.Model):
     def usage(self):
         n_decks = Deck.objects.count()
         n_usage = Deck.objects.filter(cards=self).distinct().count()
-        return n_usage / n_decks * 100
+        if n_usage > 0:    
+            return n_usage / n_decks * 100
+        else:
+            return 0
         
 
 class Collection(models.Model):
