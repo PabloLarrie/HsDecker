@@ -14,7 +14,7 @@ class TestDecks:
             DeckCard(deck=deck_warrior, card=card_legendary, quantity=1, golden=False).save()
         
 
-    def test_same_class(self, class_priest, card_priest, card_warrior, card_neutral, deck_warrior):
+    def test_same_class(self, card_priest, card_warrior, card_neutral, deck_warrior):
         DeckCard(deck=deck_warrior, card=card_warrior, quantity=2, golden=False).save()
         with pytest.raises(ValueError):
             DeckCard(deck=deck_warrior, card=card_priest, quantity=2, golden=False).save()

@@ -14,5 +14,6 @@ class DeckCardFactory(DjangoModelFactory):
     deck = SubFactory(DeckFactory)
     card = SubFactory(CardFactory)
     quantity = Faker("random_int", min=1, max=2)
+    golden = False
     class Meta:
         model = DeckCard 
