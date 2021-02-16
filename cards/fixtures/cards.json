@@ -13,7 +13,8 @@
             "cost": 10,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -30,7 +31,8 @@
             "cost": 7,
             "attack": 7,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -47,7 +49,8 @@
             "cost": 2,
             "attack": 1,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -64,7 +67,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -81,7 +85,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -98,7 +103,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -115,7 +121,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -132,7 +139,8 @@
             "cost": 8,
             "attack": 3,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -149,7 +157,8 @@
             "cost": 4,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -166,7 +175,8 @@
             "cost": 9,
             "attack": 5,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -183,7 +193,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -200,7 +211,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -217,7 +229,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -234,7 +247,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -251,7 +265,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -268,7 +283,8 @@
             "cost": 5,
             "attack": 4,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -285,7 +301,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -302,7 +319,8 @@
             "cost": 3,
             "attack": 1,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -319,7 +337,8 @@
             "cost": 5,
             "attack": 5,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -336,7 +355,8 @@
             "cost": 5,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -353,7 +373,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -370,7 +391,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -387,7 +409,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -404,7 +427,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -421,7 +445,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -438,7 +463,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -455,7 +481,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -472,7 +499,8 @@
             "cost": 1,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -489,7 +517,8 @@
             "cost": 7,
             "attack": 7,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -506,7 +535,8 @@
             "cost": 2,
             "attack": null,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -523,7 +553,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -540,7 +571,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -557,7 +589,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -574,7 +607,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -591,7 +625,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -608,7 +643,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -625,7 +661,8 @@
             "cost": 6,
             "attack": 6,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -642,7 +679,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -659,7 +697,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -676,7 +715,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -693,7 +733,8 @@
             "cost": 3,
             "attack": 1,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -710,7 +751,8 @@
             "cost": 4,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -727,7 +769,8 @@
             "cost": 0,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -744,7 +787,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -761,7 +805,8 @@
             "cost": 4,
             "attack": 5,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -778,7 +823,8 @@
             "cost": 6,
             "attack": 6,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -795,7 +841,8 @@
             "cost": 1,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -812,7 +859,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -829,7 +877,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -846,7 +895,8 @@
             "cost": 6,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -863,7 +913,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -880,7 +931,8 @@
             "cost": 8,
             "attack": 8,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -897,7 +949,8 @@
             "cost": 10,
             "attack": 8,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -914,7 +967,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -931,7 +985,8 @@
             "cost": 2,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -948,7 +1003,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -965,7 +1021,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -982,7 +1039,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -999,7 +1057,8 @@
             "cost": 4,
             "attack": 3,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1016,7 +1075,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1033,7 +1093,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1050,7 +1111,8 @@
             "cost": 1,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1067,7 +1129,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1084,7 +1147,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1101,7 +1165,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1118,7 +1183,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1135,7 +1201,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1152,7 +1219,8 @@
             "cost": 6,
             "attack": 4,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1169,7 +1237,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1186,7 +1255,8 @@
             "cost": 6,
             "attack": 4,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1203,7 +1273,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1220,7 +1291,8 @@
             "cost": 2,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1237,7 +1309,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1254,7 +1327,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1271,7 +1345,8 @@
             "cost": 6,
             "attack": 5,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1288,7 +1363,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1305,7 +1381,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1322,7 +1399,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1339,7 +1417,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1356,7 +1435,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1373,7 +1453,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1390,7 +1471,8 @@
             "cost": 5,
             "attack": 5,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1407,7 +1489,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1424,7 +1507,8 @@
             "cost": 4,
             "attack": 2,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1441,7 +1525,8 @@
             "cost": 7,
             "attack": 5,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1458,7 +1543,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1475,7 +1561,8 @@
             "cost": 7,
             "attack": 7,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1492,7 +1579,8 @@
             "cost": 8,
             "attack": 4,
             "endurance": 9,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1509,7 +1597,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1526,7 +1615,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1543,7 +1633,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1560,7 +1651,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1577,7 +1669,8 @@
             "cost": 2,
             "attack": 1,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1594,7 +1687,8 @@
             "cost": 5,
             "attack": 2,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1611,7 +1705,8 @@
             "cost": 9,
             "attack": 8,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1628,7 +1723,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1645,7 +1741,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1662,7 +1759,8 @@
             "cost": 8,
             "attack": 8,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1679,7 +1777,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1696,7 +1795,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1713,7 +1813,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1730,7 +1831,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1747,7 +1849,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1764,7 +1867,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1781,7 +1885,8 @@
             "cost": 4,
             "attack": 3,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1798,7 +1903,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1815,7 +1921,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1832,7 +1939,8 @@
             "cost": 2,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1849,7 +1957,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1866,7 +1975,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1883,7 +1993,8 @@
             "cost": 9,
             "attack": 8,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1900,7 +2011,8 @@
             "cost": 5,
             "attack": 4,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1917,7 +2029,8 @@
             "cost": 2,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1934,7 +2047,8 @@
             "cost": 6,
             "attack": 4,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1951,7 +2065,8 @@
             "cost": 5,
             "attack": 3,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1968,7 +2083,8 @@
             "cost": 6,
             "attack": 5,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -1985,7 +2101,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2002,7 +2119,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2019,7 +2137,8 @@
             "cost": 9,
             "attack": 4,
             "endurance": 12,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2036,7 +2155,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2053,7 +2173,8 @@
             "cost": 5,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2070,7 +2191,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2087,7 +2209,8 @@
             "cost": 6,
             "attack": 5,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2104,7 +2227,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2121,7 +2245,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2138,7 +2263,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2155,7 +2281,8 @@
             "cost": 5,
             "attack": 5,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2172,7 +2299,8 @@
             "cost": 6,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2189,7 +2317,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2206,7 +2335,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2223,7 +2353,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2240,7 +2371,8 @@
             "cost": 3,
             "attack": 4,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2257,7 +2389,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2274,7 +2407,8 @@
             "cost": 1,
             "attack": 0,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2291,7 +2425,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2308,7 +2443,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2325,7 +2461,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2342,7 +2479,8 @@
             "cost": 6,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2359,7 +2497,8 @@
             "cost": 5,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2376,7 +2515,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2393,7 +2533,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2410,7 +2551,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2427,7 +2569,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2444,7 +2587,8 @@
             "cost": 6,
             "attack": 5,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2461,7 +2605,8 @@
             "cost": 3,
             "attack": null,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2478,7 +2623,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2495,7 +2641,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2512,7 +2659,8 @@
             "cost": 4,
             "attack": 2,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2529,7 +2677,8 @@
             "cost": 6,
             "attack": 4,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2546,7 +2695,8 @@
             "cost": 8,
             "attack": 7,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2563,7 +2713,8 @@
             "cost": 2,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2580,7 +2731,8 @@
             "cost": 5,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2597,7 +2749,8 @@
             "cost": 4,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2614,7 +2767,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2631,7 +2785,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2648,7 +2803,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2665,7 +2821,8 @@
             "cost": 6,
             "attack": 7,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2682,7 +2839,8 @@
             "cost": 5,
             "attack": 6,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2699,7 +2857,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2716,7 +2875,8 @@
             "cost": 6,
             "attack": 4,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2733,7 +2893,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2750,7 +2911,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2767,7 +2929,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2784,7 +2947,8 @@
             "cost": 9,
             "attack": 8,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2801,7 +2965,8 @@
             "cost": 5,
             "attack": 4,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2818,7 +2983,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2835,7 +3001,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2852,7 +3019,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2869,7 +3037,8 @@
             "cost": 2,
             "attack": 4,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2886,7 +3055,8 @@
             "cost": 8,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2903,7 +3073,8 @@
             "cost": 2,
             "attack": 1,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2920,7 +3091,8 @@
             "cost": 4,
             "attack": 2,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2937,7 +3109,8 @@
             "cost": 5,
             "attack": 3,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2954,7 +3127,8 @@
             "cost": 2,
             "attack": 4,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2971,7 +3145,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -2988,7 +3163,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3005,7 +3181,8 @@
             "cost": 2,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3022,7 +3199,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3039,7 +3217,8 @@
             "cost": 2,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3056,7 +3235,8 @@
             "cost": 1,
             "attack": 3,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3073,7 +3253,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3090,7 +3271,8 @@
             "cost": 4,
             "attack": 2,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3107,7 +3289,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3124,7 +3307,8 @@
             "cost": 7,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3141,7 +3325,8 @@
             "cost": 5,
             "attack": 5,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3158,7 +3343,8 @@
             "cost": 4,
             "attack": 3,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3175,7 +3361,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3192,7 +3379,8 @@
             "cost": 6,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3209,7 +3397,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3226,7 +3415,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3243,7 +3433,8 @@
             "cost": 3,
             "attack": 1,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3260,7 +3451,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3277,7 +3469,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3294,7 +3487,8 @@
             "cost": 1,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3311,7 +3505,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3328,7 +3523,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3345,7 +3541,8 @@
             "cost": 5,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3362,7 +3559,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3379,7 +3577,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3396,7 +3595,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3413,7 +3613,8 @@
             "cost": 5,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3430,7 +3631,8 @@
             "cost": 5,
             "attack": 2,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3447,7 +3649,8 @@
             "cost": 4,
             "attack": 1,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3464,7 +3667,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3481,7 +3685,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3498,7 +3703,8 @@
             "cost": 7,
             "attack": 7,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3515,7 +3721,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3532,7 +3739,8 @@
             "cost": 1,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3549,7 +3757,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3566,7 +3775,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3583,7 +3793,8 @@
             "cost": 4,
             "attack": 2,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3600,7 +3811,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3617,7 +3829,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3634,7 +3847,8 @@
             "cost": 3,
             "attack": 4,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3651,7 +3865,8 @@
             "cost": 2,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3668,7 +3883,8 @@
             "cost": 7,
             "attack": 6,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3685,7 +3901,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3702,7 +3919,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3719,7 +3937,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3736,7 +3955,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3753,7 +3973,8 @@
             "cost": 6,
             "attack": 4,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3770,7 +3991,8 @@
             "cost": 2,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3787,7 +4009,8 @@
             "cost": 4,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3804,7 +4027,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3821,7 +4045,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3838,7 +4063,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3855,7 +4081,8 @@
             "cost": 5,
             "attack": 2,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3872,7 +4099,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3889,7 +4117,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3906,7 +4135,8 @@
             "cost": 9,
             "attack": 3,
             "endurance": 15,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3923,7 +4153,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3940,7 +4171,8 @@
             "cost": 4,
             "attack": 5,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3957,7 +4189,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3974,7 +4207,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -3991,7 +4225,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4008,7 +4243,8 @@
             "cost": 2,
             "attack": null,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4025,7 +4261,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4042,7 +4279,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4059,7 +4297,8 @@
             "cost": 7,
             "attack": 7,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4076,7 +4315,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4093,7 +4333,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4110,7 +4351,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4127,7 +4369,8 @@
             "cost": 6,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4144,7 +4387,8 @@
             "cost": 5,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4161,7 +4405,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4178,7 +4423,8 @@
             "cost": 10,
             "attack": 12,
             "endurance": 12,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4195,7 +4441,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4212,7 +4459,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4229,7 +4477,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4246,7 +4495,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4263,7 +4513,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4280,7 +4531,8 @@
             "cost": 2,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4297,7 +4549,8 @@
             "cost": 8,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4314,7 +4567,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4331,7 +4585,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4348,7 +4603,8 @@
             "cost": 1,
             "attack": null,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4365,7 +4621,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4382,7 +4639,8 @@
             "cost": 4,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4399,7 +4657,8 @@
             "cost": 4,
             "attack": null,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4416,7 +4675,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4433,7 +4693,8 @@
             "cost": 8,
             "attack": 6,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4450,7 +4711,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4467,7 +4729,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4484,7 +4747,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4501,7 +4765,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4518,7 +4783,8 @@
             "cost": 2,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4535,7 +4801,8 @@
             "cost": 5,
             "attack": 5,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4552,7 +4819,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4569,7 +4837,8 @@
             "cost": 4,
             "attack": 2,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4586,7 +4855,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4603,7 +4873,8 @@
             "cost": 7,
             "attack": 5,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4620,7 +4891,8 @@
             "cost": 3,
             "attack": 4,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4637,7 +4909,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4654,7 +4927,8 @@
             "cost": 3,
             "attack": 1,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4671,7 +4945,8 @@
             "cost": 6,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4688,7 +4963,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4705,7 +4981,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4722,7 +4999,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4739,7 +5017,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4756,7 +5035,8 @@
             "cost": 6,
             "attack": 9,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4773,7 +5053,8 @@
             "cost": 4,
             "attack": null,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4790,7 +5071,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4807,7 +5089,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4824,7 +5107,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4841,7 +5125,8 @@
             "cost": 3,
             "attack": 1,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4858,7 +5143,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4875,7 +5161,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4892,7 +5179,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4909,7 +5197,8 @@
             "cost": 12,
             "attack": 8,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4926,7 +5215,8 @@
             "cost": 1,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4943,7 +5233,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4960,7 +5251,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4977,7 +5269,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -4994,7 +5287,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5011,7 +5305,8 @@
             "cost": 7,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5028,7 +5323,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5045,7 +5341,8 @@
             "cost": 2,
             "attack": null,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5062,7 +5359,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5079,7 +5377,8 @@
             "cost": 2,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5096,7 +5395,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5113,7 +5413,8 @@
             "cost": 6,
             "attack": 6,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5130,7 +5431,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5147,7 +5449,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5164,7 +5467,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5181,7 +5485,8 @@
             "cost": 4,
             "attack": 3,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5198,7 +5503,8 @@
             "cost": 7,
             "attack": 5,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5215,7 +5521,8 @@
             "cost": 4,
             "attack": 4,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5232,7 +5539,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5249,7 +5557,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5266,7 +5575,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5283,7 +5593,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5300,7 +5611,8 @@
             "cost": 7,
             "attack": 5,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
 },
     {
@@ -5317,7 +5629,8 @@
             "cost": 2,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5334,7 +5647,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5351,7 +5665,8 @@
             "cost": 7,
             "attack": 5,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5368,7 +5683,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5385,7 +5701,8 @@
             "cost": 10,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5402,7 +5719,8 @@
             "cost": 1,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5419,7 +5737,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5436,7 +5755,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5453,7 +5773,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5470,7 +5791,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5487,7 +5809,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5504,7 +5827,8 @@
             "cost": 6,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5521,7 +5845,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5538,7 +5863,8 @@
             "cost": 3,
             "attack": 4,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5555,7 +5881,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5572,7 +5899,8 @@
             "cost": 5,
             "attack": 7,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5589,7 +5917,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5606,7 +5935,8 @@
             "cost": 2,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5623,7 +5953,8 @@
             "cost": 2,
             "attack": null,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5640,7 +5971,8 @@
             "cost": 5,
             "attack": 5,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5657,7 +5989,8 @@
             "cost": 5,
             "attack": 7,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5674,7 +6007,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5691,7 +6025,8 @@
             "cost": 9,
             "attack": 8,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5708,7 +6043,8 @@
             "cost": 2,
             "attack": null,
             "endurance": 4,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5725,7 +6061,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5742,7 +6079,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5759,7 +6097,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5776,7 +6115,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5793,7 +6133,8 @@
             "cost": 6,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5810,7 +6151,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5827,7 +6169,8 @@
             "cost": 9,
             "attack": 4,
             "endurance": 12,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5844,7 +6187,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5861,7 +6205,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5878,7 +6223,8 @@
             "cost": 5,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5895,7 +6241,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5912,7 +6259,8 @@
             "cost": 6,
             "attack": 6,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5929,7 +6277,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5946,7 +6295,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5963,7 +6313,8 @@
             "cost": 0,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5980,7 +6331,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -5997,7 +6349,8 @@
             "cost": 6,
             "attack": 6,
             "endurance": 6,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6014,7 +6367,8 @@
             "cost": 6,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6031,7 +6385,8 @@
             "cost": 4,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6048,7 +6403,8 @@
             "cost": 2,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6065,7 +6421,8 @@
             "cost": 3,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6082,7 +6439,8 @@
             "cost": 2,
             "attack": 2,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6099,7 +6457,8 @@
             "cost": 4,
             "attack": 2,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6116,7 +6475,8 @@
             "cost": 5,
             "attack": 3,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6133,7 +6493,8 @@
             "cost": 20,
             "attack": 8,
             "endurance": 8,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6150,7 +6511,8 @@
             "cost": 1,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6167,7 +6529,8 @@
             "cost": 3,
             "attack": 2,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6184,7 +6547,8 @@
             "cost": 5,
             "attack": null,
             "endurance": null,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6201,7 +6565,8 @@
             "cost": 1,
             "attack": 2,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6218,7 +6583,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6235,7 +6601,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6252,7 +6619,8 @@
             "cost": 3,
             "attack": 5,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6269,7 +6637,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6286,7 +6655,8 @@
             "cost": 6,
             "attack": 4,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6303,7 +6673,8 @@
             "cost": 3,
             "attack": 4,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6320,7 +6691,8 @@
             "cost": 3,
             "attack": null,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6337,7 +6709,8 @@
             "cost": 3,
             "attack": 1,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6354,7 +6727,8 @@
             "cost": 3,
             "attack": 3,
             "endurance": 2,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6371,7 +6745,8 @@
             "cost": 6,
             "attack": 6,
             "endurance": 7,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6388,7 +6763,8 @@
             "cost": 7,
             "attack": 9,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6405,7 +6781,8 @@
             "cost": 1,
             "attack": 1,
             "endurance": 1,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6422,7 +6799,8 @@
             "cost": 3,
             "attack": 5,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6439,7 +6817,8 @@
             "cost": 6,
             "attack": 5,
             "endurance": 5,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     },
     {
@@ -6456,7 +6835,8 @@
             "cost": 4,
             "attack": 3,
             "endurance": 3,
-            "collectible":true
+            "collectible":true, 
+            "standard":true
         }
     }
 ]

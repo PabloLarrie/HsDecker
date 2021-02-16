@@ -6,6 +6,7 @@ from factory import Faker, SubFactory
 
 class DeckFactory(DjangoModelFactory):
     hero_class = SubFactory(HeroClassFactory)
+    standard = True
     class Meta:
         model = Deck
 
