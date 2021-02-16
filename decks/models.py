@@ -9,7 +9,7 @@ class Deck(models.Model):
     size = models.PositiveIntegerField(default=30)
     hero_class = models.ForeignKey('cards.HeroClass', related_name="decks", on_delete=models.CASCADE, null=True)
     cards = models.ManyToManyField('cards.Card', through='DeckCard')
-    standard = models.BooleanField(default=False)
+    standard = models.BooleanField(default=True)
 
     def complete(self):
         return self.size == DeckCard.objects.filter(deck_id=self.id).aggregate(total=Sum("quantity"))["total"]

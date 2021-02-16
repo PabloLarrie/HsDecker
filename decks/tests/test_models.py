@@ -35,9 +35,9 @@ class TestDecks:
         deck_priest.size = 28
         assert not deck_priest.complete() 
 
-    def test_format(self, deck_priest, deck_priest_standard, card_priest, card_priest_savage):
+    def test_format(self, deck_priest, deck_priest_savage, card_priest, card_priest_savage):
         DeckCard(deck=deck_priest, card=card_priest, quantity=1, golden=True).save()
-        DeckCard(deck=deck_priest, card=card_priest_savage, quantity=1, golden=False).save()
-        DeckCard(deck=deck_priest_standard, card=card_priest,quantity=1, golden=False).save()
+        DeckCard(deck=deck_priest_savage, card=card_priest_savage, quantity=1, golden=False).save()
+        DeckCard(deck=deck_priest_savage, card=card_priest,quantity=1, golden=False).save()
         with pytest.raises(ValueError):
-            DeckCard(deck=deck_priest_standard, card=card_priest_savage, quantity=1, golden=False).save()
+            DeckCard(deck=deck_priest, card=card_priest_savage, quantity=1, golden=False).save()
