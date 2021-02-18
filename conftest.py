@@ -1,7 +1,12 @@
 import pytest
 from cards.constants import QualityCard
 from decks.tests.factories import DeckFactory, DeckCardFactory
-from cards.tests.factories import CardFactory, HeroClassFactory
+from cards.tests.factories import CardFactory, HeroClassFactory, ExpansionFactory
+
+
+@pytest.fixture
+def expansion_1(): 
+    return ExpansionFactory()
 
 
 @pytest.fixture
