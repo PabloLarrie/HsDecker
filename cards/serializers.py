@@ -3,7 +3,7 @@ from cards.models import Card, Expansion
 
 class ExpansionSerializer(serializers.ModelSerializer):
     name = serializers.CharField(read_only=True)
-    id = serializers.IntegerField(read_only=True)
+    id = serializers.IntegerField()
 
     class Meta:
         model = Expansion 
@@ -19,6 +19,14 @@ class CardSerializer(serializers.ModelSerializer):
 
     def get_usage(self, object):
         return object.usage()
+
+    def create(self, validated_data):
+        expansion_id = validated_data["expansion"]["id"]
+        expansion = Expansion.objects.get(id=expansion_id)
+        
+        del validated_data["expansion"]
+        card = Card.objects.create(**validated_data, expansion=expansion)
+        return card
 
     class Meta:
         model = Card

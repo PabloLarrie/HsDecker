@@ -30,6 +30,7 @@
 		"tht13.python",
 		"mikestead.dotenv",
 		"2gua.rainbow-brackets",
+		"ms-ossdata.vscode-postgresql",
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

@@ -23,9 +23,6 @@ class DeckCard(models.Model):
 
     class Meta:
         unique_together = ("deck", "card", "golden"),
-        # constraints = [
-        #     CheckConstraint(check=Q(card__heroes=F("deck__hero_class")) | Q(card__heroes__isnull=True), name="card_belongs_deck_hero")
-        # ]
 
 
     def save(self, *args, **kwargs):
