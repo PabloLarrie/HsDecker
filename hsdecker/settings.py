@@ -138,3 +138,8 @@ STATIC_URL = '/static/'
 
 SHELL_PLUS_PRINT_SQL = True
 SHELL_PLUS_PRINT_SQL_TRUNCATE = None
+
+# django-rest-framework
+REST_FRAMWORK = {
+    "DEFAULT_PERMISSION_CLASSES":("rest_framework.permissions.AllowAny",),
+}

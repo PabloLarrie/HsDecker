@@ -44,3 +44,15 @@ class CardSerializer(serializers.ModelSerializer):
             "collection",
             "usage",
         ]
+
+
+class CardSimpleSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Card
+        fields = [
+            "id",
+            "name",
+            "card_type",
+            "quality",  
+        ]

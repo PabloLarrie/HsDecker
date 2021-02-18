@@ -17,7 +17,7 @@ class TestDecksSerializers:
     def test_deck_cards(self, card_neutral):
         serializer = DeckSerializer(data={"name": "mideck"})
         assert serializer.is_valid()
-        assert serializer.save() 
-        DeckCard(deck_id=1, card=card_neutral, quantity=2, golden=False).save()
+        deck = serializer.save() 
+        DeckCard(deck_id=deck.id, card=card_neutral, quantity=2, golden=False).save()
 
         
