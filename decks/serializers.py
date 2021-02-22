@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from decks.models import Deck, DeckCard
 from cards.serializers import CardSerializer
+from django.db.models import Sum
 
 
 class DeckCardSerializer(serializers.ModelSerializer):
@@ -38,6 +39,14 @@ class DeckSerializer(serializers.ModelSerializer):
 
 class DeckSimpleSerializer(serializers.ModelSerializer):
     hero_class = serializers.CharField(source="hero_class.name", read_only=True)
+    complete = serializers.SerializerMethodField()
+    total_cards = serializers.SerializerMethodField()
+
+    def get_total_cards(self, object):
+        return DeckCard.objects.filter(deck_id=object.id).aggregate(total=Sum("quantity"))["total"]
+
+    def get_complete(self, object):
+        return object.complete()
 
     class Meta:
         model = Deck
@@ -46,4 +55,7 @@ class DeckSimpleSerializer(serializers.ModelSerializer):
             "name",
             "hero_class",
             "standard",
+            "complete",
+            "size",
+            "total_cards",
         ]

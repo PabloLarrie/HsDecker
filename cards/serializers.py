@@ -14,26 +14,18 @@ class ExpansionSerializer(serializers.ModelSerializer):
             "name",
         ]
 
-class HeroClassSerializer (serializers.ModelSerializer):
-    name = serializers.CharField(source="HeroClass.name", read_only=True)
-
-    class Meta:
-        model = HeroClass 
-        fields = [
-            "name",
-        ]
-
 
 class CardSerializer(serializers.ModelSerializer):
     expansion = ExpansionSerializer()
     collection = serializers.CharField(source="expansion.collection.name", read_only=True)
-    heroes = HeroClassSerializer()
+    heroes = serializers.SerializerMethodField()
     usage = serializers.SerializerMethodField()
 
-    # def get_heroes(self, object):
-    #     id_hero = list(Card.heroes)
-    #     hero = HeroClass.objects.get(id=id_hero[0])
-    #     return hero.name
+    def get_heroes(self, object):
+        hero_list = []
+        for hero in object.heroes.all():
+            hero_list.append(hero.name)
+        return hero_list
 
     def get_usage(self, object):
         return object.usage()
