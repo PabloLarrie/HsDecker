@@ -1,9 +1,11 @@
 from rest_framework import serializers
-from cards.models import Card, Expansion
+from cards.models import Card, Expansion, HeroClass
+from decks.models import Deck
+
 
 class ExpansionSerializer(serializers.ModelSerializer):
     name = serializers.CharField(read_only=True)
-    id = serializers.IntegerField()
+    id = serializers.IntegerField()   
 
     class Meta:
         model = Expansion 
@@ -12,14 +14,30 @@ class ExpansionSerializer(serializers.ModelSerializer):
             "name",
         ]
 
+class HeroClassSerializer (serializers.ModelSerializer):
+    name = serializers.CharField(source="HeroClass.name", read_only=True)
+
+    class Meta:
+        model = HeroClass 
+        fields = [
+            "name",
+        ]
+
+
 class CardSerializer(serializers.ModelSerializer):
     expansion = ExpansionSerializer()
     collection = serializers.CharField(source="expansion.collection.name", read_only=True)
+    heroes = HeroClassSerializer()
     usage = serializers.SerializerMethodField()
+
+    # def get_heroes(self, object):
+    #     id_hero = list(Card.heroes)
+    #     hero = HeroClass.objects.get(id=id_hero[0])
+    #     return hero.name
 
     def get_usage(self, object):
         return object.usage()
-
+    
     def create(self, validated_data):
         expansion_id = validated_data["expansion"]["id"]
         expansion = Expansion.objects.get(id=expansion_id)
@@ -39,6 +57,7 @@ class CardSerializer(serializers.ModelSerializer):
             "race",
             "cost",
             "attack",
+            "heroes",
             "endurance",
             "expansion",
             "collection",

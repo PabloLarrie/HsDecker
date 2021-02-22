@@ -17,7 +17,9 @@ class TestCardViewSet:
         response = CardViewSet.as_view({"get": "list"})(request)
 
         assert len(response.data) == 30
+        assert "usage" not in response.data
 
+        
     def test_cards_retrieve(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
@@ -29,5 +31,6 @@ class TestCardViewSet:
 
         assert response.data["id"] == cards[0].id
         assert response.data["name"] == cards[0].name
+        assert response.data["usage"] == cards[0].usage()
 
 
