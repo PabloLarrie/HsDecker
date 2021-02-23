@@ -6,3 +6,5 @@ pytest-django
 factory-boy
 django
 djangorestframework
+black
+pep8

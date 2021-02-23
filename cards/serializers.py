@@ -4,9 +4,9 @@ from decks.models import Deck
 
 
 class ExpansionSerializer(serializers.ModelSerializer):
-    name = serializers.CharField(read_only=True)
-    id = serializers.IntegerField()   
-
+    name = serializers.CharField(read_only=True)   
+    id = serializers.IntegerField()
+    
     class Meta:
         model = Expansion 
         fields = [
