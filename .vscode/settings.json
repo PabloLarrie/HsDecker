@@ -19,5 +19,7 @@
         "terminal.ansiBrightGreen": "#a0ebbd",
         "terminal.selectionBackground":"#a3d5db"
     
-    }
+    },
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true
 }

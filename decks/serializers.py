@@ -18,40 +18,6 @@ class DeckCardSerializer(serializers.ModelSerializer):
         ]
 
 
-class DeckSerializer(serializers.ModelSerializer):
-    hero_class = serializers.CharField(source="hero_class.name", read_only=True)
-    complete = serializers.SerializerMethodField()
-    cards = serializers.SerializerMethodField()
-    total_cards = serializers.SerializerMethodField()
-
-    def get_total_cards(self, object):
-        return DeckCard.objects.filter(deck_id=object.id).aggregate(
-            total=Sum("quantity")
-        )["total"]
-
-    def get_cards(self, object):
-        return DeckCardSerializer(
-            DeckCard.objects.filter(deck_id=object.id), many=True
-        ).data
-
-    def get_complete(self, object):
-        return object.complete()
-
-    class Meta:
-        model = Deck
-        fields = [
-            "id",
-            "name",
-            "size",
-            "hero_class",
-            "standard",
-            "cards",
-            "complete",
-            "size",
-            "total_cards",
-        ]
-
-
 class DeckSimpleSerializer(serializers.ModelSerializer):
     hero_class = serializers.CharField(source="hero_class.name", read_only=True)
     complete = serializers.SerializerMethodField()
@@ -75,4 +41,18 @@ class DeckSimpleSerializer(serializers.ModelSerializer):
             "complete",
             "size",
             "total_cards",
+        ]
+
+
+class DeckSerializer(DeckSimpleSerializer):
+    cards = serializers.SerializerMethodField()
+
+    def get_cards(self, object):
+        return DeckCardSerializer(
+            DeckCard.objects.filter(deck_id=object.id), many=True
+        ).data
+
+    class Meta(DeckSimpleSerializer.Meta):
+        fields = DeckSimpleSerializer.Meta.fields + [
+            "cards",
         ]
