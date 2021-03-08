@@ -1,11 +1,14 @@
-django
+django==3.0.4
 django-extensions
 psycopg2
 pytest
 pytest-django
 factory-boy
 django
+django-filter
 djangorestframework
+djangorestframework-filters==1.0.0.dev0
 black
 pep8
 pylint
+six
