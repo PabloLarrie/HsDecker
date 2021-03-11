@@ -1,15 +1,15 @@
 from rest_framework.viewsets import ModelViewSet
 from cards.models import Card
 from cards.serializers import CardSerializer, CardSimpleSerializer
-from rest_framework.filters import SearchFilter
+from rest_framework.filters import SearchFilter, OrderingFilter
 from cards.filters import CardsFilter
 from rest_framework_filters.backends import RestFrameworkFilterBackend
 
 
 class CardViewSet(ModelViewSet):
     queryset = Card.objects.all()
-    filter_backedns = (SearchFilter, RestFrameworkFilterBackend)
-    search_fields = ["name", "keywords_name", "card_type", "quality"]
+    filter_backends = (SearchFilter, RestFrameworkFilterBackend, OrderingFilter)
+    search_fields = ["name", "keywords__name", "card_type", "quality"]
     filterset_class = CardsFilter
 
     def get_serializer_class(self):

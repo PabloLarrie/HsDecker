@@ -38,3 +38,20 @@ class TestCardViewSet:
         assert response.data["id"] == cards[0].id
         assert response.data["name"] == cards[0].name
         assert response.data["usage"] == cards[0].usage()
+
+    def test_cards_filter(self):
+        collection = CollectionFactory()
+        expansion = ExpansionFactory(collection=collection)
+        card = CardFactory(expansion=expansion)
+
+        request_factory = APIRequestFactory()
+        reverse_url = reverse(
+            "cards:cards-list", kwargs={"SearchFilter": card.name}
+        )  # "http://localhost:8000/cards/cards/X"
+        request = request_factory.get(reverse_url)
+        response = CardViewSet.as_view({"get": "list"})(request, SearchFilter=card.name)
+
+        assert response.status_code == 200
+        # assert response.data["id"] == cards[0].id
+        # assert response.data["name"] == cards[0].name
+        # assert response.data["usage"] == cards[0].usage()
