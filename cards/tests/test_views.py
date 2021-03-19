@@ -14,7 +14,7 @@ class TestCardViewSet:
     def test_cards_list(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(30, expansion=expansion)
+        CardFactory.create_batch(10, expansion=expansion)
 
         request_factory = APIRequestFactory()
         reverse_url = reverse("cards:cards-list")  # "http://localhost:8000/cards/cards"
@@ -45,7 +45,7 @@ class TestCardViewSet:
     def test_cards_filter(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(100)
+        CardFactory.create_batch(10)
         card = CardFactory(expansion=expansion)
 
         request_factory = APIRequestFactory()
@@ -63,7 +63,7 @@ class TestCardViewSet:
     def test_cards_typefilter(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(100)
+        CardFactory.create_batch(10)
         card = CardFactory(expansion=expansion)
 
         request_factory = APIRequestFactory()
@@ -81,7 +81,7 @@ class TestCardViewSet:
     def test_cards_standardfilter(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(100)
+        CardFactory.create_batch(10)
         card = CardFactory(expansion=expansion)
 
         request_factory = APIRequestFactory()
@@ -99,7 +99,7 @@ class TestCardViewSet:
     def test_cards_herofilter(self, class_priest):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(100)
+        CardFactory.create_batch(10)
         card = CardFactory(expansion=expansion)
         card.heroes.set([class_priest])
 
@@ -118,7 +118,7 @@ class TestCardViewSet:
     def test_cards_qualityfilter(self, card_legendary):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(100)
+        CardFactory.create_batch(10)
         # card = CardFactory(expansion=expansion)
 
         request_factory = APIRequestFactory()
@@ -136,7 +136,7 @@ class TestCardViewSet:
     def test_cards_racefilter(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(100)
+        CardFactory.create_batch(10)
         card = CardFactory(expansion=expansion, race="")
 
         request_factory = APIRequestFactory()
@@ -154,7 +154,7 @@ class TestCardViewSet:
     def test_cards_expansionfilter(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(100)
+        CardFactory.create_batch(10)
         card = CardFactory(expansion=expansion)
 
         request_factory = APIRequestFactory()
@@ -172,7 +172,7 @@ class TestCardViewSet:
     def test_cards_costfilter(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(100)
+        CardFactory.create_batch(10)
         card = CardFactory(expansion=expansion, cost=1)
 
         request_factory = APIRequestFactory()

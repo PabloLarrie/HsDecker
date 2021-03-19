@@ -1,0 +1,13 @@
+django
+django-extensions
+psycopg2
+pytest
+pytest-django
+factory-boy
+django-filter
+djangorestframework
+djangorestframework-filters==1.0.0.dev0
+black
+pep8
+pylint
+six
