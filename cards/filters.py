@@ -1,24 +1,15 @@
-from rest_framework_filters import FilterSet
+from rest_framework_filters import FilterSet, filters
 from cards.models import Card, HeroClass
 
 
-# class HeroFilter(CardsFilter):
-#     class Meta:
-#         model = HeroClass
-#         fields = [
-#             "id",
-#             "name",
-#         ]
-
-
 class CardsFilter(FilterSet):
-    # heroes = HeroFilter()
+    hero = filters.CharFilter(field_name="hero", method="filter_hero")
 
     class Meta:
         model = Card
         fields = [
             "standard",
-            "heroes",
+            "hero",
             "card_type",
             "quality",
             "race",
@@ -26,3 +17,11 @@ class CardsFilter(FilterSet):
             "cost",
             "keywords",
         ]  # filtrar id hero
+
+    def filter_hero(self, qs, name, value):
+        """
+        QS -> Card.objects.filter(name="Prophet")
+        name -> hero
+        value -> id of the hero to search, for example 2
+        """
+        return qs.filter(heroes=value)

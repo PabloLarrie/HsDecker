@@ -7,11 +7,6 @@ endif
 build:
 	docker-compose build
 
-# build_pro:
-# 	docker-compose build \
-#   	--build-arg USER_ID=`id -u` \
-#   	--build-arg GROUP_ID=`id -g`
-
 shell:
 	${DOCKER_HSDECKER} python manage.py shell_plus
 
@@ -23,5 +18,19 @@ pip-compile:
 	
 freeze_dependencies: pip_compile chown
 
-runserver:
+run:
 	${DOCKER_HSDECKER} python manage.py runserver
+
+loadcards:
+	${DOCKER_HSDECKER} python manage.py loaddata cards/fixtures/*
+
+loaddecks:
+	${DOCKER_HSDECKER} python manage.py loaddata decks/fixtures/*
+
+loaddata:loadcards loaddecks
+
+migrate:
+	${DOCKER_HSDECKER} python manage.py migrate
+
+makemigrations:
+	${DOCKER_HSDECKER} python manage.py makemigrations
