@@ -11,6 +11,7 @@ class DeckViewSet(ModelViewSet):
     filter_backends = (SearchFilter, RestFrameworkFilterBackend)
     search_fields = ["name", "hero_class", "standard"]
     filterset_class = DecksFilter
+    ordering = ("id",)
 
     def get_serializer_class(self):
         if self.action == "list":

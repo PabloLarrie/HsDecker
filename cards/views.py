@@ -11,6 +11,7 @@ class CardViewSet(ModelViewSet):
     filter_backends = (SearchFilter, RestFrameworkFilterBackend, OrderingFilter)
     search_fields = ["name", "keywords__name", "card_type", "quality"]
     filterset_class = CardsFilter
+    ordering = ("id",)
 
     def get_serializer_class(self):
         if self.action == "list":

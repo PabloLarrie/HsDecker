@@ -21,10 +21,10 @@ class TestCardViewSet:
         request = request_factory.get(reverse_url)
         response = CardViewSet.as_view({"get": "list"})(request)
 
-        result = [y for v in response.data.values() if type(v) == list for y in v]
+        # result = [y for v in response.data.values() if type(v) == list for y in v]
 
         assert response.status_code == 200
-        assert len(result) == 10
+        assert len(response.data["results"]) == 10
         assert "usage" not in response.data
 
     def test_cards_retrieve(self):
@@ -59,8 +59,8 @@ class TestCardViewSet:
         # devuelve el método que se encarga de devolver la lista de cartas if request
 
         assert response.status_code == 200
-        assert len(response.data) == 1
-        assert response.data[0]["name"] == card.name
+        assert len(response.data["results"]) == 1
+        assert response.data["results"][0]["name"] == card.name
 
     def test_cards_typefilter(self):
         collection = CollectionFactory()
@@ -77,8 +77,7 @@ class TestCardViewSet:
         # devuelve el método que se encarga de devolver la lista de cartas if request
 
         assert response.status_code == 200
-        # assert len(response.data) == 1
-        assert response.data[0]["card_type"] == card.card_type
+        assert response.data["results"][0]["card_type"] == card.card_type
 
     def test_cards_standardfilter(self):
         collection = CollectionFactory()
@@ -95,8 +94,8 @@ class TestCardViewSet:
         # devuelve el método que se encarga de devolver la lista de cartas if request
 
         assert response.status_code == 200
-        assert len(response.data) == 1
-        assert response.data[0]["id"] == card.id
+        assert len(response.data["results"]) == 1
+        assert response.data["results"][0]["id"] == card.id
 
     def test_cards_herofilter(self, class_priest):
         collection = CollectionFactory()
@@ -114,8 +113,8 @@ class TestCardViewSet:
         # devuelve el método que se encarga de devolver la lista de cartas if request
 
         assert response.status_code == 200
-        # assert len(response.data) == 1
-        assert response.data[0]["id"] == card.id
+        assert len(response.data["results"]) == 1
+        assert response.data["results"][0]["id"] == card.id
 
     def test_cards_qualityfilter(self, card_legendary):
         collection = CollectionFactory()
@@ -132,26 +131,26 @@ class TestCardViewSet:
         # devuelve el método que se encarga de devolver la lista de cartas if request
 
         assert response.status_code == 200
-        # assert len(response.data) == 1
-        assert response.data[0]["quality"] == card_legendary.quality
+        # assert response.data["results"] == 1
+        assert response.data["results"][0]["quality"] == card_legendary.quality
 
     def test_cards_racefilter(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
         CardFactory.create_batch(10)
-        card = CardFactory(expansion=expansion, race="")
+        card = CardFactory(expansion=expansion, race="beast")
 
         request_factory = APIRequestFactory()
         reverse_url = reverse(
             "cards:cards-list"
         )  # "http://localhost:8000/cards/cards/X" (URL correspondiente al listado de cartas)
-        request = request_factory.get(reverse_url, {"search": card.race})
+        request = request_factory.get(reverse_url, {"race": card.race})
         response = CardViewSet.as_view({"get": "list"})(request)
         # devuelve el método que se encarga de devolver la lista de cartas if request
 
         assert response.status_code == 200
-        # assert len(response.data) == 1
-        assert response.data["race"] == card.race
+        assert len(response.data["results"]) == 1
+        assert response.data["results"][0]["id"] == card.id
 
     def test_cards_expansionfilter(self):
         collection = CollectionFactory()
@@ -163,31 +162,31 @@ class TestCardViewSet:
         reverse_url = reverse(
             "cards:cards-list"
         )  # "http://localhost:8000/cards/cards/X" (URL correspondiente al listado de cartas)
-        request = request_factory.get(reverse_url, {"search": card.expansion})
+        request = request_factory.get(reverse_url, {"expansion": expansion.id})
         response = CardViewSet.as_view({"get": "list"})(request)
         # devuelve el método que se encarga de devolver la lista de cartas if request
 
         assert response.status_code == 200
-        # assert len(response.data) == 1
-        assert response.data[0]["expansion"] == card.expansion
+        assert len(response.data["results"]) == 1
+        assert response.data["results"][0]["id"] == card.id
 
     def test_cards_costfilter(self):
         collection = CollectionFactory()
         expansion = ExpansionFactory(collection=collection)
-        CardFactory.create_batch(10)
+        CardFactory.create_batch(10, cost=5)
         card = CardFactory(expansion=expansion, cost=1)
 
         request_factory = APIRequestFactory()
         reverse_url = reverse(
             "cards:cards-list"
         )  # "http://localhost:8000/cards/cards/X" (URL correspondiente al listado de cartas)
-        request = request_factory.get(reverse_url, {"search": card.cost})
+        request = request_factory.get(reverse_url, {"cost": card.cost})
         response = CardViewSet.as_view({"get": "list"})(request)
         # devuelve el método que se encarga de devolver la lista de cartas if request
 
         assert response.status_code == 200
-        # assert len(response.data) == 1
-        assert response.data[0]["expansion"] == card.cost
+        assert len(response.data["results"]) == 1
+        assert response.data["results"][0]["id"] == card.id
 
     def test_create_card(self, expansion_1):
         values = {
