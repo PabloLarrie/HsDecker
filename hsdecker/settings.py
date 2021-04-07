@@ -140,6 +140,12 @@ SHELL_PLUS_PRINT_SQL_TRUNCATE = None
 
 # django-rest-framework
 REST_FRAMEWORK = {
-    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
+    "DEFAULT_PERMISSION_CLASSES": (
+        "rest_framework.permissions.DjangoModelPermissions",
+        # "rest_framework.permissions.IsAuthenticatedOrReadOnly",
+    ),
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework.authentication.BasicAuthentication",
+    ),
     "DEFAULT_PAGINATION_CLASS": "hsdecker.apps.StandardResultsSetPagination",
 }
