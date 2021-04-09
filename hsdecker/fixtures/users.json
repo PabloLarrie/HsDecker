@@ -1,0 +1,20 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$ae1HksyHnmIkAVGdi9ybEA$P8FWBqHkBm61DPgL+CodPeCCTxNVOp4FU3mhL8She48=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jhon",
+        "first_name": "",
+        "last_name": "",
+        "email": "aa@ee.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-04-07T16:56:18.270Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

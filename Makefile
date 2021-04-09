@@ -16,10 +16,13 @@ chown:
 pip-compile:
 	${DOCKER_HSDECKER} pip-compile requirements.in > requirements.txt
 	
-freeze_dependencies: pip_compile chown
+freeze_dependencies: pip-compile chown
 
 run:
 	${DOCKER_HSDECKER} python manage.py runserver
+
+loadusers:
+	${DOCKER_HSDECKER} python manage.py loaddata hsdecker/fixtures/*
 
 loadcards:
 	${DOCKER_HSDECKER} python manage.py loaddata cards/fixtures/*
@@ -27,7 +30,7 @@ loadcards:
 loaddecks:
 	${DOCKER_HSDECKER} python manage.py loaddata decks/fixtures/*
 
-loaddata:loadcards loaddecks
+loaddata: loadusers loadcards loaddecks
 
 migrate:
 	${DOCKER_HSDECKER} python manage.py migrate

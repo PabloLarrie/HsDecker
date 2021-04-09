@@ -7,6 +7,7 @@ factory-boy
 django-filter
 djangorestframework
 djangorestframework-filters==1.0.0.dev0
+djangorestframework-simplejwt
 black
 pep8
 pylint

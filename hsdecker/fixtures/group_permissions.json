@@ -1,0 +1,34 @@
+[
+    {
+        "model": "auth.group_permissions",
+        "pk": 1,
+        "fields": {
+            "group": 1,
+            "permission": 1
+        }
+    },
+    {
+        "model": "auth.group_permissions",
+        "pk": 2,
+        "fields": {
+            "group": 2,
+            "permission": 6
+        }
+    },
+    {
+        "model": "auth.group_permissions",
+        "pk": 3,
+        "fields": {
+            "group": 3,
+            "permission": 3
+        }
+    },
+    {
+        "model": "auth.group_permissions",
+        "pk": 4,
+        "fields": {
+            "group": 4,
+            "permission": 3
+        }
+    }
+]
