@@ -30,6 +30,9 @@ loadcards:
 loaddecks:
 	${DOCKER_HSDECKER} python manage.py loaddata decks/fixtures/*
 
+loadgroups:
+	${DOCKER_HSDECKER} python manage.py setup_user_permissions
+
 loaddata: loadusers loadcards loaddecks
 
 migrate:
