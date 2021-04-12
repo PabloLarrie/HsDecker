@@ -19,3 +19,11 @@ class CardViewSet(ModelViewSet):
             return CardSimpleSerializer
         else:
             return CardSerializer
+
+
+class CardEditSet(ModelViewSet):
+    queryset = Card.objects.all()
+    filter_backends = (SearchFilter, RestFrameworkFilterBackend, OrderingFilter)
+    search_fields = ["name", "keywords__name", "card_type", "quality"]
+    filterset_class = CardsFilter
+    ordering = ("id",)

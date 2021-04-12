@@ -1,7 +1,17 @@
 import pytest
-from cards.constants import QualityCard
+
 from decks.tests.factories import DeckFactory, DeckCardFactory
 from cards.tests.factories import CardFactory, HeroClassFactory, ExpansionFactory
+from cards.constants import QualityCard
+
+from rest_framework.views import APIView
+from rest_framework.permissions import AllowAny
+from rest_framework.test import APIRequestFactory
+
+
+@pytest.fixture
+def APIrequest():
+    return APIRequestFactory()
 
 
 @pytest.fixture
@@ -63,3 +73,13 @@ def deck_priest(class_priest):
 @pytest.fixture
 def deck_priest_savage(class_priest):
     return DeckFactory(hero_class=class_priest, standard=False)
+
+
+@pytest.fixture(autouse=True)
+def disable_authentication(monkeypatch, request):
+    """
+    Use `use_auth` marker to enable authentication for the test.
+    See https://pytest.readthedocs.io/en/latest/example/markers.html
+    """
+    if "use_auth" not in request.keywords:
+        monkeypatch.setattr(APIView, "permission_classes", (AllowAny,))

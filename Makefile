@@ -21,14 +21,14 @@ freeze_dependencies: pip-compile chown
 run:
 	${DOCKER_HSDECKER} python manage.py runserver
 
-loadusers:
-	${DOCKER_HSDECKER} python manage.py loaddata hsdecker/fixtures/*
-
 loadcards:
 	${DOCKER_HSDECKER} python manage.py loaddata cards/fixtures/*
 
 loaddecks:
 	${DOCKER_HSDECKER} python manage.py loaddata decks/fixtures/*
+
+loadusers:
+	${DOCKER_HSDECKER} python manage.py setup_user_creation
 
 loadgroups:
 	${DOCKER_HSDECKER} python manage.py setup_user_permissions

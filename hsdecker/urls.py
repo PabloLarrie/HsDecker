@@ -22,8 +22,8 @@ from rest_framework_simplejwt.views import (
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("cards/", include("cards.urls", namespace="cards")),
-    path("decks/", include("decks.urls", namespace="decks")),
+    path("", include("cards.urls", namespace="cards")),
+    path("", include("decks.urls", namespace="decks")),
     path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 ]

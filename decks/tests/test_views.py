@@ -35,3 +35,20 @@ class TestDeckViewSet:
         assert response.data["id"] == deck.id
         assert response.data["name"] == deck.name
         assert response.data["complete"] == deck.complete()
+
+    def test_create_deck(self, APIrequest):
+        user = UserFactory()
+        values = {
+            "name": "yisus",
+            "size": 30,
+            "hero_class_id": 9,
+            "standard": True,
+        }
+
+        reverse_url = reverse("decks:decks-list")  # "http://localhost:8000/cards/cards"
+        request = APIrequest.post(reverse_url, data=values, format="json")
+        force_authenticate(request, user=user)
+        response = DeckViewSet.as_view({"post": "create"})(request)
+
+        assert response.status_code == 201
+        # assert Card.objects.all() == 1

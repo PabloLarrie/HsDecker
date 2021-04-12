@@ -53,6 +53,7 @@ class CardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Card
+
         fields = [
             "id",
             "name",
@@ -67,4 +68,11 @@ class CardSerializer(serializers.ModelSerializer):
             "expansion",
             "collection",
             "usage",
+        ]
+
+        read_only_fields = [
+            "id",
+            "usage",
+            "collection",
+            "heroes",
         ]

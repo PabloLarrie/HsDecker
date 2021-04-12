@@ -37,7 +37,7 @@ class Command(BaseCommand):
         for v in self.GROUPS:
             group = Group.objects.create(name=v)
             for model in self.PERMISSIONS[v]:
-                group.permissions.set([Permission.objects.get(codename="add_" + model)])
+                group.permissions.add(Permission.objects.get(codename="add_" + model))
                 group.permissions.add(
                     Permission.objects.get(codename="change_" + model)
                 )
