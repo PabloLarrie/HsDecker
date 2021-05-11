@@ -2,7 +2,7 @@
   <div>
     <MyHeader></MyHeader>
     <MyBody></MyBody>
-    <MyFooter></MyFooter>
+    <!-- <MyFooter></MyFooter> -->
   </div>
 </template>
 
@@ -10,14 +10,14 @@
 <script>
 import MyHeader from "./components/Header";
 import MyBody from "./components/Body";
-import MyFooter from "./components/Footer";
+// import MyFooter from "./components/Footer";
 
 export default {
   name: "App",
   components: {
     MyHeader,
     MyBody,
-    MyFooter,
+    // MyFooter,
   },
   data() {
     return {};

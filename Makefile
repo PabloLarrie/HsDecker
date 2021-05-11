@@ -4,6 +4,12 @@ else
 	DOCKER_HSDECKER=docker-compose run hsdecker
 endif
 
+ifdef DEVCONTAINER
+	DOCKER_FRONTEND=
+else
+	DOCKER_FRONTEND=docker-compose run frontend
+endif
+
 test:
 	${DOCKER_HSDECKER} pytest -c pytest.ini
 
@@ -42,7 +48,10 @@ loadgroups:
 loadusers:
 	${DOCKER_HSDECKER} python manage.py setup_user_creation
 
-build_and_setup: build migrate load groups loadusers loadcards loaddecks
+installfrontend:
+	${DOCKER_FRONTEND} npm install
+
+build_and_setup: build migrate loadgroups loadusers loadcards loaddecks installfrontend
 
 
 

@@ -31,7 +31,6 @@ div {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 30px, 100px;
   /* display: flex;
   justify-content: space-between;
   align-items: center; */

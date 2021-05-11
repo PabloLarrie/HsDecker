@@ -4,7 +4,7 @@
     <h2>Best Deck Builder</h2>
 
     <div class="navbar">
-      <div class="dropdown">
+      <!-- <div class="dropdown">
         <button class="dropbtn">
           Page
           <i class="fa fa-caret-down"></i>
@@ -42,39 +42,45 @@
         <div class="dropdown-content">
           <a v-for="item in info" :key="item.id">{{ item.quality }}</a>
         </div>
-      </div>
+      </div> -->
     </div>
-
-    <div class="container">
-      <select v-model="index">
-        <option v-for="item in 26" :key="item.id">
-          {{ item }}
-        </option>
-      </select>
-
-      <select>
-        <option v-for="item in info" :key="item.id">{{ item.name }}</option>
-      </select>
-    </div>
-
     <div id="aplication" class="container">
       <div class="row">
-        <template v-for="item in info">
-          <div class="card-body" :key="item.id">
-            <h5 class="card-title">
-              {{ item.name }}
-            </h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-          <ul class="list-group list-group-flush" :key="item.id">
-            <li class="list-group-item">{{ item.description }}</li>
-            <li class="list-group-item">{{ item.card_type }}</li>
-            <li class="list-group-item">{{ item.quality }}</li>
-          </ul>
-        </template>
+        <button @click="previousPage" :disabled="previous === null">
+          Página anterior
+        </button>
+        <button @click="nextPage" :disabled="next === null">
+          Siguiente Página
+        </button>
+        <select v-model="size">
+          <option value="15" selected>15</option>
+          <option value="30">30</option>
+          <option value="50">50</option>
+        </select>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Type</th>
+              <th>Quality</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in info" :key="'row' + item.id">
+              <td>{{ item.id }}</td>
+              <td>{{ item.name }}</td>
+              <td>{{ item.card_type }}</td>
+              <td>{{ item.quality }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <button @click="previousPage" :disabled="previous === null">
+          Página anterior
+        </button>
+        <button @click="nextPage" :disabled="next === null">
+          Siguiente Página
+        </button>
       </div>
     </div>
   </div>
@@ -87,18 +93,37 @@ export default {
     return {
       tipoInput: "number",
       index: "number",
+      info: [],
+      next: null,
+      previous: null,
+      size: 15,
     };
   },
-  methods: {},
+  methods: {
+    loadData(url) {
+      this.$api.get(url).then((response) => {
+        this.info = response.data.results;
+        this.next = response.data.next;
+        this.previous = response.data.previous;
+      });
+    },
+    nextPage() {
+      this.loadData(this.next);
+    },
+    previousPage() {
+      this.loadData(this.previous);
+    },
+  },
   mounted() {
-    this.$api
-      .get("/cards/")
-      .then((response) => (this.info = response.data.results));
-    // v-for="item in info" :key="item.id"
+    this.loadData("/cards/?page_size=30");
   },
 };
 </script>
 <style scoped>
+table {
+  margin: auto;
+  color: #fff;
+}
 p {
   color: black;
 }
