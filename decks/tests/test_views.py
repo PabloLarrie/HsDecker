@@ -3,18 +3,17 @@ from rest_framework.test import APIRequestFactory, force_authenticate
 from rest_framework.reverse import reverse
 
 from decks.tests.factories import DeckFactory
-from cards.tests.factories import UserFactory
+from cards.tests.factories import UserFactory, CardFactory
 from decks.views import DeckViewSet
+from decks.models import Deck
 
 pytestmark = pytest.mark.django_db
 
 
 class TestDeckViewSet:
-    def test_deck_list(self):
-        DeckFactory()
-        request_factory = APIRequestFactory()
+    def test_deck_list(self, APIrequest):
         reverse_url = reverse("decks:decks-list")
-        request = request_factory.get(reverse_url)
+        request = APIrequest.get(reverse_url)
         user = UserFactory()
         force_authenticate(request, user=user)
         response = DeckViewSet.as_view({"get": "list"})(request)
@@ -22,11 +21,10 @@ class TestDeckViewSet:
         assert response.status_code == 200
         assert "complete" not in response.data
 
-    def test_decks_retrieve(self):
+    def test_decks_retrieve(self, APIrequest):
         deck = DeckFactory()
-        request_factory = APIRequestFactory()
         reverse_url = reverse("decks:decks-detail", kwargs={"pk": deck.id})
-        request = request_factory.get(reverse_url)
+        request = APIrequest.get(reverse_url)
         user = UserFactory()
         force_authenticate(request, user=user)
         response = DeckViewSet.as_view({"get": "retrieve"})(request, pk=deck.id)
@@ -37,12 +35,18 @@ class TestDeckViewSet:
         assert response.data["complete"] == deck.complete()
 
     def test_create_deck(self, APIrequest):
+        card = CardFactory()
+        card2 = CardFactory()
         user = UserFactory()
         values = {
             "name": "yisus",
             "size": 30,
             "hero_class_id": 9,
             "standard": True,
+            "cards": [
+                {"golden": True, "quantity": 1, "card": {"id": card.id}},
+                {"golden": False, "quantity": 1, "card": {"id": card2.id}},
+            ],
         }
 
         reverse_url = reverse("decks:decks-list")  # "http://localhost:8000/cards/cards"
@@ -51,4 +55,4 @@ class TestDeckViewSet:
         response = DeckViewSet.as_view({"post": "create"})(request)
 
         assert response.status_code == 201
-        # assert Card.objects.all() == 1
+        # assert Deck.objects.filter(id=) == 1

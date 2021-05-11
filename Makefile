@@ -4,8 +4,11 @@ else
 	DOCKER_HSDECKER=docker-compose run hsdecker
 endif
 
-build:
-	docker-compose build
+test:
+	${DOCKER_HSDECKER} pytest -c pytest.ini
+
+pip-compile:
+	${DOCKER_HSDECKER} pip-compile requirements.in > requirements.txt
 
 shell:
 	${DOCKER_HSDECKER} python manage.py shell_plus
@@ -13,13 +16,19 @@ shell:
 chown:
 	sudo chown `whoami` -R .
 
-pip-compile:
-	${DOCKER_HSDECKER} pip-compile requirements.in > requirements.txt
-	
 freeze_dependencies: pip-compile chown
 
 run:
 	${DOCKER_HSDECKER} python manage.py runserver
+
+build:
+	docker-compose build
+
+migrate:
+	${DOCKER_HSDECKER} python manage.py migrate
+
+makemigrations:
+	${DOCKER_HSDECKER} python manage.py makemigrations
 
 loadcards:
 	${DOCKER_HSDECKER} python manage.py loaddata cards/fixtures/*
@@ -27,16 +36,13 @@ loadcards:
 loaddecks:
 	${DOCKER_HSDECKER} python manage.py loaddata decks/fixtures/*
 
-loadusers:
-	${DOCKER_HSDECKER} python manage.py setup_user_creation
-
 loadgroups:
 	${DOCKER_HSDECKER} python manage.py setup_user_permissions
 
-loaddata: loadusers loadcards loaddecks
+loadusers:
+	${DOCKER_HSDECKER} python manage.py setup_user_creation
 
-migrate:
-	${DOCKER_HSDECKER} python manage.py migrate
+build_and_setup: build migrate load groups loadusers loadcards loaddecks
 
-makemigrations:
-	${DOCKER_HSDECKER} python manage.py makemigrations
+
+

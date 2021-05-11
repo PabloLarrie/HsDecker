@@ -16,10 +16,17 @@ class ExpansionSerializer(serializers.ModelSerializer):
 
 
 class CardSimpleSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField()
+
     class Meta:
         model = Card
         fields = [
             "id",
+            "name",
+            "card_type",
+            "quality",
+        ]
+        read_only_fields = [
             "name",
             "card_type",
             "quality",

@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
 from decks.models import Deck
-from decks.serializers import DeckSerializer, DeckSimpleSerializer
+from decks.serializers import DeckSerializer, DeckSimpleSerializer, DeckCreateSerializer
 from rest_framework.filters import SearchFilter, OrderingFilter
 from decks.filters import DecksFilter
 from rest_framework_filters.backends import RestFrameworkFilterBackend
@@ -16,5 +16,7 @@ class DeckViewSet(ModelViewSet):
     def get_serializer_class(self):
         if self.action == "list":
             return DeckSimpleSerializer
+        if self.action == "create":
+            return DeckCreateSerializer
         else:
             return DeckSerializer

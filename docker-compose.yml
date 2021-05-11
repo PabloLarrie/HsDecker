@@ -15,7 +15,17 @@ services:
     depends_on:
       - postgres
       
-    
+  frontend:
+    build:
+      context: ./frontend
+    image: hsdecker_frontend
+    container_name: frontend
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8080:8080"
+
+  
   postgres:
     image: postgres
     ports:

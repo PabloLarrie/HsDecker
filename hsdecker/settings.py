@@ -40,6 +40,7 @@ DJANGO_APPS = [
     "django_extensions",
     "rest_framework",
     "rest_framework_filters",
+    "corsheaders",
 ]
 
 LOCAL_APPS = [
@@ -53,6 +54,7 @@ INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -148,3 +150,6 @@ REST_FRAMEWORK = {
     ),
     "DEFAULT_PAGINATION_CLASS": "hsdecker.apps.StandardResultsSetPagination",
 }
+
+
+CORS_ALLOWED_ORIGINS = ["http://localhost:8080"]

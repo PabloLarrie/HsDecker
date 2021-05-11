@@ -10,7 +10,5 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         for index, user in enumerate(self.USERS):
-            for number, groupy in enumerate(self.GROUPS):
-                if index == number:
-                    user = User.objects.create(username=user)
-                    user.groups.set([Group.objects.get(name=groupy)])
+            user = User.objects.create(username=user)
+            user.groups.set([Group.objects.get(name=self.GROUPS[index])])
