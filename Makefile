@@ -51,7 +51,13 @@ loadusers:
 installfrontend:
 	${DOCKER_FRONTEND} npm install
 
+installvuestrap:
+	${DOCKER_FRONTEND} npm install vue bootstrap bootstrap-vue
+
+addvuestrap:
+	${DOCKER_FRONTEND} vue add bootstrap-vue
+
+vuestrap:
+	installvuestrap addvuestrap
+
 build_and_setup: build migrate loadgroups loadusers loadcards loaddecks installfrontend
-
-
-

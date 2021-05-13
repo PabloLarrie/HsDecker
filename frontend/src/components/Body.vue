@@ -2,57 +2,15 @@
   <div>
     <h1>HSDECKER</h1>
     <h2>Best Deck Builder</h2>
-
-    <div class="navbar">
-      <!-- <div class="dropdown">
-        <button class="dropbtn">
-          Page
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a v-for="item in 26" :key="item.id">{{ item }}</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">
-          Card
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a v-for="item in info" :key="item.id">{{ item.name }}</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">
-          Type
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a v-for="item in info" :key="item.id">{{ item.card_type }}</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">
-          Collection
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a v-for="item in info" :key="item.id">{{ item.quality }}</a>
-        </div>
-      </div> -->
-    </div>
     <div id="aplication" class="container">
       <div class="row">
         <button @click="previousPage" :disabled="previous === null">
-          Página anterior
+          Prev
         </button>
         <button @click="nextPage" :disabled="next === null">
-          Siguiente Página
+          Next
         </button>
-        <select v-model="size">
+        <select @click="sizer" v-model="size">
           <option value="15" selected>15</option>
           <option value="30">30</option>
           <option value="50">50</option>
@@ -76,10 +34,10 @@
           </tbody>
         </table>
         <button @click="previousPage" :disabled="previous === null">
-          Página anterior
+          Prev
         </button>
         <button @click="nextPage" :disabled="next === null">
-          Siguiente Página
+          Next
         </button>
       </div>
     </div>
@@ -99,6 +57,7 @@ export default {
       size: 15,
     };
   },
+
   methods: {
     loadData(url) {
       this.$api.get(url).then((response) => {
@@ -113,9 +72,25 @@ export default {
     previousPage() {
       this.loadData(this.previous);
     },
+    sizer() {
+      if (this.size === "15") {
+        this.loadData("/cards/?page_size=15")
+      }
+      if (this.size === "30") {
+      this.loadData("/cards/?page_size=30")
+      }
+      if (this.size === "50") {
+      this.loadData("/cards/?page_size=50")
+      }
+    }
   },
+  // watch: {
+  //   sizer(newSize, oldSize){
+  //     this.loadData("/cards/?page_size=30");
+  //   },
+  // },
   mounted() {
-    this.loadData("/cards/?page_size=30");
+    this.loadData("/cards/?page_size=15");
   },
 };
 </script>
@@ -137,9 +112,16 @@ div .container {
 }
 select {
   padding-right: 30px;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 20px;
   width: 8%;
+}
+button {
+  padding-right: 30px;
+  font-size: 16px;
+  border-radius: 20px;
+  width: 8%;
+  text-align: center;
 }
 option {
   list-style: none;
