@@ -1,22 +1,40 @@
 <template>
-  <div>
-    <MyHeader></MyHeader>
-    <MyBody></MyBody>
-    <!-- <MyFooter></MyFooter> -->
-  </div>
+  <main-layout>
+    <template v-slot:header>
+      <my-header />
+      <hr />
+    </template>
+
+    <template v-slot:body>
+      <cards-bar />
+      <cards-list />
+      <hr />
+      <decks-bar />
+      <decks-list />
+    </template>
+  </main-layout>
 </template>
 
 
 <script>
 import MyHeader from "./components/Header";
-import MyBody from "./components/Body";
+import CardsList from "./components/CardsList";
+import DecksList from "./components/DecksList";
+import MainLayout from "./layouts/MainLayout";
+import DecksBar from "./components/bars/DecksBar";
+import CardsBar from "./components/bars/CardsBar";
+
 // import MyFooter from "./components/Footer";
 
 export default {
   name: "App",
   components: {
+    MainLayout,
     MyHeader,
-    MyBody,
+    CardsList,
+    DecksList,
+    CardsBar,
+    DecksBar,
     // MyFooter,
   },
   data() {
@@ -27,13 +45,8 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
-* #app {
-  scroll-behavior: smooth;
-  margin: 0;
-}
+
 body {
   background: linear-gradient(#2b1055, #7597de);
-  min-height: 100vh;
-  text-align: center;
 }
 </style>

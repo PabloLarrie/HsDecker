@@ -57,6 +57,9 @@ installvuestrap:
 addvuestrap:
 	${DOCKER_FRONTEND} vue add bootstrap-vue
 
+installrouter:
+	${DOCKER_FRONTEND} npm install vue-router
+
 vuestrap:
 	installvuestrap addvuestrap
 

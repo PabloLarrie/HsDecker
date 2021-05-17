@@ -26,43 +26,4 @@ export default {
 };
 </script>
 <style scoped>
-div {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  z-index: 10000;
-}
-div .logo {
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-left: 20px;
-}
-div ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-div ul li {
-  list-style: none;
-  margin-left: 20px;
-}
-div ul li a {
-  text-decoration: none;
-  padding: 6px 15px;
-  color: #fff;
-  border-radius: 20px;
-}
-div ul li a:hover,
-div ul li a.active {
-  background: #fff;
-  color: #2b1055;
-}
 </style>
