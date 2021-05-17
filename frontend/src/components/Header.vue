@@ -7,8 +7,8 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Cards</b-nav-item>
-          <b-nav-item href="#">Decks</b-nav-item>
+          <router-link to="/">Cards</router-link>
+          <router-link to="/decks">Decks</router-link>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">

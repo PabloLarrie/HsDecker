@@ -7,24 +7,6 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-form>
-            <b-form-input
-              size="sm"
-              class="mr-sm-2"
-              placeholder="Search by card name"
-            ></b-form-input>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit"
-              >Search</b-button
-            >
-          </b-nav-form>
-
-          <b-nav-item-dropdown text="Type" right>
-            <b-dropdown-item href="#">Creature</b-dropdown-item>
-            <b-dropdown-item href="#">Spell</b-dropdown-item>
-            <b-dropdown-item href="#">Weapon</b-dropdown-item>
-            <b-dropdown-item href="#">Quest</b-dropdown-item>
-          </b-nav-item-dropdown>
-
           <b-nav-item-dropdown text="Quality" right>
             <b-dropdown-item href="#">Free</b-dropdown-item>
             <b-dropdown-item href="#">Common</b-dropdown-item>
