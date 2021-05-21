@@ -1,50 +1,56 @@
 <template>
-  <div>
-    <table-pagination
-      :next="next"
-      :previous="previous"
-      v-model="size"
-      @nextPageClick="nextPage"
-      @previousPageClick="previousPage"
-    />
+  <table-layout>
+    <template v-slot:pagination-top>
+      <table-pagination
+        :next="next"
+        :previous="previous"
+        v-model="size"
+        @nextPageClick="nextPage"
+        @previousPageClick="previousPage"
+      />
+    </template>
+    <template v-slot:filters>
+      <b-input
+        size="sm"
+        class="mr-sm-2"
+        placeholder="Search by deck name"
+        v-model="searchInfo"
+        debounce="500"
+      ></b-input>
 
-    <b-row>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>NAME</th>
-            <th>Type</th>
-            <th>Quality</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="item in info" :key="'row' + item.id">
-            <td>{{ item.id }}</td>
-            <td>{{ item.name }}</td>
-            <td>{{ item.card_type }}</td>
-            <td>{{ item.quality }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </b-row>
+      <b-form-select v-model="selectedFormat" :options="formatOptions">
+      </b-form-select> 
 
-    <table-pagination
-      :next="next"
-      :previous="previous"
-      v-model="size"
-      @nextPageClick="nextPage"
-      @previousPageClick="previousPage"
-    />
-  </div>
+      <b-form-select v-model="selectedHero" :options="heroOptions">
+      </b-form-select> 
+
+    </template>
+
+    <template v-slot:table>
+      <b-table class="w-100" striped hover :items="info" />
+    </template>
+
+    <template v-slot:pagination-bottom>
+      <table-pagination
+        :next="next"
+        :previous="previous"
+        v-model="size"
+        @nextPageClick="nextPage"
+        @previousPageClick="previousPage"
+      />
+    </template>
+  </table-layout>
 </template>
 
 <script>
 import TablePagination from "@/components/table/TablePagination";
+import TableLayout from "@/layouts/TableLayout";
+
 export default {
-  name: "DecksList",
+  name: "CardsList",
   components: {
     TablePagination,
+    TableLayout,
   },
   data() {
     return {
@@ -54,6 +60,27 @@ export default {
       next: null,
       previous: null,
       size: 15,
+      searchInfo: null,
+      selectedFormat: "",
+      selectedHero: "",
+      formatOptions: [
+        {value: "", text: "All Formats"},
+        {value: true, text: "Standard"},
+        {value: false, text: "Wild"},
+      ],
+      heroOptions: [
+        {value: "", text: "All Heroes"},
+        {value: 1, text: "Demon Hunter"},
+        {value: 2, text: "Druid"},
+        {value: 3, text: "Hunter"},
+        {value: 4, text: "Mage"},
+        {value: 5, text: "Paladin"},
+        {value: 6, text: "Priest"},
+        {value: 7, text: "Rogue"},
+        {value: 8, text: "Shaman"},
+        {value: 9, text: "Warlock"},
+        {value: 10, text: "Warrior"},
+      ],
     };
   },
 
@@ -71,10 +98,20 @@ export default {
     previousPage() {
       this.loadData(this.previous);
     },
+
   },
   watch: {
-    size(newSize) {
-      this.loadData("/decks/?page_size=" + newSize);
+    size() {
+      this.loadData("/decks/?page_size=" + this.size);
+    },
+    searchInfo() {
+      this.loadData("/decks/?search=" + this.searchInfo);
+    },
+    selectedFormat () {
+      this.loadData("/decks/?standard=" + this.selectedFormat);
+    },
+    selectedHero () {
+      this.loadData("/decks/?hero_class=" + this.selectedHero);
     },
   },
   mounted() {
