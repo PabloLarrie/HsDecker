@@ -38,6 +38,10 @@
 
         <b-form-select v-model="filters.selectedRace" :options="raceOptions">
         </b-form-select>
+
+        <b-form-select v-model="filters.selectedExpansion" :options="expansionOptions">
+        </b-form-select>
+
         <b-input
           size="sm"
           class="mr-sm-5"
@@ -53,6 +57,9 @@
       <b-table class="w-100" striped hover :items="info" :fields="columns">
         <template #cell(heroes)="data">
           {{ data.value.length ? data.value.join(", ") : "Neutral" }}
+        </template>        
+        <template #cell(expansion)="data">
+          {{ data.value.join(", ") }}
         </template>
       </b-table>
     </template>
@@ -87,7 +94,7 @@ export default {
       next: null,
       previous: null,
       savedFilters: {},
-      columns: ["name", "card_type", "quality", "heroes", "standard", "race"],
+      columns: ["name", "card_type", "quality", "heroes", "standard", "race", "expansion"],
       filters: {
         selectedQuality: "",
         selectedFormat: "",
@@ -95,6 +102,7 @@ export default {
         selectedRace: "",
         selectedCost: "",
         selectedType: "",
+        selectedExpansion: "",
         searchInfo: null,
         size: 15,
       },
@@ -174,9 +182,6 @@ export default {
     },
   },
   watch: {
-    size() {
-      this.magicFilter();
-    },
     filters: {
       handler() {
         this.magicFilter();
@@ -186,6 +191,7 @@ export default {
   },
   mounted() {
     this.loadData("/cards/?page_size=15");
+    // this.loadData("/expansions/?page_size=15");
     this.savedFilters = JSON.parse(JSON.stringify(this.filters));
   },
 };

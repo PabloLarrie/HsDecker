@@ -18,12 +18,19 @@ class ExpansionSerializer(serializers.ModelSerializer):
 class CardSimpleSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField()
     heroes = serializers.SerializerMethodField()
+    expansion = serializers.SerializerMethodField()
 
     def get_heroes(self, object):
         hero_list = []
         for hero in object.heroes.all():
             hero_list.append(hero.name)
         return hero_list
+
+    def get_expansion(self, object):
+        expansion_list = []
+        for expansion in Expansion.objects.filter(id=object.expansion.id):
+            expansion_list.append(expansion.name)
+        return expansion_list
 
     class Meta:
         model = Card
@@ -36,6 +43,7 @@ class CardSimpleSerializer(serializers.ModelSerializer):
             "heroes",
             "standard",
             "race",
+            "expansion",
         ]
         read_only_fields = [
             "name",
