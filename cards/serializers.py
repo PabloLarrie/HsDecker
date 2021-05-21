@@ -17,6 +17,13 @@ class ExpansionSerializer(serializers.ModelSerializer):
 
 class CardSimpleSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField()
+    heroes = serializers.SerializerMethodField()
+
+    def get_heroes(self, object):
+        hero_list = []
+        for hero in object.heroes.all():
+            hero_list.append(hero.name)
+        return hero_list
 
     class Meta:
         model = Card
@@ -25,6 +32,10 @@ class CardSimpleSerializer(serializers.ModelSerializer):
             "name",
             "card_type",
             "quality",
+            "card_type",
+            "heroes",
+            "standard",
+            "race",
         ]
         read_only_fields = [
             "name",

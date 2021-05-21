@@ -4,54 +4,64 @@
       <table-pagination
         :next="next"
         :previous="previous"
-        v-model="size"
+        v-model="filters.size"
         @nextPageClick="nextPage"
         @previousPageClick="previousPage"
       />
     </template>
     <template v-slot:filters>
-      <b-input
-        size="sm"
-        class="mr-sm-2"
-        placeholder="Search by card name"
-        v-model="searchInfo"
-        debounce="500"
-      ></b-input>
+      <b-button-toolbar>
+        <b-input
+          size="sm"
+          class="mr-sm-2"
+          placeholder="Search by card name"
+          v-model="filters.searchInfo"
+          debounce="500"
+        ></b-input>
+        <b-form-select v-model="filters.selectedType" :options="typeOptions">
+        </b-form-select>
 
-      <b-form-select v-model="selectedType" :options="typeOptions">
-      </b-form-select>
+        <b-form-select
+          v-model="filters.selectedQuality"
+          :options="qualityOptions"
+        >
+        </b-form-select>
 
-      <b-form-select v-model="selectedQuality" :options="qualityOptions">
-      </b-form-select>
+        <b-form-select
+          v-model="filters.selectedFormat"
+          :options="formatOptions"
+        >
+        </b-form-select>
 
-      <b-form-select v-model="selectedFormat" :options="formatOptions">
-      </b-form-select> 
+        <b-form-select v-model="filters.selectedHero" :options="heroOptions">
+        </b-form-select>
 
-      <b-form-select v-model="selectedHero" :options="heroOptions">
-      </b-form-select> 
-      
-      <b-form-select v-model="selectedRace" :options="raceOptions">
-      </b-form-select> 
-
-      <b-input
-        size="sm"
-        class="mr-sm-5"
-        placeholder="Cost"
-        v-model="selectedCost"
-        debounce="500"
-      ></b-input>
-
+        <b-form-select v-model="filters.selectedRace" :options="raceOptions">
+        </b-form-select>
+        <b-input
+          size="sm"
+          class="mr-sm-5"
+          placeholder="Cost"
+          v-model="filters.selectedCost"
+          debounce="500"
+        ></b-input>
+        <b-button @click="resetFilter"> Reset </b-button>
+      </b-button-toolbar>
     </template>
 
     <template v-slot:table>
-      <b-table class="w-100" striped hover :items="info" />
+      <b-table class="w-100" striped hover :items="info" :fields="columns">
+        <template #cell(heroes)="data">
+          {{ data.value.length ? data.value.join(", ") : "Neutral" }}
+        </template>
+      </b-table>
     </template>
 
     <template v-slot:pagination-bottom>
       <table-pagination
         :next="next"
         :previous="previous"
-        v-model="size"
+        v-model="filters.size"
         @nextPageClick="nextPage"
         @previousPageClick="previousPage"
       />
@@ -76,15 +86,18 @@ export default {
       info: [],
       next: null,
       previous: null,
-      size: 15,
-      magicFilter: "",
-      selectedType: "",
-      searchInfo: null,
-      selectedQuality: "",
-      selectedFormat: "",
-      selectedHero: "",
-      selectedRace: "",
-      selectedCost: "",
+      savedFilters: {},
+      columns: ["name", "card_type", "quality", "heroes", "standard", "race"],
+      filters: {
+        selectedQuality: "",
+        selectedFormat: "",
+        selectedHero: "",
+        selectedRace: "",
+        selectedCost: "",
+        selectedType: "",
+        searchInfo: null,
+        size: 15,
+      },
       typeOptions: [
         { value: "", text: "All card types" },
         { value: "minion", text: "Minion" },
@@ -101,31 +114,31 @@ export default {
         { value: "legendary", text: "Legendary" },
       ],
       formatOptions: [
-        {value: "", text: "All Formats"},
-        {value: true, text: "Standard"},
-        {value: false, text: "Wild"},
+        { value: "", text: "All Formats" },
+        { value: true, text: "Standard" },
+        { value: false, text: "Wild" },
       ],
       heroOptions: [
-        {value: "", text: "All Heroes"},
-        {value: 1, text: "Demon Hunter"},
-        {value: 2, text: "Druid"},
-        {value: 3, text: "Hunter"},
-        {value: 4, text: "Mage"},
-        {value: 5, text: "Paladin"},
-        {value: 6, text: "Priest"},
-        {value: 7, text: "Rogue"},
-        {value: 8, text: "Shaman"},
-        {value: 9, text: "Warlock"},
-        {value: 10, text: "Warrior"},
+        { value: "", text: "All Heroes" },
+        { value: 1, text: "Demon Hunter" },
+        { value: 2, text: "Druid" },
+        { value: 3, text: "Hunter" },
+        { value: 4, text: "Mage" },
+        { value: 5, text: "Paladin" },
+        { value: 6, text: "Priest" },
+        { value: 7, text: "Rogue" },
+        { value: 8, text: "Shaman" },
+        { value: 9, text: "Warlock" },
+        { value: 10, text: "Warrior" },
       ],
       raceOptions: [
-        {value: "", text: "All races"},
-        {value: "beast", text: "Beast"},
-        {value: "murloc", text: "Murloc"},
-        {value: "dragon", text: "Dragon"},
-        {value: "demon", text: "Demon"},
-        {value: "totem", text: "Totem"},
-      ]
+        { value: "", text: "All races" },
+        { value: "beast", text: "Beast" },
+        { value: "murloc", text: "Murloc" },
+        { value: "dragon", text: "Dragon" },
+        { value: "demon", text: "Demon" },
+        { value: "totem", text: "Totem" },
+      ],
     };
   },
 
@@ -143,46 +156,37 @@ export default {
     previousPage() {
       this.loadData(this.previous);
     },
-
+    magicFilter() {
+      this.loadData(
+        `/cards/?standard=${this.filters.selectedFormat}` +
+          `&hero=${this.filters.selectedHero}` +
+          `&card_type=${this.filters.selectedType}` +
+          `&quality=${this.filters.selectedQuality}` +
+          `&race=${this.filters.selectedRace}` +
+          `&expansion=&cost=${this.filters.selectedCost}` +
+          `&page_size=${this.filters.size}`
+      );
+    },
+    resetFilter() {
+      Object.entries(this.filters).forEach(([key]) => {
+        this.filters[key] = this.savedFilters[key];
+      });
+    },
   },
   watch: {
-    magicFilter () {
-      this.loadData("/cards/?standard=" + this.selectedFormat + 
-      "&hero=" + this.selectedHero +
-      "&card_type=" + this.selectedType + 
-      "&quality=" + this.selectedQuality + 
-      "&race=" + this.selectedRace + 
-      "&expansion=" +
-      "&cost=" + this.selectedCost);
-    },
     size() {
-      this.loadData("/cards/?page_size=" + this.size);
+      this.magicFilter();
     },
-    searchInfo() {
-      this.loadData("/cards/?search=" + this.searchInfo);
+    filters: {
+      handler() {
+        this.magicFilter();
+      },
+      deep: true,
     },
-    selectedType () {
-      this.loadData("/cards/?card_type=" + this.selectedType);
-    },
-    selectedQuality () {
-      this.loadData("/cards/?quality=" + this.selectedQuality);
-    },
-    selectedFormat () {
-      this.loadData("/cards/?standard=" + this.selectedFormat);
-    },
-    selectedHero () {
-      this.loadData("/cards/?hero=" + this.selectedHero);
-    },
-    selectedRace () {
-      this.loadData("/cards/?race=" + this.selectedRace);
-    },
-    selectedCost () {
-      this.loadData("/cards/?cost=" + this.selectedCost);
-    },
-
   },
   mounted() {
     this.loadData("/cards/?page_size=15");
+    this.savedFilters = JSON.parse(JSON.stringify(this.filters));
   },
 };
 </script>
