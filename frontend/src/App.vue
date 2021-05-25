@@ -2,7 +2,6 @@
   <main-layout>
     <template v-slot:header>
       <my-header />
-      <hr />
     </template>
 
     <template v-slot:body>

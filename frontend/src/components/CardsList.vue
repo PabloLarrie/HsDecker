@@ -15,7 +15,7 @@
           size="sm"
           class="mr-sm-2"
           placeholder="Search by card name"
-          v-model="filters.searchInfo"
+          v-model="searchInfo"
           debounce="500"
         ></b-input>
         <b-form-select v-model="filters.selectedType" :options="typeOptions">
@@ -54,8 +54,20 @@
     </template>
 
     <template v-slot:table>
-      <b-table class="w-100" striped hover :items="info" :fields="columns">
-        <template #cell(heroes)="data">
+      <b-button @click="targetCarding"> hola </b-button>
+      <b-table 
+        class="w-100" 
+        striped 
+        hover 
+        fixed
+        noCollapse
+        :items="info" 
+        :fields="columns" 
+        bordered
+        @row-clicked="$router.push({
+          path: '/detailView/'
+        })">
+        <template #cell(heroes)="data">   
           {{ data.value.length ? data.value.join(", ") : "Neutral" }}
         </template>        
         <template #cell(expansion)="data">
@@ -80,6 +92,7 @@
 import TablePagination from "@/components/table/TablePagination";
 import TableLayout from "@/layouts/TableLayout";
 
+
 export default {
   name: "CardsList",
   components: {
@@ -88,12 +101,12 @@ export default {
   },
   data() {
     return {
-      tipoInput: "number",
-      index: "number",
       info: [],
       next: null,
       previous: null,
       savedFilters: {},
+      searchInfo: null,
+      targetCard: "",
       columns: ["name", "card_type", "quality", "heroes", "standard", "race", "expansion"],
       filters: {
         selectedQuality: "",
@@ -103,7 +116,6 @@ export default {
         selectedCost: "",
         selectedType: "",
         selectedExpansion: "",
-        searchInfo: null,
         size: 15,
       },
       typeOptions: [
@@ -147,6 +159,12 @@ export default {
         { value: "demon", text: "Demon" },
         { value: "totem", text: "Totem" },
       ],
+      expansionOptions: [
+        { value: "", text: "All expansions" },
+        { value: 1, text: "Basic" },
+        { value: 2, text: "putos amos" },
+        { value: 3, text: "destroyers" },
+      ],
     };
   },
 
@@ -171,7 +189,8 @@ export default {
           `&card_type=${this.filters.selectedType}` +
           `&quality=${this.filters.selectedQuality}` +
           `&race=${this.filters.selectedRace}` +
-          `&expansion=&cost=${this.filters.selectedCost}` +
+          `&expansion=${this.filters.selectedExpansion}` +
+          `&cost=${this.filters.selectedCost}` +
           `&page_size=${this.filters.size}`
       );
     },
@@ -179,9 +198,19 @@ export default {
       Object.entries(this.filters).forEach(([key]) => {
         this.filters[key] = this.savedFilters[key];
       });
+      this.searchInfo = null;
     },
+    targetCarding() {
+      this.targetCard = this.info[0].id;
+      },
   },
   watch: {
+    searchInfo() {
+      this.loadData("/cards/?search=" + this.searchInfo)
+      },
+    targetCard() {
+      // $router.push({path: '/detailView/'})
+      },  
     filters: {
       handler() {
         this.magicFilter();
@@ -191,7 +220,6 @@ export default {
   },
   mounted() {
     this.loadData("/cards/?page_size=15");
-    // this.loadData("/expansions/?page_size=15");
     this.savedFilters = JSON.parse(JSON.stringify(this.filters));
   },
 };
