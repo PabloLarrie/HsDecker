@@ -39,12 +39,16 @@
         <b-form-select v-model="filters.selectedRace" :options="raceOptions">
         </b-form-select>
 
-        <b-form-select v-model="filters.selectedExpansion" :options="expansionOptions">
+        <b-form-select
+          class="mr-sm-5 w-25 h-25"
+          v-model="filters.selectedExpansion"
+          :options="expansionOptions"
+        >
         </b-form-select>
 
         <b-input
           size="sm"
-          class="mr-sm-5"
+          class="mr-sm-5 w-25 h-25"
           placeholder="Cost"
           v-model="filters.selectedCost"
           debounce="500"
@@ -54,22 +58,20 @@
     </template>
 
     <template v-slot:table>
-      <b-button @click="targetCarding"> hola </b-button>
-      <b-table 
-        class="w-100" 
-        striped 
-        hover 
+      <b-table
+        class="w-100"
+        striped
+        hover
         fixed
         noCollapse
-        :items="info" 
-        :fields="columns" 
+        :items="info"
+        :fields="columns"
         bordered
-        @row-clicked="$router.push({
-          path: '/detailView/'
-        })">
-        <template #cell(heroes)="data">   
+        @row-clicked="rowClick"
+      >
+        <template #cell(heroes)="data">
           {{ data.value.length ? data.value.join(", ") : "Neutral" }}
-        </template>        
+        </template>
         <template #cell(expansion)="data">
           {{ data.value.join(", ") }}
         </template>
@@ -92,7 +94,6 @@
 import TablePagination from "@/components/table/TablePagination";
 import TableLayout from "@/layouts/TableLayout";
 
-
 export default {
   name: "CardsList",
   components: {
@@ -106,8 +107,15 @@ export default {
       previous: null,
       savedFilters: {},
       searchInfo: null,
-      targetCard: "",
-      columns: ["name", "card_type", "quality", "heroes", "standard", "race", "expansion"],
+      columns: [
+        "name",
+        "card_type",
+        "quality",
+        "heroes",
+        "standard",
+        "race",
+        "expansion",
+      ],
       filters: {
         selectedQuality: "",
         selectedFormat: "",
@@ -159,12 +167,7 @@ export default {
         { value: "demon", text: "Demon" },
         { value: "totem", text: "Totem" },
       ],
-      expansionOptions: [
-        { value: "", text: "All expansions" },
-        { value: 1, text: "Basic" },
-        { value: 2, text: "putos amos" },
-        { value: 3, text: "destroyers" },
-      ],
+      expansionOptions: [],
     };
   },
 
@@ -200,17 +203,18 @@ export default {
       });
       this.searchInfo = null;
     },
-    targetCarding() {
-      this.targetCard = this.info[0].id;
-      },
+    rowClick(row) {
+      this.$router.push({
+        name: "detail-card",
+        params: { cardId: row.id },
+      });
+    },
   },
   watch: {
     searchInfo() {
-      this.loadData("/cards/?search=" + this.searchInfo)
-      },
-    targetCard() {
-      // $router.push({path: '/detailView/'})
-      },  
+      this.loadData("/cards/?search=" + this.searchInfo);
+    },
+
     filters: {
       handler() {
         this.magicFilter();
@@ -220,6 +224,15 @@ export default {
   },
   mounted() {
     this.loadData("/cards/?page_size=15");
+    this.$api.get("/expansions/").then((response) => {
+      this.expansionOptions = response.data.results.reduce(
+        (options, expansion) => {
+          options.push({ value: expansion.id, text: expansion.name });
+          return options;
+        },
+        [{ value: "", text: "All expansions" }]
+      );
+    });
     this.savedFilters = JSON.parse(JSON.stringify(this.filters));
   },
 };

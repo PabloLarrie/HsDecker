@@ -1,22 +1,23 @@
 <template>
   <card-layout>
     <template v-slot:cardBody>
-      <b-table 
-        hover 
-        small 
-        caption-top 
-        stacked 
-        class="w-100" 
-        striped 
-        :items="info" 
+      <b-table
+        hover
+        small
+        caption-top
+        stacked
+        class="w-100"
+        striped
+        :items="info"
         :fields="columns"
-        bordered> 
-        <template #cell(heroes)="data">   
+        bordered
+      >
+        <template #cell(heroes)="data">
           {{ data.value.length ? data.value.join(", ") : "Neutral" }}
-        </template>        
+        </template>
         <template #cell(expansion)="data">
           {{ data.value.name }}
-        </template> 
+        </template>
       </b-table>
     </template>
   </card-layout>
@@ -31,40 +32,36 @@ export default {
     CardLayout,
   },
   props: {
-    targetCard: {
+    cardId: {
       required: true,
     },
   },
   data() {
     return {
       info: [],
-      columns: [
+    };
+  },
+
+  computed: {
+    columns() {
+      let commonColumns = [
         "name",
-        "attack", 
-        "card_type", 
-        "collection", 
-        "cost", 
-        "description", 
-        "endurance",
+        "card_type",
+        "collection",
+        "cost",
+        "description",
         "expansion",
         "heroes",
         "quality",
         "race",
         "usage",
-      ],
-      // spellColumns: [
-      //   "name",
-      //   "card_type", 
-      //   "collection", 
-      //   "cost", 
-      //   "description", 
-      //   "expansion",
-      //   "heroes",
-      //   "quality",
-      //   "race",
-      //   "usage",
-      // ],      
-    };
+      ];
+      if (this.info.length && this.info[0].card_type !== "spell") {
+        commonColumns.push("attack");
+        commonColumns.push("endurance");
+      }
+      return commonColumns;
+    },
   },
 
   methods: {
@@ -76,7 +73,7 @@ export default {
   },
 
   mounted() {
-    this.loadData("/cards/8");
+    this.loadData("/cards/" + this.cardId);
   },
 };
 </script>

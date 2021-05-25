@@ -17,9 +17,10 @@ export const router = new VueRouter({
             component: DecksList,
         },
         {
-            path: '/detailView/',
-            name: 'cardDetail',
+            path: '/detail-card/:cardId/',
+            name: 'detail-card',
             component: CardDetail,
-          },
+            props: true,
+        },
     ]
 })
