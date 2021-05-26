@@ -142,9 +142,9 @@ SHELL_PLUS_PRINT_SQL_TRUNCATE = None
 
 # django-rest-framework
 REST_FRAMEWORK = {
-    # "DEFAULT_PERMISSION_CLASSES": (
-    #     "rest_framework.permissions.DjangoModelPermissions",
-    # ),
+    "DEFAULT_PERMISSION_CLASSES": (
+        "rest_framework.permissions.DjangoModelPermissions",
+    ),
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),

@@ -1,3 +1,4 @@
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import permissions
 from cards.models import Card, Expansion
@@ -8,6 +9,7 @@ from rest_framework_filters.backends import RestFrameworkFilterBackend
 
 
 class CardViewSet(ModelViewSet):
+    permission_classes = (IsAuthenticatedOrReadOnly,)
     queryset = Card.objects.all()
     filter_backends = (SearchFilter, RestFrameworkFilterBackend, OrderingFilter)
     search_fields = ["name", "keywords__name", "card_type", "quality"]
@@ -21,18 +23,12 @@ class CardViewSet(ModelViewSet):
             return CardSerializer
 
 
-class CardEditSet(ModelViewSet):
-    queryset = Card.objects.all()
-    filter_backends = (SearchFilter, RestFrameworkFilterBackend, OrderingFilter)
-    search_fields = ["name", "keywords__name", "card_type", "quality"]
-    filterset_class = CardsFilter
-    ordering = ("id",)
-
 class ExpansionViewSet(ModelViewSet):
+    permission_classes = (IsAuthenticatedOrReadOnly,)
     queryset = Expansion.objects.all()
     filter_backends = (SearchFilter, RestFrameworkFilterBackend, OrderingFilter)
     search_fields = ["name", "collection"]
     ordering = ("id",)
-    
+
     def get_serializer_class(self):
-            return ExpansionSerializer
+        return ExpansionSerializer
