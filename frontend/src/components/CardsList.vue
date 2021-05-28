@@ -55,6 +55,7 @@
         ></b-input>
         <b-button @click="resetFilter"> Reset </b-button>
       </b-button-toolbar>
+
     </template>
 
     <template v-slot:table>
