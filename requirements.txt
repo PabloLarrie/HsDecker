@@ -12,9 +12,9 @@ astroid==2.5.6
     # via pylint
 attrs==21.2.0
     # via pytest
-black==21.5b0
+black==21.5b1
     # via -r requirements.in
-click==7.1.2
+click==8.0.1
     # via black
 django-cors-headers==3.7.0
     # via -r requirements.in
@@ -24,7 +24,7 @@ django-filter==2.4.0
     # via
     #   -r requirements.in
     #   djangorestframework-filters
-django==3.2.2
+django==3.2.3
     # via
     #   -r requirements.in
     #   django-cors-headers
@@ -34,7 +34,7 @@ django==3.2.2
     #   djangorestframework-simplejwt
 djangorestframework-filters==1.0.0.dev0
     # via -r requirements.in
-djangorestframework-simplejwt==4.6.0
+djangorestframework-simplejwt==4.7.0
     # via -r requirements.in
 djangorestframework==3.12.4
     # via
@@ -43,7 +43,7 @@ djangorestframework==3.12.4
     #   djangorestframework-simplejwt
 factory-boy==3.2.0
     # via -r requirements.in
-faker==8.1.2
+faker==8.3.0
     # via factory-boy
 iniconfig==1.1.1
     # via pytest
@@ -73,7 +73,7 @@ pylint==2.8.2
     # via -r requirements.in
 pyparsing==2.4.7
     # via packaging
-pytest-django==4.2.0
+pytest-django==4.3.0
     # via -r requirements.in
 pytest==6.2.4
     # via
