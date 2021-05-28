@@ -10,5 +10,5 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         for index, user in enumerate(self.USERS):
-            user = User.objects.create(username=user)
+            user = User.objects.create_user(username=user, email=None, password="Aaa1234*")
             user.groups.set([Group.objects.get(name=self.GROUPS[index])])

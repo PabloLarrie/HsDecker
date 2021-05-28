@@ -1,7 +1,8 @@
-from django.db import models
-from cards.constants import QualityCard
 from django.core.validators import MaxValueValidator, MinValueValidator
-from django.db.models import Sum, CheckConstraint, Q, F
+from django.db import models
+from django.db.models import Sum
+
+from cards.constants import QualityCard
 
 
 class Deck(models.Model):

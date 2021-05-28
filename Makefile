@@ -27,8 +27,7 @@ freeze_dependencies: pip-compile chown
 run:
 	${DOCKER_HSDECKER} python manage.py runserver
 
-build:
-	docker-compose build
+build:docker-compose build
 
 migrate:
 	${DOCKER_HSDECKER} python manage.py migrate
@@ -60,7 +59,6 @@ addvuestrap:
 installrouter:
 	${DOCKER_FRONTEND} npm install vue-router
 
-vuestrap:
-	installvuestrap addvuestrap
+vuestrap: installvuestrap addvuestrap
 
 build_and_setup: build migrate loadgroups loadusers loadcards loaddecks installfrontend

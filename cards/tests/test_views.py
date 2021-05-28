@@ -1,8 +1,8 @@
 import pytest
-
-from rest_framework.test import APIRequestFactory, force_authenticate
 from rest_framework.reverse import reverse
+from rest_framework.test import force_authenticate
 
+from cards.models import Card
 from cards.tests.factories import (
     CardFactory,
     CollectionFactory,
@@ -10,9 +10,6 @@ from cards.tests.factories import (
     UserFactory,
 )
 from cards.views import CardViewSet
-from cards.serializers import CardSerializer
-from cards.models import Card
-
 
 pytestmark = pytest.mark.django_db
 

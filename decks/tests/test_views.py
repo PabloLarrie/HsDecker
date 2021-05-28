@@ -1,11 +1,10 @@
 import pytest
-from rest_framework.test import APIRequestFactory, force_authenticate
 from rest_framework.reverse import reverse
+from rest_framework.test import force_authenticate
 
-from decks.tests.factories import DeckFactory
 from cards.tests.factories import UserFactory, CardFactory
+from decks.tests.factories import DeckFactory
 from decks.views import DeckViewSet
-from decks.models import Deck
 
 pytestmark = pytest.mark.django_db
 
