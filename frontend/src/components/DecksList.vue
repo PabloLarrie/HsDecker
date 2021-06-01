@@ -27,7 +27,15 @@
     </template>
 
     <template v-slot:table>
-      <b-table class="w-100" striped hover :items="info" />
+      <b-table
+          class="w-100"
+          striped hover
+          :items="info"
+          @row-clicked="rowClick"
+      />
+      <b-button>
+        <router-link to="/createDeck">Create new Deck</router-link>
+      </b-button>
     </template>
 
     <template v-slot:pagination-bottom>
@@ -98,6 +106,12 @@ export default {
     previousPage() {
       this.loadData(this.previous);
     },
+    rowClick(row) {
+      this.$router.push({
+        name: "detail-deck",
+        params: { deckId: row.id },
+      });
+    },
 
   },
   watch: {
@@ -119,5 +133,5 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 </style>

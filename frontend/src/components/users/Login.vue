@@ -50,6 +50,7 @@
 
 <script>
 import LoginLayout from "@/layouts/LoginLayout";
+import store from "@/vuex/index";
 
 export default {
   name: "Login",
@@ -64,19 +65,28 @@ export default {
         password: '',
         checked: []
       },
-      show: true
+      show: true,
+      token: "",
     }
   },
 
   methods: {
-    loadData(url) {
-      this.$api.get(url).then((response) => {
-        this.info = [response.data];
+    login() {
+      this.$api.post("/token/", {
+        "username": this.form.username,
+        "password": this.form.password,
+      })
+        .then((response) => {
+          this.token = response.data.access;
+          console.log(response);
+          })
+        .then((response) => {
+          store.commit(response.data.access, true)
       });
     },
     onSubmit(event) {
       event.preventDefault()
-      alert(JSON.stringify(this.form))
+      this.login()
     },
     onReset(event) {
       event.preventDefault()
@@ -90,10 +100,6 @@ export default {
         this.show = true
       })
     }
-  },
-
-  mounted() {
-    this.loadData("/token/")
   },
 };
 </script>

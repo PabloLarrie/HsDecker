@@ -7,8 +7,15 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <router-link to="/">Cards</router-link>
-          <router-link to="/decks">Decks</router-link>
+          <b-button>
+            <router-link to="/">Cards</router-link>
+          </b-button>
+          <b-button>
+            <router-link to="/decks">Decks</router-link>
+          </b-button>
+          <b-button>
+            <router-link to="/login">Login</router-link>
+          </b-button>
         </b-navbar-nav>
 
       </b-collapse>

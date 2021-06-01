@@ -2,7 +2,10 @@ import VueRouter from "vue-router"
 import CardsList from "@/components/CardsList";
 import DecksList from "@/components/DecksList";
 import CardDetail from "@/components/cardsDetail/CardDetail";
+import DeckDetail from "@/components/decksDetail/DeckDetail";
 import Login from "@/components/users/Login";
+import EditDeck from "@/components/decksDetail/EditDeck";
+import CreateDeck from "@/components/decksDetail/CreateDeck";
 
 export const router = new VueRouter({
     mode: "history",
@@ -24,9 +27,25 @@ export const router = new VueRouter({
             props: true,
         },
         {
+            path: '/detail-deck/:deckId/',
+            name: 'detail-deck',
+            component: DeckDetail,
+            props: true,
+        },
+        {
             path: "/login",
             name: "login",
             component: Login,
+        },
+        {
+            path: "/editDeck",
+            name: "editDeck",
+            component: EditDeck,
+        },
+        {
+            path: "/createDeck",
+            name: "createDeck",
+            component: CreateDeck,
         },
     ]
 })
