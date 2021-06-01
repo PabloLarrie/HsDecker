@@ -34,7 +34,7 @@
           @row-clicked="rowClick"
       />
       <b-button>
-        <router-link to="/createDeck">Create new Deck</router-link>
+        <router-link to="/create-deck">Create new Deck</router-link>
       </b-button>
     </template>
 

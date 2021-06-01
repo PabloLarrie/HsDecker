@@ -50,7 +50,7 @@
 
 <script>
 import LoginLayout from "@/layouts/LoginLayout";
-import store from "@/vuex/index";
+import {mapMutations} from "vuex";
 
 export default {
   name: "Login",
@@ -66,23 +66,26 @@ export default {
         checked: []
       },
       show: true,
-      token: "",
     }
   },
 
   methods: {
+    ...mapMutations("userStore", ["setToken", "setUser"]),
     login() {
       this.$api.post("/token/", {
         "username": this.form.username,
         "password": this.form.password,
       })
-        .then((response) => {
-          this.token = response.data.access;
-          console.log(response);
-          })
-        .then((response) => {
-          store.commit(response.data.access, true)
-      });
+          .then((response) => {
+            this.setToken(response.data.access);
+            this.$api.get("/user/").then((response) => {
+              this.setUser(response.data)
+              this.$router.push({
+                name: "cards",
+              });
+            })
+            // .catch
+          });
     },
     onSubmit(event) {
       event.preventDefault()

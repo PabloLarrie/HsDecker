@@ -20,10 +20,13 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
+from cards.views import UserViewSet
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("cards.urls", namespace="cards")),
     path("", include("decks.urls", namespace="decks")),
+    path("user/", UserViewSet.as_view(), name="user"),
     path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 ]

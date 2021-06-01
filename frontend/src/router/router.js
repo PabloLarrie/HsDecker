@@ -38,12 +38,12 @@ export const router = new VueRouter({
             component: Login,
         },
         {
-            path: "/editDeck",
+            path: "/edit-deck",
             name: "editDeck",
             component: EditDeck,
         },
         {
-            path: "/createDeck",
+            path: "/create-deck",
             name: "createDeck",
             component: CreateDeck,
         },

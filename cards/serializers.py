@@ -1,6 +1,8 @@
+from django.contrib.auth import get_user_model
 from rest_framework import serializers
-from cards.models import Card, Expansion, HeroClass
-from decks.models import Deck
+from cards.models import Card, Expansion
+
+UserModel = get_user_model()
 
 
 class ExpansionSerializer(serializers.ModelSerializer):
@@ -102,3 +104,15 @@ class CardSerializer(serializers.ModelSerializer):
             "collection",
             "heroes",
         ]
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserModel
+        fields = (
+            "username",
+            "first_name",
+            "last_name",
+            "email",
+            "is_superuser",
+        )

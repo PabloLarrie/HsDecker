@@ -2,7 +2,7 @@
   <deck-layout>
     <template v-slot:deckBody>
       <b-button>
-        <router-link to="/editDeck">Edit</router-link>
+        <router-link to="/edit-deck">Edit</router-link>
       </b-button>
       <b-table
         hover

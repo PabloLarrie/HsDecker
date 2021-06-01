@@ -3,30 +3,27 @@ import Vuex from "vuex";
 
 Vue.use(Vuex)
 
-const userState = {
-    token: null,
-}
-
-const userMutations = {
-    setToken(state, token) {
-        state.token = token
-    }
-}
-
-const userActions = {}
-
-const userGetters = {
-    token: state => {
-        return state.token
-    }
-}
-
 const userStore = {
     namespaced: true,
-    userState,
-    userActions,
-    userGetters,
-    userMutations,
+    state: {
+        token: null,
+        user: {},
+    },
+    actions: {},
+    getters: {
+        token: state => {
+            return state.token
+        },
+    },
+    mutations: {
+        setToken(state, token) {
+            state.token = token
+        },
+        setUser (state, user) {
+            state.user = user
+        },
+    },
+
 
 }
 

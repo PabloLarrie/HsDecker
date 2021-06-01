@@ -27,7 +27,8 @@ freeze_dependencies: pip-compile chown
 run:
 	${DOCKER_HSDECKER} python manage.py runserver
 
-build:docker-compose build
+build:
+	docker-compose build
 
 migrate:
 	${DOCKER_HSDECKER} python manage.py migrate
