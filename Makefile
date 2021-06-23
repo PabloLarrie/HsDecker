@@ -63,3 +63,5 @@ installrouter:
 vuestrap: installvuestrap addvuestrap
 
 build_and_setup: build migrate loadgroups loadusers loadcards loaddecks installfrontend
+
+setup: migrate loadgroups loadusers loadcards loaddecks installfrontend

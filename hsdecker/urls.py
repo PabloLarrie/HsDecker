@@ -20,7 +20,7 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
-from cards.views import UserViewSet
+from users.views import UserViewSet
 
 urlpatterns = [
     path("admin/", admin.site.urls),

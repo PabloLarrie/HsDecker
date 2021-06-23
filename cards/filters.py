@@ -1,5 +1,6 @@
 from rest_framework_filters import FilterSet, filters
-from cards.models import Card, HeroClass
+
+from cards.models import Card
 
 
 class CardsFilter(FilterSet):

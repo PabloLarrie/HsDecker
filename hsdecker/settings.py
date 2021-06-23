@@ -46,6 +46,7 @@ DJANGO_APPS = [
 LOCAL_APPS = [
     "cards",
     "decks",
+    "users",
 ]
 
 

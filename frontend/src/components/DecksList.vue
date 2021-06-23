@@ -33,7 +33,7 @@
           :items="info"
           @row-clicked="rowClick"
       />
-      <b-button>
+      <b-button v-if="token">
         <router-link to="/create-deck">Create new Deck</router-link>
       </b-button>
     </template>
@@ -53,6 +53,7 @@
 <script>
 import TablePagination from "@/components/table/TablePagination";
 import TableLayout from "@/layouts/TableLayout";
+import {mapState} from "vuex";
 
 export default {
   name: "CardsList",
@@ -91,7 +92,9 @@ export default {
       ],
     };
   },
-
+  computed: {
+    ...mapState("userStore", ["token", "user"])
+  },
   methods: {
     loadData(url) {
       this.$api.get(url).then((response) => {

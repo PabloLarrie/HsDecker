@@ -13,7 +13,7 @@
           <b-button>
             <router-link to="/decks">Decks</router-link>
           </b-button>
-          <b-button>
+          <b-button v-if="!token">
             <router-link to="/login">Login</router-link>
           </b-button>
         </b-navbar-nav>
@@ -24,11 +24,17 @@
 </template>
 
 <script>
+
+import {mapState} from "vuex";
+
 export default {
   name: "MyHeader",
   data() {
     return {};
   },
+  computed: {
+    ...mapState("userStore", ["token", "user"])
+  }
 };
 </script>
 <style scoped>

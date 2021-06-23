@@ -47,5 +47,5 @@ export const router = new VueRouter({
             name: "createDeck",
             component: CreateDeck,
         },
-    ]
+    ],
 })
