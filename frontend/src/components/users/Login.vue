@@ -51,6 +51,7 @@
 <script>
 import LoginLayout from "@/layouts/LoginLayout";
 import {mapMutations} from "vuex";
+import {TOKEN_STORAGE_KEY} from "@/constants";
 
 export default {
   name: "Login",
@@ -78,6 +79,7 @@ export default {
       })
           .then((response) => {
             this.setToken(response.data.access);
+            localStorage.setItem(TOKEN_STORAGE_KEY, response.data.access);
             this.$api.get("/user/").then((response) => {
               this.setUser(response.data)
               this.$router.push({

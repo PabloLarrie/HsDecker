@@ -14,6 +14,8 @@
 <script>
 import MyHeader from "./components/Header";
 import MainLayout from "./layouts/MainLayout";
+import {TOKEN_STORAGE_KEY} from "@/constants";
+import {mapMutations} from "vuex";
 
 // import MyFooter from "./components/Footer";
 
@@ -24,9 +26,21 @@ export default {
     MyHeader,
     // MyFooter,
   },
+  methods: {
+    ...mapMutations("userStore", ["setToken", "setUser"]),
+  },
   data() {
     return {};
   },
+  mounted() {
+    const token_check = localStorage.getItem(TOKEN_STORAGE_KEY)
+    if (token_check) {
+      this.setToken(token_check);
+      this.$api.get("/user/").then((response) => {
+        this.setUser(response.data)
+      })
+    }
+  }
 };
 </script>
 
