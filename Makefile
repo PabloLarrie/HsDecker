@@ -48,6 +48,9 @@ loadgroups:
 loadusers:
 	${DOCKER_HSDECKER} python manage.py setup_user_creation
 
+loadprofiles:
+	${DOCKER_HSDECKER} python manage.py loaddata users/fixtures/*
+
 installfrontend:
 	${DOCKER_FRONTEND} npm install
 
@@ -62,6 +65,6 @@ installrouter:
 
 vuestrap: installvuestrap addvuestrap
 
-build_and_setup: build migrate loadgroups loadusers loadcards loaddecks installfrontend
+build_and_setup: build migrate loadgroups loadusers loadcards loaddecks loadprofiles installfrontend
 
-setup: migrate loadgroups loadusers loadcards loaddecks installfrontend
+setup: migrate loadgroups loadusers loadcards loaddecks loadprofiles installfrontend

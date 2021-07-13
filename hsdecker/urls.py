@@ -26,6 +26,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("cards.urls", namespace="cards")),
     path("", include("decks.urls", namespace="decks")),
+    path("", include("users.urls", namespace="profiles")),
     path("user/", UserViewSet.as_view(), name="user"),
     path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),

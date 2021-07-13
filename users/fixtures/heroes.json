@@ -1,0 +1,13 @@
+[
+    {
+        "model": "users.Profile",
+        "pk": 1,
+        "fields": {
+            "username": "Larrieman",
+            "user": 1,
+            "email": "larrie@larrie.com",
+            "bio": "Me llamo Larrie y soy granjero, pero no busco esposa",
+            "avatar": "avatar.png"
+        }
+    }
+    ]

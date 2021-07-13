@@ -6,6 +6,7 @@ import DeckDetail from "@/components/decksDetail/DeckDetail";
 import Login from "@/components/users/Login";
 import EditDeck from "@/components/decksDetail/EditDeck";
 import CreateDeck from "@/components/decksDetail/CreateDeck";
+import register from "@/components/users/register"
 
 export const router = new VueRouter({
     mode: "history",
@@ -36,6 +37,11 @@ export const router = new VueRouter({
             path: "/login",
             name: "login",
             component: Login,
+        },
+        {
+            path: "/register",
+            name: "register",
+            component: register,
         },
         {
             path: "/edit-deck",

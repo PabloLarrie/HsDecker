@@ -13,9 +13,18 @@
           <b-button>
             <router-link to="/decks">Decks</router-link>
           </b-button>
+        </b-navbar-nav>
+        <b-navbar-nav class="position-absolute top-0 end-0">
           <b-button v-if="!token">
-            <router-link to="/login">Login</router-link>
+            <router-link v-b-tooltip.hover.down="'Click to login!'" to="/login">Login</router-link>
           </b-button>
+          <b-button v-if="!token">
+            <router-link v-b-tooltip.hover.down="'Click to Register!'" to="/register">Register</router-link>
+          </b-button>
+          <b-dropdown class="position-relative" v-if="token" text="username">
+            <b-dropdown-item href="#" to="/settings">Settings</b-dropdown-item>
+            <b-dropdown-item href="#">Log out</b-dropdown-item>
+          </b-dropdown>
         </b-navbar-nav>
 
       </b-collapse>
