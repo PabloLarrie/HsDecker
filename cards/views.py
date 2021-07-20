@@ -4,8 +4,8 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework_filters.backends import RestFrameworkFilterBackend
 
 from cards.filters import CardsFilter
-from cards.models import Card, Expansion
-from cards.serializers import CardSerializer, CardSimpleSerializer, ExpansionSerializer
+from cards.models import Card, Expansion, HeroClass
+from cards.serializers import CardSerializer, CardSimpleSerializer, ExpansionSerializer, HeroClassSerializer
 
 
 class CardViewSet(ModelViewSet):
@@ -32,3 +32,11 @@ class ExpansionViewSet(ModelViewSet):
 
     def get_serializer_class(self):
         return ExpansionSerializer
+
+
+class HeroClassViewSet(ModelViewSet):
+    permission_classes = (IsAuthenticatedOrReadOnly,)
+    queryset = HeroClass.objects.all()
+
+    def get_serializer_class(self):
+        return HeroClassSerializer

@@ -147,19 +147,7 @@ export default {
         { value: true, text: "Standard" },
         { value: false, text: "Wild" },
       ],
-      heroOptions: [
-        { value: "", text: "All Heroes" },
-        { value: 1, text: "Demon Hunter" },
-        { value: 2, text: "Druid" },
-        { value: 3, text: "Hunter" },
-        { value: 4, text: "Mage" },
-        { value: 5, text: "Paladin" },
-        { value: 6, text: "Priest" },
-        { value: 7, text: "Rogue" },
-        { value: 8, text: "Shaman" },
-        { value: 9, text: "Warlock" },
-        { value: 10, text: "Warrior" },
-      ],
+      heroOptions: [],
       raceOptions: [
         { value: "", text: "All races" },
         { value: "beast", text: "Beast" },
@@ -225,6 +213,15 @@ export default {
   },
   mounted() {
     this.loadData("/cards/?page_size=15");
+    this.$api.get("/hero-classes/").then((response) => {
+      this.heroOptions = response.data.results.reduce(
+          (options, hero) => {
+            options.push({ value: hero.id, text: hero.name });
+            return options;
+          },
+          [{ value: "", text: "All heroes" }]
+      )
+    });
     this.$api.get("/expansions/").then((response) => {
       this.expansionOptions = response.data.results.reduce(
         (options, expansion) => {

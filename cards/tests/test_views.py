@@ -7,9 +7,9 @@ from cards.tests.factories import (
     CardFactory,
     CollectionFactory,
     ExpansionFactory,
-    UserFactory,
+    UserFactory, HeroClassFactory,
 )
-from cards.views import CardViewSet
+from cards.views import CardViewSet, HeroClassViewSet
 
 pytestmark = pytest.mark.django_db
 
@@ -124,3 +124,14 @@ class TestCardViewSet:
 
         assert response.status_code == 201
         # assert Card.objects.all() == 1
+
+
+class TestHeroClassViewSet:
+    def test_hero_class_list(self, APIrequest):
+        HeroClassFactory.create_batch(10)
+        reverse_url = reverse("hero-classes:hero-classes-list")
+        request = APIrequest.get(reverse_url)
+        response = HeroClassViewSet.as_view({"get": "list"})(request)
+
+        assert response.status_code == 200
+        assert len(response.data["results"]) == 10

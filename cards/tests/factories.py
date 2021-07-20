@@ -44,5 +44,7 @@ class CardFactory(DjangoModelFactory):
 
 
 class HeroClassFactory(DjangoModelFactory):
+    name = Faker("pystr", max_chars=15)
+
     class Meta:
         model = HeroClass

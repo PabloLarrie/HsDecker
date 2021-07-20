@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
-from cards.models import Card, Expansion
+from cards.models import Card, Expansion, HeroClass
 
 UserModel = get_user_model()
 
@@ -11,6 +11,18 @@ class ExpansionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Expansion
+        fields = [
+            "id",
+            "name",
+        ]
+
+
+class HeroClassSerializer(serializers.ModelSerializer):
+    name = serializers.CharField(read_only=True)
+    id = serializers.IntegerField()
+
+    class Meta:
+        model = HeroClass
         fields = [
             "id",
             "name",

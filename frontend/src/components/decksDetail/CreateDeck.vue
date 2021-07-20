@@ -5,7 +5,7 @@
 
         <b-form-group label="Name:" >
           <b-form-input
-              id="input-1"
+              id="name"
               v-model="name"
               placeholder="Enter Deck Name"
               required
@@ -13,34 +13,18 @@
         </b-form-group>
 
         <b-form-group label="Hero Class:" >
-          <b-form-input
-              id="input-2"
-              v-model="hero_class"
-              placeholder="Enter Hero"
-              required
-          ></b-form-input>
+          <b-form-select v-model="selectedHero" :options="heroOptions">
+          </b-form-select>
         </b-form-group>
 
-        <b-form-group label="Standard:" >
-          <b-form-input
-              id="input-3"
-              v-model="standard"
-              placeholder="Enter Standard"
-              required
-          ></b-form-input>
-        </b-form-group>
+        <b-form-checkbox v-model="standard">Standard</b-form-checkbox>
 
-        <b-form-group label="Cards:" >
-          <b-form-input
-              id="input-4"
-              v-model="cards"
-              placeholder="Enter Cards"
-              required
-          ></b-form-input>
-        </b-form-group>
+        <b-button @click="submitDeck">Create</b-button>
+        <b-button>
+            <router-link to="/decks">Cancel</router-link>
+        </b-button>
 
       </b-form>
-
     </template>
   </edit-deck-layout>
 </template>
@@ -53,19 +37,35 @@ export default {
   components: {
     EditDeckLayout,
   },
-  props: {},
   data() {
     return {
       name: '',
-      hero_class: '',
-      standard: '',
-      cards: [],
-      }
-
-    },
-
-  methods: {
+      selectedHero: null,
+      standard: false,
+      heroOptions: [],
+      heroClass: '',
+    }
   },
+  methods: {
+    submitDeck() {
+      let values = {
+            "name": this.name,
+            "hero_class_id": this.selectedHero,
+            "standard": this.standard,
+        }
+    },
+  },
+  mounted() {
+    this.$api.get("/hero-classes/").then((response) => {
+      this.heroOptions = response.data.results.reduce(
+          (options, hero) => {
+            options.push({ value: hero.id, text: hero.name });
+            return options;
+          },
+          [{ value: "", text: "All heroes" }]
+      )
+    });
+  }
 };
 </script>
 <style>

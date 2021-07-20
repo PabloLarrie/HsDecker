@@ -75,15 +75,10 @@ export const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    console.log(store.state.userStore.token)
-    if(to.meta.requiresAuth) {
-        if(!store.state.userStore.token) {
-            next({
+    if(to.meta.requiresAuth && !store.state.userStore.token) {
+             next({
                 name: "login"
             });
-        } else {
-            next();
-        }
     } else {
         next();
     }
