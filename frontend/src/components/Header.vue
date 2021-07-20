@@ -1,7 +1,7 @@
 -<template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="#">HSDECKER</b-navbar-brand>
+      <b-navbar-brand to="/home">HSDECKER</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -22,7 +22,7 @@
             <router-link v-b-tooltip.hover.down="'Click to Register!'" to="/register">Register</router-link>
           </b-button>
           <b-dropdown class="position-relative" v-if="token" :text="user.username">
-<!--            <b-dropdown-item href="#" to="/settings">Settings</b-dropdown-item>-->
+            <b-dropdown-item href="#" to="/settings">Settings</b-dropdown-item>
             <b-dropdown-item @click="logOut">Log out</b-dropdown-item>
           </b-dropdown>
         </b-navbar-nav>

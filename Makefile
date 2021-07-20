@@ -10,6 +10,15 @@ else
 	DOCKER_FRONTEND=docker-compose run frontend
 endif
 
+up:
+	docker-compose up
+
+down:
+	docker-compose down
+
+dest:
+	docker exec -it hsdecker_postgres_1 bash
+
 test:
 	${DOCKER_HSDECKER} pytest -c pytest.ini
 

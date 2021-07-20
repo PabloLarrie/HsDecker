@@ -7,6 +7,10 @@ import Login from "@/components/users/Login";
 import EditDeck from "@/components/decksDetail/EditDeck";
 import CreateDeck from "@/components/decksDetail/CreateDeck";
 import register from "@/components/users/register"
+import { store } from "@/vuex"
+import settings from "../components/users/settings";
+import Home from "../components/Home";
+
 
 export const router = new VueRouter({
     mode: "history",
@@ -26,17 +30,24 @@ export const router = new VueRouter({
             name: 'detail-card',
             component: CardDetail,
             props: true,
+
         },
         {
             path: '/detail-deck/:deckId/',
             name: 'detail-deck',
             component: DeckDetail,
             props: true,
+            meta: { requiresAuth: true }
         },
         {
             path: "/login",
             name: "login",
             component: Login,
+        },
+        {
+            path: "/home",
+            name: "home",
+            component: Home,
         },
         {
             path: "/register",
@@ -49,9 +60,31 @@ export const router = new VueRouter({
             component: EditDeck,
         },
         {
+            path: "/settings",
+            name: "settings",
+            component: settings,
+            props: true,
+
+        },
+        {
             path: "/create-deck",
             name: "createDeck",
             component: CreateDeck,
         },
     ],
 })
+
+router.beforeEach((to, from, next) => {
+    console.log(store.state.userStore.token)
+    if(to.meta.requiresAuth) {
+        if(!store.state.userStore.token) {
+            next({
+                name: "login"
+            });
+        } else {
+            next();
+        }
+    } else {
+        next();
+    }
+});

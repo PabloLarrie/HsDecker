@@ -7,10 +7,9 @@
         caption-top
         class="w-100"
         striped
-        :fields="cardColumns"
-        :items="cardsInfo"
+        :items="info"
+        :fields="columns"
         bordered
-        @row-clicked="rowClick"
 
       >
         <template #cell(profile)="data">
@@ -23,16 +22,13 @@
 
 <script>
 import SettingsLayout from "@/layouts/SettingsLayout";
+import { store } from "@/vuex"
+
 
 export default {
   name: "Settings",
   components: {
     SettingsLayout
-  },
-  props: {
-    userId: {
-      required: true,
-    },
   },
 
   data() {
@@ -40,19 +36,12 @@ export default {
       info: [],
       userSettings: [],
       columns: [
-          "id",
-          "name",
-          "hero_class",
-          "standard",
-          "complete",
-          "size",
-          "total_cards",
+        "username",
+        "user",
+        "email",
+        "bio" ,
+        "avatar"
       ],
-      settingColumns: [
-          "card",
-          "quantity",
-          "golden",
-      ]
     };
   },
   methods: {
@@ -66,7 +55,7 @@ export default {
     },
   },
   mounted() {
-    this.loadData("/profiles/" + this.userId);
+    this.loadData("/profiles/" + store.state.userStore.user.id);
   },
 };
 </script>

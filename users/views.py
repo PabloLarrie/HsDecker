@@ -7,10 +7,9 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework_filters.backends import RestFrameworkFilterBackend
 
-from cards.serializers import UserSerializer
 from users.filters import ProfilesFilter
 from users.models import Profile
-from users.serializers import ProfileSimpleSerializer, ProfileSerializer
+from users.serializers import ProfileSimpleSerializer, ProfileSerializer, UserSerializer
 
 
 class UserViewSet(APIView):

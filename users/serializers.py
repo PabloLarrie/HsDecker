@@ -7,9 +7,12 @@ UserModel = get_user_model()
 
 
 class UserSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(read_only=False)
+
     class Meta:
         model = UserModel
         fields = (
+            "id",
             "username",
             "first_name",
             "last_name",
