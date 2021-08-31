@@ -129,7 +129,7 @@ class TestCardViewSet:
 class TestHeroClassViewSet:
     def test_hero_class_list(self, APIrequest):
         HeroClassFactory.create_batch(10)
-        reverse_url = reverse("hero-classes:hero-classes-list")
+        reverse_url = reverse("cards:hero-classes-list")
         request = APIrequest.get(reverse_url)
         response = HeroClassViewSet.as_view({"get": "list"})(request)
 

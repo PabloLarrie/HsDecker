@@ -6,19 +6,27 @@ from users.models import Profile
 UserModel = get_user_model()
 
 
-class UserSerializer(serializers.ModelSerializer):
+class UserSimpleSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(read_only=False)
 
     class Meta:
         model = UserModel
-        fields = (
+        fields = [
             "id",
             "username",
+        ]
+
+
+class UserSerializer(UserSimpleSerializer):
+
+    class Meta:
+        model = UserModel
+        fields = UserSimpleSerializer.Meta.fields + [
             "first_name",
             "last_name",
             "email",
             "is_superuser",
-        )
+        ]
 
 
 class ProfileSerializer(serializers.ModelSerializer):

@@ -1,8 +1,11 @@
+from django.contrib.auth import get_user_model
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.db.models import Sum
 
 from cards.constants import QualityCard
+
+UserModel = get_user_model()
 
 
 class Deck(models.Model):
@@ -12,7 +15,7 @@ class Deck(models.Model):
         "cards.HeroClass", related_name="decks", on_delete=models.CASCADE, null=True
     )
     cards = models.ManyToManyField("cards.Card", through="DeckCard")
-
+    user = models.ForeignKey(UserModel, related_name="decks", on_delete=models.CASCADE)
     standard = models.BooleanField(default=True)
 
     def complete(self):

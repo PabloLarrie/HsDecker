@@ -8,8 +8,8 @@ from django.contrib.auth.models import User
 
 
 class UserFactory(DjangoModelFactory):
-    username = "user01"
-    email = "user01@example.com"
+    username = Faker("name")
+    email = Faker("email")
     password = "user01P4ssw0rD"
 
     class Meta:

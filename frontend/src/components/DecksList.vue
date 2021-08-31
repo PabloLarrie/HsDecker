@@ -30,6 +30,7 @@
       <b-table
           class="w-100"
           striped hover
+          :fields="columns"
           :items="info"
           @row-clicked="rowClick"
       />
@@ -66,6 +67,19 @@ export default {
       tipoInput: "number",
       index: "number",
       info: [],
+      columns: [
+          "id",
+          "name",
+          "hero_class",
+          "standard",
+          "complete",
+          "size",
+          "total_cards",
+        {
+          key: "user.username",
+          label: "Username",
+        },
+      ],
       next: null,
       previous: null,
       size: 15,

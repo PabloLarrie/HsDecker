@@ -50,9 +50,11 @@ export default {
     submitDeck() {
       let values = {
             "name": this.name,
-            "hero_class_id": this.selectedHero,
+            "hero_class": this.selectedHero,
             "standard": this.standard,
         }
+      this.$api.post("/decks/", values)
+        console.log(values)
     },
   },
   mounted() {
@@ -62,8 +64,9 @@ export default {
             options.push({ value: hero.id, text: hero.name });
             return options;
           },
-          [{ value: "", text: "All heroes" }]
+          []
       )
+      this.selectedHero = this.heroOptions[0].value
     });
   }
 };

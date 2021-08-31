@@ -33,14 +33,14 @@ class TestDeckViewSet:
         assert response.data["name"] == deck.name
         assert response.data["complete"] == deck.complete()
 
-    def test_create_deck(self, APIrequest):
+    def test_create_deck(self, APIrequest, class_priest):
         card = CardFactory()
         card2 = CardFactory()
         user = UserFactory()
         values = {
             "name": "yisus",
             "size": 30,
-            "hero_class_id": 9,
+            "hero_class": class_priest.id,
             "standard": True,
             "cards": [
                 {"golden": True, "quantity": 1, "card": {"id": card.id}},
@@ -54,4 +54,5 @@ class TestDeckViewSet:
         response = DeckViewSet.as_view({"post": "create"})(request)
 
         assert response.status_code == 201
-        # assert Deck.objects.filter(id=) == 1
+        assert response.data["user"]["id"] == user.id
+        assert response.data["user"]["id"] == user.id

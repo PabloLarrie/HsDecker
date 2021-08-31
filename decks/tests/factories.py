@@ -1,12 +1,13 @@
 from factory.django import DjangoModelFactory
 from decks.models import Deck, DeckCard
-from cards.tests.factories import HeroClassFactory, CardFactory
+from cards.tests.factories import HeroClassFactory, CardFactory, UserFactory
 from factory import Faker, SubFactory
 
 
 class DeckFactory(DjangoModelFactory):
     hero_class = SubFactory(HeroClassFactory)
     standard = True
+    user = SubFactory(UserFactory)
     class Meta:
         model = Deck
 

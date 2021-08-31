@@ -4,7 +4,6 @@ import DecksList from "@/components/DecksList";
 import CardDetail from "@/components/cardsDetail/CardDetail";
 import DeckDetail from "@/components/decksDetail/DeckDetail";
 import Login from "@/components/users/Login";
-import EditDeck from "@/components/decksDetail/EditDeck";
 import CreateDeck from "@/components/decksDetail/CreateDeck";
 import register from "@/components/users/register"
 import { store } from "@/vuex"
@@ -53,11 +52,6 @@ export const router = new VueRouter({
             path: "/register",
             name: "register",
             component: register,
-        },
-        {
-            path: "/edit-deck",
-            name: "editDeck",
-            component: EditDeck,
         },
         {
             path: "/settings",

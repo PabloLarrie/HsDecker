@@ -6,7 +6,8 @@
             "name": "My Deck",
             "size": 30,
             "hero_class": 10,
-            "standard": true
+            "standard": true,
+            "user": 1
 
         }
     },
@@ -17,7 +18,19 @@
             "name": "My Deck2",
             "size": 0,
             "hero_class": 9,
-            "standard": false
+            "standard": false,
+            "user": 1
         }
-    } 
+    },
+    {
+        "model": "decks.Deck",
+        "pk": 3,
+        "fields": {
+            "name": "My Deck3",
+            "size": 0,
+            "hero_class": 9,
+            "standard": false,
+            "user": 2
+        }
+    }
 ]
